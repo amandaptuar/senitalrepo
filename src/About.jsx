@@ -11,17 +11,15 @@ const About = () => {
           "/js/custom-marquee.js"
         ];
     
-        const loadScript = (index) => {
-          if (index >= scripts.length) return;
-          const script = document.createElement("script");
-          script.src = scripts[index];
-          script.async = false;
-          script.onload = () => loadScript(index + 1);
-          document.body.appendChild(script);
-        };
-    
         const timeoutId = setTimeout(() => {
-            loadScript(0);
+            scripts.forEach(src => {
+              if (!document.querySelector(`script[src="${src}"]`)) {
+                const script = document.createElement("script");
+                script.src = src;
+                script.async = false;
+                document.body.appendChild(script);
+              }
+            });
         }, 100);
     
         window.scrollTo(0, 0);
@@ -104,12 +102,12 @@ const About = () => {
                                         <div className="row g-4">
                                             <div className="col-lg-6 wow fadeInRight">
                                                 <div className="relative rounded-1 overflow-hidden">
-                                                    <img src="/images/misc/p1.webp" className="w-100" alt="Cybersecurity Operations Center" />
+                                                    <img src="/images/misc/p1.webp" className="w-100" alt="Cybersecurity Operations Center" loading="lazy" />
                                                 </div>
                                             </div>
                                             <div className="col-lg-6 wow fadeInRight" data-wow-delay=".3s">
                                                 <div className="relative rounded-1 overflow-hidden">
-                                                    <img src="/images/misc/p2.webp" className="w-100" alt="Network Security Infrastructure" />
+                                                    <img src="/images/misc/p2.webp" className="w-100" alt="Network Security Infrastructure" loading="lazy" />
                                                 </div>
                                             </div>
                                         </div>
@@ -247,7 +245,7 @@ const About = () => {
                                 
                                 <div className="col-lg-3">
                                     <div className="rounded-1 overflow-hidden">
-                                        <img src="/images/team/1.webp" className="w-100" alt="Cybersecurity Expert" />
+                                        <img src="/images/team/1.webp" className="w-100" alt="Cybersecurity Expert" loading="lazy" />
                                         <div className="bg-light p-4 overflow-hidden text-center">
                                             <h4 className="mb-0">John Smith</h4>
                                             <p className="mb-2">Chief Security Officer</p>

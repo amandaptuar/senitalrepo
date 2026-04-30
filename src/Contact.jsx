@@ -12,17 +12,15 @@ const Contact = () => {
           "/js/custom-swiper-1.js"
         ];
     
-        const loadScript = (index) => {
-          if (index >= scripts.length) return;
-          const script = document.createElement("script");
-          script.src = scripts[index];
-          script.async = false;
-          script.onload = () => loadScript(index + 1);
-          document.body.appendChild(script);
-        };
-    
         const timeoutId = setTimeout(() => {
-            loadScript(0);
+            scripts.forEach(src => {
+              if (!document.querySelector(`script[src="${src}"]`)) {
+                const script = document.createElement("script");
+                script.src = src;
+                script.async = false;
+                document.body.appendChild(script);
+              }
+            });
         }, 100);
     
         window.scrollTo(0, 0);
@@ -90,7 +88,7 @@ const Contact = () => {
                                 <div className="rounded-1 bg-light overflow-hidden">
                                     <div className="row g-2">
                                         <div className="col-sm-6">
-                                            <div className="auto-height relative" style={{ backgroundImage: 'url(/images/misc/s1.webp)', backgroundSize: 'cover' }} data-bgimage="url(/images/misc/s1.webp)"></div>
+                                            <div className="auto-height relative" style={{ backgroundImage: 'url(/images/misc/s1.webp)', backgroundSize: 'cover' }} data-bgimage="url(/images/misc/s1.webp)" loading="lazy"></div>
                                         </div>   
                                         <div className="col-sm-6 relative">
                                             <div className="p-30">

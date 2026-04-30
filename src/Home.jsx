@@ -14,18 +14,15 @@ const Home = () => {
       "/js/custom-swiper-1.js"
     ];
 
-    const loadScript = (index) => {
-      if (index >= scripts.length) return;
-      const script = document.createElement("script");
-      script.src = scripts[index];
-      script.async = false;
-      script.onload = () => loadScript(index + 1);
-      document.body.appendChild(script);
-    };
-
-    // Use a small timeout to let the DOM paint completely first
     const timeoutId = setTimeout(() => {
-        loadScript(0);
+        scripts.forEach(src => {
+          if (!document.querySelector(`script[src="${src}"]`)) {
+            const script = document.createElement("script");
+            script.src = src;
+            script.async = false;
+            document.body.appendChild(script);
+          }
+        });
     }, 100);
 
     return () => {
@@ -158,7 +155,7 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                                         <div className="relative overflow-hidden">
                                             <h3 className="abs text-white fs-32 lh-1 p-4 top-0 start-0 z-3">01</h3>
                                             <div className="sw-overlay z-2 op-3"></div>
-                                            <img src="images/services/1.webp" className="w-100 hover-scale-1-2" alt="Network Security" />
+                                            <img src="images/services/1.webp" className="w-100 hover-scale-1-2" alt="Network Security" loading="lazy" />
                                         </div>
                                     </div>
                                     <div className="col-md-6">
@@ -178,7 +175,7 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                                         <div className="relative overflow-hidden">
                                             <h3 className="abs text-white fs-32 lh-1 p-4 top-0 start-0 z-3">02</h3>
                                             <div className="sw-overlay z-2 op-3"></div>
-                                            <img src="images/services/2.webp" className="w-100 hover-scale-1-2" alt="Data Encryption" />
+                                            <img src="images/services/2.webp" className="w-100 hover-scale-1-2" alt="Data Encryption" loading="lazy" />
                                         </div>
                                     </div>
                                     <div className="col-md-6">
@@ -204,7 +201,7 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                                         <div className="relative overflow-hidden">
                                             <h3 className="abs text-white fs-32 lh-1 p-4 top-0 start-0 z-3">03</h3>
                                             <div className="sw-overlay z-2 op-3"></div>
-                                            <img src="images/services/3.webp" className="w-100 hover-scale-1-2" alt="Identity & Access" />
+                                            <img src="images/services/3.webp" className="w-100 hover-scale-1-2" alt="Identity & Access" loading="lazy" />
                                         </div>
                                     </div>
                                 </div>
@@ -224,7 +221,7 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                                         <div className="relative overflow-hidden">
                                             <h3 className="abs text-white fs-32 lh-1 p-4 top-0 start-0 z-3">04</h3>
                                             <div className="sw-overlay z-2 op-3"></div>
-                                            <img src="images/services/4.webp" className="w-100 hover-scale-1-2" alt="Security Monitoring" />
+                                            <img src="images/services/4.webp" className="w-100 hover-scale-1-2" alt="Security Monitoring" loading="lazy" />
                                         </div>
                                     </div>
                                 </div>
@@ -238,7 +235,7 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                                         <div className="relative overflow-hidden">
                                             <h3 className="abs text-white fs-32 lh-1 p-4 top-0 start-0 z-3">05</h3>
                                             <div className="sw-overlay z-2 op-3"></div>
-                                            <img src="images/services/5.webp" className="w-100 hover-scale-1-2" alt="Backup & Recovery" />
+                                            <img src="images/services/5.webp" className="w-100 hover-scale-1-2" alt="Backup & Recovery" loading="lazy" />
                                         </div>
                                     </div>
                                     <div className="col-md-6">
@@ -258,7 +255,7 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                                         <div className="relative overflow-hidden">
                                             <h3 className="abs text-white fs-32 lh-1 p-4 top-0 start-0 z-3">06</h3>
                                             <div className="sw-overlay z-2 op-3"></div>
-                                            <img src="images/services/6.webp" className="w-100 hover-scale-1-2" alt="Security Configuration" />
+                                            <img src="images/services/6.webp" className="w-100 hover-scale-1-2" alt="Security Configuration" loading="lazy" />
                                         </div>
                                     </div>
                                     <div className="col-md-6">

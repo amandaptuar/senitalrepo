@@ -42,7 +42,7 @@ header .de-flex.sm-pt10 {
 body { margin: 0; padding: 0; overflow-x: hidden; }
 
 /* 2. Push hero section down so it sits below the fixed navbar */
-#section-intro {
+#section-intro, #subheader {
   padding-top: 140px !important;
 }
 
@@ -102,8 +102,11 @@ section {
     padding-top: 120px !important;
     padding-bottom: 40px !important;
   }
-  #section-intro h1 {
-    font-size: 2rem !important;
+  #section-intro h1, #subheader h1 {
+    font-size: 2.5rem !important;
+  }
+  #subheader {
+    padding-bottom: 40px !important;
   }
 }
 

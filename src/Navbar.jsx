@@ -128,8 +128,8 @@ const Navbar = () => {
                           <div id="logo">
                               <a href="index.html">
                                   <div id="custom-logo-wrapper">
-                                      <img className="logo-main" src="/imgadd/senitalnewlogo.jpeg" alt="CyberGuard Logo" />
-                                      <img className="logo-mobile" src="/imgadd/senitalnewlogo.jpeg" alt="CyberGuard Logo" />
+                                      <img className="logo-main" src="/imgadd/image.png" alt="Senitel Logo" />
+                                      <img className="logo-mobile" src="/imgadd/image.png" alt="Senitel Logo" />
                                   </div>
                               </a>
                           </div>

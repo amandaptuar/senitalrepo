@@ -1,5 +1,5 @@
  /* --------------------------------------------------
-  * © Copyright 2026 - CyberGuard by Designesia
+  * © Copyright 2026 - Senitel by Designesia
   * --------------------------------------------------*/
 (function($) {
 

@@ -64,7 +64,7 @@ const Home = () => {
                         <div className="col-lg-12 text-center"> 
                             <div className="spacer-double"></div>
                             <div className="subtitle text-light s2 mb-3 wow fadeInUp" data-wow-delay=".0s">Cybersecurity Experts</div>
-                            <h1 className="fs-120 fs-xs-10vw wow fadeInUp">Cyber Guard</h1>
+                            <h1 className="fs-120 fs-xs-10vw wow fadeInUp">Senitel</h1>
                             <p className="lead mb-0 col-lg-6 offset-lg-3 wow fadeInUp" data-wow-delay=".2s">Protect your business from digital threats with cutting-edge cybersecurity solutions—24/7 monitoring, penetration testing, and expert-driven defense strategies.</p>
                             <div className="spacer-single"></div>
                             <a className="btn-main fx-slide wow fadeIn" data-wow-delay=".6s" href="appointment.html"><span>Start Scan</span></a>
@@ -991,10 +991,10 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
         <footer className="section-dark">
           <div className="container">
             <div className="row gx-5">
-              <div className="col-lg-4 col-sm-6">
-                <img src="imgadd/senitalnewlogo.jpeg" className="logo-footer" alt="" />
+              <div className="col-lg-4 col-md-6 col-12 mb-sm-30">
+                <img src="imgadd/image.png" className="logo-footer" alt="" />
                 <div className="spacer-20"></div>
-                <p>At CyberGuard, we’re committed to delivering professional, high-quality cybersecurity solutions. From proactive threat monitoring to advanced data protection, we help keep your business secure while preserving its reputation and protecting it from evolving digital threats.</p>
+                <p>At Senitel, we’re committed to delivering professional, high-quality cybersecurity solutions. From proactive threat monitoring to advanced data protection, we help keep your business secure while preserving its reputation and protecting it from evolving digital threats.</p>
 
                 <div className="social-icons mb-sm-30">
                   <a href="#"><i className="fa-brands fa-facebook-f"></i></a>
@@ -1005,9 +1005,9 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                 </div>
               </div>
 
-              <div className="col-lg-4 col-sm-12 order-lg-1 order-sm-2">
+              <div className="col-lg-4 col-md-12 col-12 mb-sm-30">
                 <div className="row">
-                  <div className="col-lg-5">
+                  <div className="col-lg-5 col-6">
                     <div className="widget">
                       <h5>Company</h5>
                       <ul>
@@ -1021,7 +1021,7 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                     </div>
                   </div>
 
-                  <div className="col-lg-7">
+                  <div className="col-lg-7 col-6">
                     <div className="widget">
                       <h5>Our Services</h5>
                       <ul>
@@ -1037,7 +1037,7 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                 </div>
               </div>
 
-              <div className="col-lg-4 col-sm-6 order-lg-2 order-sm-1">
+              <div className="col-lg-4 col-md-6 col-12 mb-sm-30">
                 <div className="widget">
                   <h5>Contact Us</h5>
 
@@ -1058,7 +1058,7 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                   <div className="fw-bold text-white">
                     <i className="icofont-envelope me-2 id-color"></i>Email Us
                   </div>
-                  support@cyberguard.com
+                  support@senitel.com
                 </div>
               </div>
             </div>
@@ -1070,7 +1070,7 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                 <div className="col-md-12">
                   <div className="de-flex">
                     <div className="de-flex-col">
-                      &copy; 2026 - CyberGuard by Designesia
+                      &copy; 2026 - Senitel by Designesia
                     </div>
                     <ul className="menu-simple">
                       <li><a href="#">Terms &amp; Conditions</a></li>

@@ -1,7 +1,7 @@
 /* ================================================== */
 
 
-/* CyberGuard
+/* Senitel
 /* created by designesia
 
 @charset "utf-8";
@@ -13611,22 +13611,22 @@ img {
 /* ===== CUSTOM LOGO SIZE OVERRIDES ===== */
 #custom-logo-wrapper {
   display: block !important;
-  width: 250px !important;
-  height: 200px !important;
+  width: 160px !important;
+  height: 60px !important;
   overflow: visible !important;
 }
 
 /* Navbar height override to fit logo */
 header {
-  min-height: 5px !important;
+  min-height: 80px !important;
 }
 
 header .container {
-  min-height: 5px !important;
+  min-height: 80px !important;
 }
 
 header .de-flex {
-  min-height: 5px !important;
+  min-height: 80px !important;
   align-items: center !important;
 }
 
@@ -13646,12 +13646,52 @@ header .de-flex {
 @media only screen and (max-width: 767px) {
   #custom-logo-wrapper {
     width: 180px !important;
-    height: 150px !important;
+    height: 65px !important;
   }
+  
+  header, header .container, header .de-flex {
+    min-height: 80px !important;
+  }
+
   #custom-logo-wrapper img.logo-main {
     display: none !important;
   }
   #custom-logo-wrapper img.logo-mobile {
     display: block !important;
+  }
+
+  /* Footer Mobile Fixes */
+  footer {
+    text-align: center !important;
+  }
+
+  footer .logo-footer {
+    margin: 0 auto !important;
+    display: block !important;
+  }
+
+  footer .social-icons {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 10px !important;
+  }
+
+  footer .widget h5 {
+    margin-top: 20px !important;
+  }
+
+  footer .widget ul {
+    padding: 0 !important;
+    list-style: none !important;
+  }
+
+  footer .subfooter .de-flex {
+    flex-direction: column !important;
+    gap: 15px !important;
+    text-align: center !important;
+  }
+
+  footer .subfooter .menu-simple {
+    justify-content: center !important;
   }
 }

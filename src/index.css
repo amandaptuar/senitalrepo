@@ -27,12 +27,12 @@ header.scrollOff, header.scrollOn, header.clone {
 }
 
 header .logo-main, header .logo-mobile {
-    max-height: 70px !important; /* Increased logo height */
+    max-height: 100px !important; /* Medium logo height */
     width: auto;
 }
 
 header .de-flex.sm-pt10 {
-    min-height: 100px; /* Increased overall navbar height */
+    min-height: 130px; /* Increased overall navbar height for medium logo */
     align-items: center;
 }
 

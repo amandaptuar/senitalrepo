@@ -125,8 +125,8 @@ const Navbar = () => {
                 {/* logo begin */}
                 <div id="logo">
                   <Link to="/">
-                    <img className="logo-main" src="/imgadd/senitalnewlogo.jpeg" alt="Senitel Logo" />
-                    <img className="logo-mobile" src="/imgadd/senitalnewlogo.jpeg" alt="Senitel Logo" />
+                    <img className="logo-main" src="/imgadd/image.png" alt="Senitel Logo" />
+                    <img className="logo-mobile" src="/imgadd/image.png" alt="Senitel Logo" />
                   </Link>
                 </div>
                 {/* logo end */}

@@ -116,71 +116,70 @@ const Navbar = () => {
   };
 
   return (
-    <header className={headerClasses} style={headerStyle}>
+    <header className={`${isScrolled ? 'smaller' : ''} ${headerClasses}`} style={headerStyle}>
       <div className="container">
-          <div className="row">
-              <div className="col-md-12">
-                  <div className="de-flex sm-pt10">
-                      <div className="de-flex-col">
-                          {/* logo begin */}
-                          <div id="logo">
-                              <Link to="/">
-                                  <div id="custom-logo-wrapper">
-                                      <img className="logo-main" src="/imgadd/image.png" alt="Senitel Logo" />
-                                      <img className="logo-mobile" src="/imgadd/image.png" alt="Senitel Logo" />
-                                  </div>
-                              </Link>
-                          </div>
-                          {/* logo end */}
-                      </div>
-                      <div className="de-flex-col header-col-mid">
-                          {/* mainmenu begin */}
-                          <ul id="mainmenu" style={getMenuStyles()}>
-                              {navLinks.map((link) => (
-                                <li key={link.label}>
-                                  {link.children && isMobileWindow && (
-                                    <span 
-                                      className={`arrow ${openDropdowns[link.label] ? 'active' : ''}`} 
-                                      onClick={(e) => toggleDropdown(link.label, e)}
-                                    ></span>
-                                  )}
-                                  {link.to ? (
-                                    <Link className="menu-item" to={link.to}>{link.label}</Link>
-                                  ) : (
-                                    <a className="menu-item" href={link.href}>{link.label}</a>
-                                  )}
-                                  {link.children && (
-                                    <ul style={getSubmenuStyles(link.label)}>
-                                      {link.children.map(child => (
-                                        <li key={child.label}>
-                                          {child.to ? (
-                                            <Link to={child.to}>{child.label}</Link>
-                                          ) : (
-                                            <a href={child.href}>{child.label}</a>
-                                          )}
-                                        </li>
-                                      ))}
-                                    </ul>
-                                  )}
-                                </li>
-                              ))}
-                          </ul>
-                          {/* mainmenu end */}
-                      </div>
-                      <div className="de-flex-col">
-                          <div className="menu_side_area">
-                              <Link to="/contact" className="btn-main fx-slide btn-line me-2"><span>Start Scan</span></Link>
-                              <span 
-                                id="menu-btn" 
-                                className={isMobileMenuOpen ? 'menu-open' : ''}
-                                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                                style={{ display: isMobileWindow ? 'block' : 'none' }}
-                              ></span>
-                          </div>
-                      </div>
-                  </div>
+        <div className="row">
+          <div className="col-md-12">
+            <div className="de-flex sm-pt10">
+              <div className="de-flex-col">
+                {/* logo begin */}
+                <div id="logo">
+                  <Link to="/">
+                    <img className="logo-main" src="/imgadd/senitalnewlogo.jpeg" alt="Senitel Logo" />
+                    <img className="logo-mobile" src="/imgadd/senitalnewlogo.jpeg" alt="Senitel Logo" />
+                  </Link>
+                </div>
+                {/* logo end */}
               </div>
+              <div className="de-flex-col header-col-mid">
+                {/* mainmenu begin */}
+                <ul id="mainmenu" style={getMenuStyles()}>
+                  {navLinks.map((link) => (
+                    <li key={link.label}>
+                      {link.children && isMobileWindow && (
+                        <span 
+                          className={`arrow ${openDropdowns[link.label] ? 'active' : ''}`} 
+                          onClick={(e) => toggleDropdown(link.label, e)}
+                        ></span>
+                      )}
+                      {link.to ? (
+                        <Link className="menu-item" to={link.to}>{link.label}</Link>
+                      ) : (
+                        <a className="menu-item" href={link.href}>{link.label}</a>
+                      )}
+                      {link.children && (
+                        <ul style={getSubmenuStyles(link.label)}>
+                          {link.children.map(child => (
+                            <li key={child.label}>
+                              {child.to ? (
+                                <Link to={child.to}>{child.label}</Link>
+                              ) : (
+                                <a href={child.href}>{child.label}</a>
+                              )}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+                {/* mainmenu end */}
+              </div>
+              <div className="de-flex-col">
+                <div className="menu_side_area">
+                  <Link to="/contact" className="btn-main fx-slide btn-line me-2"><span>Start Scan</span></Link>
+                  <Link to="/contact" className="btn-main fx-slide"><span>Explore Pricing</span></Link>
+                  <span 
+                    id="menu-btn" 
+                    className={isMobileMenuOpen ? 'menu-open' : ''}
+                    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                    style={{ display: isMobileWindow ? 'block' : 'none' }}
+                  ></span>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
       </div>
     </header>
   );

@@ -55,69 +55,61 @@ const Home = () => {
 
             <div id="top"></div>
 
-            <section id="section-intro" className="section-dark bg-dark text-light relative overflow-hidden" data-bgimage="url(images/background/10.webp) bottom right">
-                <div className="container relative z-2">
-                  <div className="spacer-double sm-hide"></div>
+            <section id="section-intro" className="bg-dark text-light overflow-hidden" data-bgimage="url(images/background/9.webp) bottom right">
+                <div className="container">
                   <div className="row g-4 gx-5 align-items-center">
                     <div className="col-lg-6">
+                        <div className="spacer-double sm-hide"></div>
                         <div className="subtitle s2 mb-3 wow fadeInUp" data-wow-delay=".0s">Welcome to CyberGuard</div>
                         <h1 className="wow fadeInUp" data-wow-delay=".2s">Your Partner in Total Cyber Security</h1>
-                        <p className="col-lg-10 mb-4 wow fadeInUp" data-wow-delay=".4s">Protect your business from digital threats with cutting-edge cybersecurity solutions—24/7 monitoring, penetration testing, and expert-driven defense strategies.</p>
-                        <Link className="btn-main fx-slide mb-3 wow fadeInUp" data-wow-delay=".6s" to="/contact"><span>Start For Free</span></Link>
-                    </div>
-                    <div className="col-lg-6">
-                        <div className="row g-4 wow flipInY" data-wow-delay=".4s" data-wow-duration="2s">
-                            <div className="col-6">
-                                <img src="images/misc/s9.webp" className="img-fluid rounded-1 mb-4 w-70 ms-30" alt="" />
-                                <img src="images/misc/s6.webp" className="img-fluid rounded-1" alt="" />
+                        <p className="col-lg-10 wow fadeInUp" data-wow-delay=".4s">Protect your business from digital threats with cutting-edge cybersecurity solutions—24/7 monitoring, penetration testing, and expert-driven defense strategies.</p>
+                        <Link className="btn-main mb10 mb-3 wow fadeInUp" data-wow-delay=".6s" to="/contact"><span>Start Scan</span></Link>
+                        <div className="border-bottom my-3"></div>
+                        <div className="d-lg-flex align-items-center text-light">
+                            <div className="me-3">Google Rating</div>
+                            <div className="me-3">5.0</div>
+                            <div className="d-flex fs-14 d-rating me-3">
+                                <i className="fa fa-solid fa-star m-1"></i>
+                                <i className="fa fa-solid fa-star m-1"></i>
+                                <i className="fa fa-solid fa-star m-1"></i>
+                                <i className="fa fa-solid fa-star m-1"></i>
+                                <i className="fa fa-solid fa-star m-1"></i>
                             </div>
-                            <div className="col-6">
-                                <div className="spacer-single sm-hide"></div>
-                                <img src="images/misc/s7.webp" className="img-fluid rounded-1 mb-4" alt="" />
-                                <img src="images/misc/s8.webp" className="img-fluid rounded-1 w-70" alt="" />
-                            </div>
+                            <div className="me-3">Based on 23k Reviews</div>
                         </div>
                     </div>
+                    <div className="col-lg-6">
+                        <div className="relative">
+                            <div className="bg-blur text-light shadow-1 abs end-0 abs-middle p-4 rounded-1 overflow-hidden z-2 wow fadeInRight" data-wow-delay=".5s">
+                                <div className="d-flex justify-content-center">
+                                    <i className="fs-60 id-color fa-solid fa-shield-halved"></i>
+                                    <div className="ms-3">
+                                        <h2 className="mb-0">99.9%</h2>
+                                        Threat detection
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="bg-blur shadow-1 abs start-0 bottom-10 p-4 rounded-1 overflow-hidden z-2 wow fadeInLeft" data-wow-delay=".7s">
+                                <div className="d-flex justify-content-center">
+                                    <i className="fs-60 id-color fa-solid fa-user-group"></i>
+                                    <div className="ms-3">
+                                        <h2 className="mb-0">23K</h2>
+                                        Happy Customers
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="images/misc/c2.webp" className="w-100 wow fadeInUp" data-wow-delay=".3s" alt="" />
+                        </div>                        
+                    </div>
                   </div>
-
-                  <div className="spacer-double"></div>
-                  <div className="spacer-double"></div>
-
-                  <div className="row g-4 slider-extra sm-hide">
-                      <div className="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".4s">
-                          <img src="images/icons-dark/padlock.png" className="absolute w-100px p-3 mb-3 z-2" alt="Network Security Icon" />
-                          <div className="ps-100 fs-16">
-                              <h4>Network Security</h4>
-                              <p>Protect critical infrastructure with firewalls, intrusion detection systems, and real-time threat monitoring.</p>
-                          </div>
-                      </div>
-
-                      <div className="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".6s">
-                          <img src="images/icons-dark/cloud.png" className="absolute w-100px p-3 mb-3 z-2" alt="Cloud Security Icon" />
-                          <div className="ps-100 fs-16">
-                              <h4>Cloud Security</h4>
-                              <p>Ensure safe cloud environments with encryption, access control, and advanced identity management solutions.</p>
-                          </div>
-                      </div>
-
-                      <div className="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".8s">
-                          <img src="images/icons-dark/quality.png" className="absolute w-100px p-3 mb-3 z-2" alt="Compliance Icon" />
-                          <div className="ps-100 fs-16">
-                              <h4>Regulatory Compliance</h4>
-                              <p>Stay ahead of industry regulations like GDPR, HIPAA, and ISO by implementing strong security frameworks.</p>
-                          </div>
-                      </div>
-                  </div>
-
                 </div>
-                <div className="gradient-edge-bottom"></div>
             </section>
 
 
             <section className="section-dark bg-dark-3 text-light pt-60 pb-50 relative overflow-hidden">
                 
                 <div className="w-30 abs abs-middle end-0 me-5 op-1">
-                    <img src="imgadd/senitalnewlogo.jpeg" className="w-100 wow scaleIn" alt="" />
+                    <img src="/imgadd/senitalnewlogo.jpeg" className="w-100 wow scaleIn" alt="" />
                 </div>
                 <div className="container">
                     <div className="row g-4">
@@ -126,6 +118,47 @@ const Home = () => {
                         </div>
                         <div className="col-md-2">                            
                             <Link className="btn-main fx-slide btn-line wow fadeInLeft" to="/contact"><span>Start Scan</span></Link>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bgimage="url(images/background/6.webp) top">
+                <div className="container">
+                    <div className="row gx-5 align-items-center">
+                        <div className="col-lg-12 text-center">
+                            <div className="spacer-single"></div>
+                            <div className="sw-text-wrapper">
+                                <div className="subtitle wow fadeInUp">Cybersecurity Experts</div>
+                                <h2 className="wow fadeInUp" data-wow-delay=".2s">Comprehensive Cybersecurity Solutions for Modern Threats</h2>
+                            </div>
+                        </div>
+                        <div className="spacer-single"></div>
+                    </div>
+
+                    <div className="row g-4 slider-extra sm-hide wow fadeInUp" data-wow-delay=".4s">
+                        <div className="col-lg-4 col-md-6">
+                            <img src="images/icons-dark/padlock.png" className="absolute w-100px p-3 mb-3 z-2" alt="Network Security Icon" />
+                            <div className="ps-100 fs-16">
+                                <h4>Network Security</h4>
+                                <p>Protect critical infrastructure with firewalls, intrusion detection systems, and real-time threat monitoring.</p>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-4 col-md-6">
+                            <img src="images/icons-dark/cloud.png" className="absolute w-100px p-3 mb-3 z-2" alt="Cloud Security Icon" />
+                            <div className="ps-100 fs-16">
+                                <h4>Cloud Security</h4>
+                                <p>Ensure safe cloud environments with encryption, access control, and advanced identity management solutions.</p>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-4 col-md-6">
+                            <img src="images/icons-dark/quality.png" className="absolute w-100px p-3 mb-3 z-2" alt="Compliance Icon" />
+                            <div className="ps-100 fs-16">
+                                <h4>Regulatory Compliance</h4>
+                                <p>Stay ahead of industry regulations like GDPR, HIPAA, and ISO by implementing strong security frameworks.</p>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -55,9 +55,30 @@ body { margin: 0; padding: 0; overflow-x: hidden; }
     padding-bottom: 16px;
   }
 
-  /* Hide the floating stat cards on mobile (they overlap too badly) */
+  /* Maintain floating stat cards on mobile without overlap */
   #section-intro .bg-blur.abs {
-    display: none !important;
+    position: absolute !important;
+    display: block !important;
+    transform: scale(0.8); /* Shrink on mobile */
+    z-index: 5;
+  }
+
+  #section-intro .bg-blur.abs.end-0 {
+    right: -10px !important;
+    top: 40% !important; /* Move up slightly */
+  }
+
+  #section-intro .bg-blur.abs.start-0 {
+    left: -10px !important;
+    bottom: 5% !important; /* Move down slightly */
+  }
+
+  #section-intro .bg-blur.abs p, #section-intro .bg-blur.abs h2 {
+    font-size: 14px !important; /* Reduce font size */
+  }
+  
+  #section-intro .bg-blur.abs i {
+    font-size: 40px !important; /* Reduce icon size */
   }
 
   /* Hero text left column: add breathing room */
@@ -77,15 +98,37 @@ section {
 /* 5. Fix absolute positioned big logos in CTA banners on mobile */
 @media (max-width: 768px) {
   .w-30.abs {
-    display: none !important;
+    position: absolute !important;
+    display: block !important;
   }
 }
 
-/* 6. Ensure the footer logo isn't too large on mobile */
-@media (max-width: 576px) {
+/* 6. Ensure the footer logo isn't too large on mobile and show header buttons */
+@media (max-width: 991px) {
   img.logo-footer {
     max-width: 160px !important;
     height: auto !important;
+  }
+
+  .menu_side_area {
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+
+  .menu_side_area .btn-main {
+    display: inline-block !important;
+    padding: 6px 12px !important;
+    font-size: 12px !important;
+    margin: 0 !important;
+    white-space: nowrap;
+  }
+
+  #menu-btn {
+    margin-left: 10px !important;
+    position: relative;
+    top: 0;
   }
 }
 
@@ -177,4 +220,38 @@ section {
   #hero-section h1 {
     font-size: clamp(3rem, 15vw, 8rem) !important;
   }
+}
+
+.abs {
+  position: absolute;
+}
+
+.abs-middle {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.end-0 {
+  right: 0;
+}
+
+.start-0 {
+  left: 0;
+}
+
+
+.fs-60 {
+  font-size: 60px !important;
+}
+
+.z-2 {
+  z-index: 2 !important;
+}
+
+.shadow-1 {
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,0.1);
+}
+
+.rounded-1 {
+  border-radius: 10px !important;
 }

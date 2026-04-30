@@ -1,38 +1,30 @@
 import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 const navLinks = [
-  { label: 'Home', href: 'index.html', children: [
-    { label: 'Homepage 1', href: 'index.html' },
-    { label: 'Homepage 2', href: 'homepage-2.html' },
-    { label: 'Homepage 3', href: 'homepage-3.html' },
-    { label: 'Homepage 4', href: 'homepage-4.html' },
-    { label: 'Homepage 5', href: 'homepage-5.html' },
-    { label: 'Homepage 6', href: 'homepage-6.html' },
-    { label: 'Homepage 7', href: 'homepage-7.html' },
-    { label: 'New: Homepage 8', href: 'homepage-8.html' },
+  { label: 'Home', to: '/' },
+  { label: 'Services', to: '/contact', children: [
+    { label: 'Services 1', to: '/contact' },
+    { label: 'Services 2', to: '/contact' },
+    { label: 'Services 3', to: '/contact' },
+    { label: 'Services Single', to: '/contact' },
+    { label: 'Pricing', to: '/contact' },
+    { label: 'Appointment', to: '/contact' },
   ]},
-  { label: 'Services', href: 'services.html', children: [
-    { label: 'Services 1', href: 'services.html' },
-    { label: 'Services 2', href: 'services-2.html' },
-    { label: 'Services 3', href: 'services-3.html' },
-    { label: 'Services Single', href: 'service-single.html' },
-    { label: 'Pricing', href: 'pricing.html' },
-    { label: 'Appointment', href: 'appointment.html' },
+  { label: 'About', to: '/about', children: [
+    { label: 'About Us', to: '/about' },
+    { label: 'Our Team', to: '/contact' },
+    { label: 'Careers', to: '/contact' },
+    { label: 'Gallery Filter', to: '/contact' },
+    { label: 'Gallery Carousel', to: '/contact' },
   ]},
-  { label: 'About', href: 'about.html', children: [
-    { label: 'About', href: 'about.html' },
-    { label: 'Our Team', href: 'team.html' },
-    { label: 'Careers', href: 'careers.html' },
-    { label: 'Gallery Filter', href: 'gallery-filter.html' },
-    { label: 'Gallery Carousel', href: 'gallery-carousel.html' },
+  { label: 'Projects', to: '/contact', children: [
+    { label: 'Projects 1', to: '/contact' },
+    { label: 'Projects 2', to: '/contact' },
+    { label: 'Project Single', to: '/contact' },
   ]},
-  { label: 'Projects', href: 'projects.html', children: [
-    { label: 'Projects 1', href: 'projects.html' },
-    { label: 'Projects 2', href: 'projects-2.html' },
-    { label: 'Project Single', href: 'project-single.html' },
-  ]},
-  { label: 'Blog', href: 'blog.html' },
-  { label: 'Contact Us', href: 'contact.html' },
+  { label: 'Blog', to: '/contact' },
+  { label: 'Contact Us', to: '/contact' },
 ];
 
 const Navbar = () => {
@@ -40,6 +32,7 @@ const Navbar = () => {
   const [openDropdowns, setOpenDropdowns] = useState({});
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileWindow, setIsMobileWindow] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -89,7 +82,8 @@ const Navbar = () => {
         overflow: 'hidden',
         transition: 'all 0.4s ease',
         opacity: isMobileMenuOpen ? 1 : 0,
-        visibility: isMobileMenuOpen ? 'visible' : 'hidden'
+        visibility: isMobileMenuOpen ? 'visible' : 'hidden',
+        backgroundColor: '#111013'
       };
     }
     return {}; 
@@ -113,12 +107,16 @@ const Navbar = () => {
   };
 
   const headerClasses = [
-    'transparent',
     isMobileWindow ? 'header-mobile' : ''
   ].filter(Boolean).join(' ');
 
+  const headerStyle = {
+    backgroundColor: '#111013',
+    ...(isMobileWindow && isMobileMenuOpen ? { height: '100vh' } : {})
+  };
+
   return (
-    <header className={headerClasses}>
+    <header className={headerClasses} style={headerStyle}>
       <div className="container">
           <div className="row">
               <div className="col-md-12">
@@ -126,12 +124,12 @@ const Navbar = () => {
                       <div className="de-flex-col">
                           {/* logo begin */}
                           <div id="logo">
-                              <a href="index.html">
+                              <Link to="/">
                                   <div id="custom-logo-wrapper">
                                       <img className="logo-main" src="/imgadd/image.png" alt="Senitel Logo" />
                                       <img className="logo-mobile" src="/imgadd/image.png" alt="Senitel Logo" />
                                   </div>
-                              </a>
+                              </Link>
                           </div>
                           {/* logo end */}
                       </div>
@@ -146,11 +144,21 @@ const Navbar = () => {
                                       onClick={(e) => toggleDropdown(link.label, e)}
                                     ></span>
                                   )}
-                                  <a className="menu-item" href={link.href}>{link.label}</a>
+                                  {link.to ? (
+                                    <Link className="menu-item" to={link.to}>{link.label}</Link>
+                                  ) : (
+                                    <a className="menu-item" href={link.href}>{link.label}</a>
+                                  )}
                                   {link.children && (
                                     <ul style={getSubmenuStyles(link.label)}>
                                       {link.children.map(child => (
-                                        <li key={child.label}><a href={child.href}>{child.label}</a></li>
+                                        <li key={child.label}>
+                                          {child.to ? (
+                                            <Link to={child.to}>{child.label}</Link>
+                                          ) : (
+                                            <a href={child.href}>{child.label}</a>
+                                          )}
+                                        </li>
                                       ))}
                                     </ul>
                                   )}
@@ -161,8 +169,7 @@ const Navbar = () => {
                       </div>
                       <div className="de-flex-col">
                           <div className="menu_side_area">
-                              <a href="appointment.html" className="btn-main fx-slide btn-line me-2"><span>Start Scan</span></a>
-                              <a href="pricing.html" className="btn-main fx-slide"><span>Explore Pricing</span></a>
+                              <Link to="/contact" className="btn-main fx-slide btn-line me-2"><span>Start Scan</span></Link>
                               <span 
                                 id="menu-btn" 
                                 className={isMobileMenuOpen ? 'menu-open' : ''}

@@ -57,16 +57,20 @@
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
     <script>
-      window.onload = function() {
+      function hideLoader() {
         const loader = document.getElementById('global-loader');
         if (loader) {
           loader.classList.add('hidden');
-          // Optionally remove the element after transition to free up DOM
           setTimeout(() => {
-            loader.remove();
+            if (loader.parentNode) loader.remove();
           }, 500);
         }
-      };
+      }
+
+      window.onload = hideLoader;
+
+      // Fallback: Hide loader after 3 seconds even if window.onload hasn't fired
+      setTimeout(hideLoader, 3000);
     </script>
   </body>
 </html>

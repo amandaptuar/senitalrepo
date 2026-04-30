@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 const Home = () => {
 
@@ -56,7 +57,7 @@ const Home = () => {
 
             <div id="top"></div>
 
-            <section className="jarallax text-light section-dark" data-video-src="mp4:video/1.mp4">
+            <section id="hero-section" className="text-light section-dark">
                 <div className="sw-overlay op-6"></div>
                 <div className="gradient-edge-bottom"></div>
                 <div className="container relative z-3">
@@ -985,105 +986,7 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
             </section>
 
         </div>
-        {/* content end */}
-
-        {/* footer begin */}
-        <footer className="section-dark">
-          <div className="container">
-            <div className="row gx-5">
-              <div className="col-lg-4 col-md-6 col-12 mb-sm-30">
-                <img src="imgadd/image.png" className="logo-footer" alt="" />
-                <div className="spacer-20"></div>
-                <p>At Senitel, we’re committed to delivering professional, high-quality cybersecurity solutions. From proactive threat monitoring to advanced data protection, we help keep your business secure while preserving its reputation and protecting it from evolving digital threats.</p>
-
-                <div className="social-icons mb-sm-30">
-                  <a href="#"><i className="fa-brands fa-facebook-f"></i></a>
-                  <a href="#"><i className="fa-brands fa-x-twitter"></i></a>
-                  <a href="#"><i className="fa-brands fa-whatsapp"></i></a>
-                  <a href="#"><i className="fa-brands fa-instagram"></i></a>
-                  <a href="#"><i className="fa-brands fa-youtube"></i></a>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-12 col-12 mb-sm-30">
-                <div className="row">
-                  <div className="col-lg-5 col-6">
-                    <div className="widget">
-                      <h5>Company</h5>
-                      <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Our Services</a></li>
-                        <li><a href="gallery-filter.html">Gallery</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="col-lg-7 col-6">
-                    <div className="widget">
-                      <h5>Our Services</h5>
-                      <ul>
-                        <li><a href="service-single.html">Network Security</a></li>
-                        <li><a href="service-single.html">Data Encryption</a></li>
-                        <li><a href="service-single.html">Identity & Access</a></li>
-                        <li><a href="service-single.html">Security Monitoring</a></li>
-                        <li><a href="service-single.html">Backup & Recovery</a></li>
-                        <li><a href="service-single.html">Security Configuration</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-6 col-12 mb-sm-30">
-                <div className="widget">
-                  <h5>Contact Us</h5>
-
-                  <div className="fw-bold text-white">
-                    <i className="icofont-location-pin me-2 id-color"></i>Head Office
-                  </div>
-                  123 Cyber Street, Los Angeles, CA
-
-                  <div className="spacer-20"></div>
-
-                  <div className="fw-bold text-white">
-                    <i className="icofont-phone me-2 id-color"></i>Call Us
-                  </div>
-                  +1 800 987 654
-
-                  <div className="spacer-20"></div>
-
-                  <div className="fw-bold text-white">
-                    <i className="icofont-envelope me-2 id-color"></i>Email Us
-                  </div>
-                  support@senitel.com
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="subfooter">
-            <div className="container">
-              <div className="row">
-                <div className="col-md-12">
-                  <div className="de-flex">
-                    <div className="de-flex-col">
-                      &copy; 2026 - Senitel by Designesia
-                    </div>
-                    <ul className="menu-simple">
-                      <li><a href="#">Terms &amp; Conditions</a></li>
-                      <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
-
-        {/* footer end */}
+        <Footer />
     </div>
 
     

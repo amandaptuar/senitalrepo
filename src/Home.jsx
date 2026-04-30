@@ -57,44 +57,62 @@ const Home = () => {
 
             <div id="top"></div>
 
-            <section id="hero-section" className="text-light section-dark">
-                <div className="sw-overlay op-6"></div>
-                <div className="gradient-edge-bottom"></div>
-                <div className="container relative z-3">
-                    <div className="row g-4 justify-content-center">
-                        <div className="col-lg-12 text-center"> 
-                            <div className="spacer-double"></div>
-                            <div className="subtitle text-light s2 mb-3 wow fadeInUp" data-wow-delay=".0s">Cybersecurity Experts</div>
-                            <h1 className="fs-120 fs-xs-10vw wow fadeInUp">Senitel</h1>
-                            <p className="lead mb-0 col-lg-6 offset-lg-3 wow fadeInUp" data-wow-delay=".2s">Protect your business from digital threats with cutting-edge cybersecurity solutions—24/7 monitoring, penetration testing, and expert-driven defense strategies.</p>
-                            <div className="spacer-single"></div>
-                            <a className="btn-main fx-slide wow fadeIn" data-wow-delay=".6s" href="appointment.html"><span>Start Scan</span></a>
-                        </div>
-
-                        <div className="spacer-single"></div>
-
-                        <div className="row g-4">
-                            <div className="col-lg-2 col-sm-4 col-6 wow fadeInRight" data-wow-delay=".2s">
-                                <img src="images/badge/1.webp" className="w-100 px-4" alt="" />
+            <section id="section-intro" className="section-dark bg-dark text-light relative overflow-hidden" data-bgimage="url(images/background/10.webp) bottom right">
+                <div className="container relative z-2">
+                  <div className="spacer-double sm-hide"></div>
+                  <div className="row g-4 gx-5 align-items-center">
+                    <div className="col-lg-6">
+                        <div className="subtitle s2 mb-3 wow fadeInUp" data-wow-delay=".0s">Welcome to CyberGuard</div>
+                        <h1 className="wow fadeInUp" data-wow-delay=".2s">Your Partner in Total Cyber Security</h1>
+                        <p className="col-lg-10 mb-4 wow fadeInUp" data-wow-delay=".4s">Protect your business from digital threats with cutting-edge cybersecurity solutions—24/7 monitoring, penetration testing, and expert-driven defense strategies.</p>
+                        <a className="btn-main fx-slide mb-3 wow fadeInUp" data-wow-delay=".6s" href="appointment.html"><span>Start For Free</span></a>
+                    </div>
+                    <div className="col-lg-6">
+                        <div className="row g-4 wow flipInY" data-wow-delay=".4s" data-wow-duration="2s">
+                            <div className="col-6">
+                                <img src="images/misc/s9.webp" className="img-fluid rounded-1 mb-4 w-70 ms-30" alt="" data-0="transform: scale(1);" data-500="transform: scale(1.5);" />
+                                <img src="images/misc/s6.webp" className="img-fluid rounded-1" alt="" data-0="transform: scale(1);" data-500="transform: scale(.5);" />
                             </div>
-                            <div className="col-lg-2 col-sm-4 col-6 wow fadeInRight" data-wow-delay=".4s">
-                                <img src="images/badge/2.webp" className="w-100 px-4" alt="" />
-                            </div>
-                            <div className="col-lg-2 col-sm-4 col-6 wow fadeInRight" data-wow-delay=".6s">
-                                <img src="images/badge/3.webp" className="w-100 px-4" alt="" />
-                            </div>
-                            <div className="col-lg-2 col-sm-4 col-6 wow fadeInRight" data-wow-delay=".8s">
-                                <img src="images/badge/4.webp" className="w-100 px-4" alt="" />
-                            </div>
-                            <div className="col-lg-2 col-sm-4 col-6 wow fadeInRight" data-wow-delay="1.2s">
-                                <img src="images/badge/5.webp" className="w-100 px-4" alt="" />
-                            </div>
-                            <div className="col-lg-2 col-sm-4 col-6 wow fadeInRight" data-wow-delay="1.4s">
-                                <img src="images/badge/6.webp" className="w-100 px-4" alt="" />
+                            <div className="col-6">
+                                <div className="spacer-single sm-hide"></div>
+                                <img src="images/misc/s7.webp" className="img-fluid rounded-1 mb-4" alt="" data-0="transform: scale(1);" data-500="transform: scale(.5);" />
+                                <img src="images/misc/s8.webp" className="img-fluid rounded-1 w-70" alt="" data-0="transform: scale(1);" data-500="transform: scale(1.5);" />
                             </div>
                         </div>
                     </div>
+                  </div>
+
+                  <div className="spacer-double"></div>
+                  <div className="spacer-double"></div>
+
+                  <div className="row g-4 slider-extra sm-hide">
+                      <div className="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".4s">
+                          <img src="images/icons-dark/padlock.png" className="absolute w-100px p-3 mb-3 z-2" alt="Network Security Icon" />
+                          <div className="ps-100 fs-16">
+                              <h4>Network Security</h4>
+                              <p>Protect critical infrastructure with firewalls, intrusion detection systems, and real-time threat monitoring.</p>
+                          </div>
+                      </div>
+
+                      <div className="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".6s">
+                          <img src="images/icons-dark/cloud.png" className="absolute w-100px p-3 mb-3 z-2" alt="Cloud Security Icon" />
+                          <div className="ps-100 fs-16">
+                              <h4>Cloud Security</h4>
+                              <p>Ensure safe cloud environments with encryption, access control, and advanced identity management solutions.</p>
+                          </div>
+                      </div>
+
+                      <div className="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".8s">
+                          <img src="images/icons-dark/quality.png" className="absolute w-100px p-3 mb-3 z-2" alt="Compliance Icon" />
+                          <div className="ps-100 fs-16">
+                              <h4>Regulatory Compliance</h4>
+                              <p>Stay ahead of industry regulations like GDPR, HIPAA, and ISO by implementing strong security frameworks.</p>
+                          </div>
+                      </div>
+                  </div>
+
                 </div>
+                <div className="gradient-edge-bottom"></div>
             </section>
 
 
@@ -115,46 +133,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section data-bgimage="url(images/background/6.webp) top">
-                <div className="container">
-                    <div className="row gx-5 align-items-center">
-                        <div className="col-lg-12 text-center">
-                            <div className="spacer-single"></div>
-                            <div className="sw-text-wrapper">
-                                <div className="subtitle wow fadeInUp">Cybersecurity Experts</div>
-                                <h2 className="wow fadeInUp" data-wow-delay=".2s">Comprehensive Cybersecurity Solutions for Modern Threats</h2>
-                            </div>
-                        </div>
-                        <div className="spacer-single"></div>
-                    </div>
 
-                    <div className="row g-4 slider-extra sm-hide wow fadeInUp" data-wow-delay=".4s">
-                        <div className="col-lg-4 col-md-6">
-                            <img src="images/icons-dark/padlock.png" className="absolute w-100px p-3 mb-3 z-2" alt="Network Security Icon" />
-                            <div className="ps-100 fs-16">
-                                <h4>Network Security</h4>
-                                <p>Protect critical infrastructure with firewalls, intrusion detection systems, and real-time threat monitoring.</p>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6">
-                            <img src="images/icons-dark/cloud.png" className="absolute w-100px p-3 mb-3 z-2" alt="Cloud Security Icon" />
-                            <div className="ps-100 fs-16">
-                                <h4>Cloud Security</h4>
-                                <p>Ensure safe cloud environments with encryption, access control, and advanced identity management solutions.</p>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6">
-                            <img src="images/icons-dark/quality.png" className="absolute w-100px p-3 mb-3 z-2" alt="Compliance Icon" />
-                            <div className="ps-100 fs-16">
-                                <h4>Regulatory Compliance</h4>
-                                <p>Stay ahead of industry regulations like GDPR, HIPAA, and ISO by implementing strong security frameworks.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
             <section className="section-dark bg-dark text-light">
                 <div className="container">

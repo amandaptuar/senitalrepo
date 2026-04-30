@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
@@ -65,18 +66,18 @@ const Home = () => {
                         <div className="subtitle s2 mb-3 wow fadeInUp" data-wow-delay=".0s">Welcome to CyberGuard</div>
                         <h1 className="wow fadeInUp" data-wow-delay=".2s">Your Partner in Total Cyber Security</h1>
                         <p className="col-lg-10 mb-4 wow fadeInUp" data-wow-delay=".4s">Protect your business from digital threats with cutting-edge cybersecurity solutions—24/7 monitoring, penetration testing, and expert-driven defense strategies.</p>
-                        <a className="btn-main fx-slide mb-3 wow fadeInUp" data-wow-delay=".6s" href="appointment.html"><span>Start For Free</span></a>
+                        <Link className="btn-main fx-slide mb-3 wow fadeInUp" data-wow-delay=".6s" to="/contact"><span>Start For Free</span></Link>
                     </div>
                     <div className="col-lg-6">
                         <div className="row g-4 wow flipInY" data-wow-delay=".4s" data-wow-duration="2s">
                             <div className="col-6">
-                                <img src="images/misc/s9.webp" className="img-fluid rounded-1 mb-4 w-70 ms-30" alt="" data-0="transform: scale(1);" data-500="transform: scale(1.5);" />
-                                <img src="images/misc/s6.webp" className="img-fluid rounded-1" alt="" data-0="transform: scale(1);" data-500="transform: scale(.5);" />
+                                <img src="images/misc/s9.webp" className="img-fluid rounded-1 mb-4 w-70 ms-30" alt="" />
+                                <img src="images/misc/s6.webp" className="img-fluid rounded-1" alt="" />
                             </div>
                             <div className="col-6">
                                 <div className="spacer-single sm-hide"></div>
-                                <img src="images/misc/s7.webp" className="img-fluid rounded-1 mb-4" alt="" data-0="transform: scale(1);" data-500="transform: scale(.5);" />
-                                <img src="images/misc/s8.webp" className="img-fluid rounded-1 w-70" alt="" data-0="transform: scale(1);" data-500="transform: scale(1.5);" />
+                                <img src="images/misc/s7.webp" className="img-fluid rounded-1 mb-4" alt="" />
+                                <img src="images/misc/s8.webp" className="img-fluid rounded-1 w-70" alt="" />
                             </div>
                         </div>
                     </div>
@@ -127,7 +128,7 @@ const Home = () => {
                             <h3 className="mb-0 fs-32 wow fadeInRight">Need 24/7 Protection From Cyber Attacks?</h3>
                         </div>
                         <div className="col-md-2">                            
-                            <a className="btn-main fx-slide btn-line wow fadeInLeft" href="appointment.html"><span>Start Scan</span></a>
+                            <Link className="btn-main fx-slide btn-line wow fadeInLeft" to="/contact"><span>Start Scan</span></Link>
                         </div>
                     </div>
                 </div>
@@ -151,7 +152,7 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                     <div className="row g-0 mb-3">
 
                         <div className="col-lg-6">
-                            <a href="service-single.html" className="hover overflow-hidden bg-dark text-light d-block">
+                            <Link to="/contact" className="hover overflow-hidden bg-dark text-light d-block">
                                 <div className="row g-0 align-items-end">
                                     <div className="col-md-6">
                                         <div className="relative overflow-hidden">
@@ -167,11 +168,11 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                                         </div>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
 
                         <div className="col-lg-6">
-                            <a href="service-single.html" className="hover overflow-hidden bg-color text-light d-block">
+                            <Link to="/contact" className="hover overflow-hidden bg-color text-light d-block">
                                 <div className="row g-0 align-items-end">
                                     <div className="col-md-6">
                                         <div className="relative overflow-hidden">
@@ -187,11 +188,11 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                                         </div>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
 
                         <div className="col-lg-6">
-                            <a href="service-single.html" className="hover overflow-hidden bg-dark text-light d-block">
+                            <Link to="/contact" className="hover overflow-hidden bg-dark text-light d-block">
                                 <div className="row g-0 align-items-end">
                                     <div className="col-sm-6">
                                         <div className="p-40">
@@ -207,11 +208,11 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                                         </div>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
 
                         <div className="col-lg-6">
-                            <a href="service-single.html" className="hover overflow-hidden bg-dark text-light d-block">
+                            <Link to="/contact" className="hover overflow-hidden bg-dark text-light d-block">
                                 <div className="row g-0 align-items-end">
                                     <div className="col-sm-6">
                                         <div className="p-40">
@@ -227,11 +228,11 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                                         </div>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
 
                         <div className="col-lg-6">
-                            <a href="service-single.html" className="hover overflow-hidden bg-color text-light d-block">
+                            <Link to="/contact" className="hover overflow-hidden bg-color text-light d-block">
                                 <div className="row g-0 align-items-end">
                                     <div className="col-md-6">
                                         <div className="relative overflow-hidden">
@@ -247,11 +248,11 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                                         </div>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
 
                         <div className="col-lg-6">
-                            <a href="service-single.html" className="hover overflow-hidden bg-dark text-light d-block">
+                            <Link to="/contact" className="hover overflow-hidden bg-dark text-light d-block">
                                 <div className="row g-0 align-items-end">
                                     <div className="col-md-6">
                                         <div className="relative overflow-hidden">
@@ -267,7 +268,7 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                                         </div>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
@@ -515,7 +516,7 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                                 <img src="images/projects/1.webp" className="hover-scale-1-1 w-100" alt="" />
                                 <div className="abs w-100 px-4 hover-op-1 z-4 hover-mt-40 abs-centered">
                                     <div className="mb-3">Safeguard your online store with end-to-end protection, preventing data breaches, fraud, and unauthorized access.</div>
-                                    <a className="btn-line" href="project-single.html">View Details</a>
+                                    <Link className="btn-line" to="/contact">View Details</Link>
                                 </div>
                                 <div className="abs bg-color z-2 top-0 w-100 h-100 hover-op-1"></div>
                                 <div className="abs z-2 bottom-0 mb-3 w-100 text-center hover-op-0">
@@ -532,7 +533,7 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                                 <img src="images/projects/2.webp" className="hover-scale-1-1 w-100" alt="" />
                                 <div className="abs w-100 px-4 hover-op-1 z-4 hover-mt-40 abs-centered">
                                     <div className="mb-3">Eliminate hidden cloud vulnerabilities with expert misconfiguration audits, secure policies, and real-time fixes.</div>
-                                    <a className="btn-line" href="project-single.html">View Details</a>
+                                    <Link className="btn-line" to="/contact">View Details</Link>
                                 </div>
                                 <div className="abs bg-color z-2 top-0 w-100 h-100 hover-op-1"></div>
                                 <div className="abs z-2 bottom-0 mb-3 w-100 text-center hover-op-0">
@@ -549,7 +550,7 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                                 <img src="images/projects/3.webp" className="hover-scale-1-1 w-100" alt="" />
                                 <div className="abs w-100 px-4 hover-op-1 z-4 hover-mt-40 abs-centered">
                                     <div className="mb-3">Strengthen your firm’s defenses with advanced protection, compliance support, and incident response readiness.</div>
-                                    <a className="btn-line" href="project-single.html">View Details</a>
+                                    <Link className="btn-line" to="/contact">View Details</Link>
                                 </div>
                                 <div className="abs bg-color z-2 top-0 w-100 h-100 hover-op-1"></div>
                                 <div className="abs z-2 bottom-0 mb-3 w-100 text-center hover-op-0">
@@ -896,7 +897,7 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                     <div className="row g-4">
 
                         <div className="col-lg-4">
-                            <a href="blog-single.html" className="d-block hover relative rounded-20 overflow-hidden text-light">
+                            <Link to="/contact" className="d-block hover relative rounded-20 overflow-hidden text-light">
                                 <img src="images/news/s1.webp" className="w-100 hover-scale-1-1" alt="Cybersecurity News" />
                                 <div className="absolute start-0 bottom-0 p-40 z-2">
                                     <div className="bg-color rounded-1 p-0 px-2 d-inline-block mb-3">Cyber Insights</div>
@@ -908,11 +909,11 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                                     </div>
                                 </div>
                                 <div className="gradient-edge-bottom h-70"></div>
-                            </a>
+                            </Link>
                         </div>
 
                         <div className="col-lg-4">
-                            <a href="blog-single.html" className="d-block hover relative rounded-20 overflow-hidden text-light">
+                            <Link to="/contact" className="d-block hover relative rounded-20 overflow-hidden text-light">
                                 <img src="images/news/s2.webp" className="w-100 hover-scale-1-1" alt="Cybersecurity News" />
                                 <div className="absolute start-0 bottom-0 p-40 z-2">
                                     <div className="bg-color rounded-1 p-0 px-2 d-inline-block mb-3">Threat Reports</div>
@@ -924,11 +925,11 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                                     </div>
                                 </div>
                                 <div className="gradient-edge-bottom h-70"></div>
-                            </a>
+                            </Link>
                         </div>
 
                         <div className="col-lg-4">
-                            <a href="blog-single.html" className="d-block hover relative rounded-20 overflow-hidden text-light">
+                            <Link to="/contact" className="d-block hover relative rounded-20 overflow-hidden text-light">
                                 <img src="images/news/s3.webp" className="w-100 hover-scale-1-1" alt="Cybersecurity News" />
                                 <div className="absolute start-0 bottom-0 p-40 z-2">
                                     <div className="bg-color rounded-1 p-0 px-2 d-inline-block mb-3">Best Practices</div>
@@ -940,7 +941,7 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                                     </div>
                                 </div>
                                 <div className="gradient-edge-bottom h-70"></div>
-                            </a>
+                            </Link>
                         </div>
 
                     </div>
@@ -958,7 +959,7 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                             <h3 className="mb-0 fs-32 wow fadeInRight">Need 24/7 Protection From Cyber Attacks?</h3>
                         </div>
                         <div className="col-md-2">                            
-                            <a className="btn-main fx-slide btn-line wow fadeInLeft" href="appointment.html"><span>Start Scan</span></a>
+                            <Link className="btn-main fx-slide btn-line wow fadeInLeft" to="/contact"><span>Start Scan</span></Link>
                         </div>
                     </div>
                 </div>

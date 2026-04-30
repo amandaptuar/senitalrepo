@@ -1,0 +1,108 @@
+/* ============================================================
+   Global fixes for React build — mobile responsiveness & layout
+   ============================================================ */
+
+/* Navbar Fixes */
+header.transparent {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0;
+    width: 100%;
+    z-index: 9999 !important;
+    background: transparent;
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
+}
+
+header.scrollOff, header.scrollOn, header.clone {
+    position: absolute !important;
+    top: 0 !important;
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+header .logo-main, header .logo-mobile {
+    max-height: 70px !important; /* Increased logo height */
+    width: auto;
+}
+
+header .de-flex.sm-pt10 {
+    min-height: 100px; /* Increased overall navbar height */
+    align-items: center;
+}
+
+
+/* 1. Remove any default margin/padding causing white space */
+* { box-sizing: border-box; }
+body { margin: 0; padding: 0; overflow-x: hidden; }
+
+/* 2. Push hero section down so it sits below the fixed navbar */
+#section-intro {
+  padding-top: 140px !important;
+}
+
+/* 3. Fix the absolutely-positioned stat cards in the hero section.
+      On mobile these overlap the hero image — convert to normal flow */
+@media (max-width: 991px) {
+  /* Hero image column: add spacing so cards don't collide */
+  #section-intro .col-lg-6 .relative {
+    position: relative;
+    padding-bottom: 16px;
+  }
+
+  /* Hide the floating stat cards on mobile (they overlap too badly) */
+  #section-intro .bg-blur.abs {
+    display: none !important;
+  }
+
+  /* Hero text left column: add breathing room */
+  #section-intro .col-lg-6:first-child {
+    padding-top: 20px;
+  }
+
+  /* Make spacer-double not take too much room on mobile */
+  .spacer-double.sm-hide { display: none !important; }
+}
+
+/* 4. Prevent any section from having horizontal scroll on mobile */
+section {
+  overflow-x: hidden;
+}
+
+/* 5. Fix absolute positioned big logos in CTA banners on mobile */
+@media (max-width: 768px) {
+  .w-30.abs {
+    display: none !important;
+  }
+}
+
+/* 6. Ensure the footer logo isn't too large on mobile */
+@media (max-width: 576px) {
+  img.logo-footer {
+    max-width: 160px !important;
+    height: auto !important;
+  }
+}
+
+
+/* 8. Content area: no extra top padding that creates white gaps */
+#content {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* 9. Fix hero on very small phones */
+@media (max-width: 480px) {
+  #section-intro {
+    padding-top: 120px !important;
+    padding-bottom: 40px !important;
+  }
+  #section-intro h1 {
+    font-size: 2rem !important;
+  }
+}

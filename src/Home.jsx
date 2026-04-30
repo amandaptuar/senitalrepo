@@ -56,53 +56,43 @@ const Home = () => {
 
             <div id="top"></div>
 
-            <section id="section-intro" className="bg-dark text-light overflow-hidden" data-bgimage="url(images/background/9.webp) bottom right">
-                <div className="container">
-                  <div className="row g-4 gx-5 align-items-center">
-                    <div className="col-lg-6">
-                        <div className="spacer-double sm-hide"></div>
-                        <div className="subtitle s2 mb-3 wow fadeInUp" data-wow-delay=".0s">Welcome to CyberGuard</div>
-                        <h1 className="wow fadeInUp" data-wow-delay=".2s">Your Partner in Total Cyber Security</h1>
-                        <p className="col-lg-10 wow fadeInUp" data-wow-delay=".4s">Protect your business from digital threats with cutting-edge cybersecurity solutions—24/7 monitoring, penetration testing, and expert-driven defense strategies.</p>
-                        <a className="btn-main mb10 mb-3 wow fadeInUp" data-wow-delay=".6s" href="appointment.html"><span>Start For Free</span></a>
-                        <div className="border-bottom my-3"></div>
-                        <div className="d-lg-flex align-items-center text-light">
-                            <div className="me-3">Google Rating</div>
-                            <div className="me-3">5.0</div>
-                            <div className="d-flex fs-14 d-rating me-3">
-                                <i className="fa fa-solid fa-star m-1"></i>
-                                <i className="fa fa-solid fa-star m-1"></i>
-                                <i className="fa fa-solid fa-star m-1"></i>
-                                <i className="fa fa-solid fa-star m-1"></i>
-                                <i className="fa fa-solid fa-star m-1"></i>
+            <section className="jarallax text-light section-dark" data-video-src="mp4:video/1.mp4">
+                <div className="sw-overlay op-6"></div>
+                <div className="gradient-edge-bottom"></div>
+                <div className="container relative z-3">
+                    <div className="row g-4 justify-content-center">
+                        <div className="col-lg-12 text-center"> 
+                            <div className="spacer-double"></div>
+                            <div className="subtitle text-light s2 mb-3 wow fadeInUp" data-wow-delay=".0s">Cybersecurity Experts</div>
+                            <h1 className="fs-120 fs-xs-10vw wow fadeInUp">Cyber Guard</h1>
+                            <p className="lead mb-0 col-lg-6 offset-lg-3 wow fadeInUp" data-wow-delay=".2s">Protect your business from digital threats with cutting-edge cybersecurity solutions—24/7 monitoring, penetration testing, and expert-driven defense strategies.</p>
+                            <div className="spacer-single"></div>
+                            <a className="btn-main fx-slide wow fadeIn" data-wow-delay=".6s" href="appointment.html"><span>Start Scan</span></a>
+                        </div>
+
+                        <div className="spacer-single"></div>
+
+                        <div className="row g-4">
+                            <div className="col-lg-2 col-sm-4 col-6 wow fadeInRight" data-wow-delay=".2s">
+                                <img src="images/badge/1.webp" className="w-100 px-4" alt="" />
                             </div>
-                            <div className="me-3">Based on 23k Reviews</div>
+                            <div className="col-lg-2 col-sm-4 col-6 wow fadeInRight" data-wow-delay=".4s">
+                                <img src="images/badge/2.webp" className="w-100 px-4" alt="" />
+                            </div>
+                            <div className="col-lg-2 col-sm-4 col-6 wow fadeInRight" data-wow-delay=".6s">
+                                <img src="images/badge/3.webp" className="w-100 px-4" alt="" />
+                            </div>
+                            <div className="col-lg-2 col-sm-4 col-6 wow fadeInRight" data-wow-delay=".8s">
+                                <img src="images/badge/4.webp" className="w-100 px-4" alt="" />
+                            </div>
+                            <div className="col-lg-2 col-sm-4 col-6 wow fadeInRight" data-wow-delay="1.2s">
+                                <img src="images/badge/5.webp" className="w-100 px-4" alt="" />
+                            </div>
+                            <div className="col-lg-2 col-sm-4 col-6 wow fadeInRight" data-wow-delay="1.4s">
+                                <img src="images/badge/6.webp" className="w-100 px-4" alt="" />
+                            </div>
                         </div>
                     </div>
-                    <div className="col-lg-6">
-                        <div className="relative">
-                            <div className="bg-blur text-light shadow-1 abs end-0 abs-middle p-4 rounded-1 overflow-hidden z-2 wow fadeInRight" data-wow-delay=".5s">
-                                <div className="d-flex justify-content-center">
-                                    <i className="fs-60 id-color fa-solid fa-shield-halved"></i>
-                                    <div className="ms-3">
-                                        <h2 className="mb-0">99.9%</h2>
-                                        Threat detection
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="bg-blur shadow-1 abs start-0 bottom-10 p-4 rounded-1 overflow-hidden z-2 wow fadeInLeft" data-wow-delay=".7s">
-                                <div className="d-flex justify-content-center">
-                                    <i className="fs-60 id-color fa-solid fa-user-group"></i>
-                                    <div className="ms-3">
-                                        <h2 className="mb-0">23K</h2>
-                                        Happy Customers
-                                    </div>
-                                </div>
-                            </div>
-                            <img src="images/misc/c2.webp" className="w-100 wow fadeInUp" data-wow-delay=".3s" alt="" />
-                        </div>                        
-                    </div>
-                  </div>
                 </div>
             </section>
 
@@ -118,7 +108,7 @@ const Home = () => {
                             <h3 className="mb-0 fs-32 wow fadeInRight">Need 24/7 Protection From Cyber Attacks?</h3>
                         </div>
                         <div className="col-md-2">                            
-                            <a className="btn-main fx-slide btn-line wow fadeInLeft" href="appointment.html"><span>Start For Free</span></a>
+                            <a className="btn-main fx-slide btn-line wow fadeInLeft" href="appointment.html"><span>Start Scan</span></a>
                         </div>
                     </div>
                 </div>
@@ -988,7 +978,7 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                             <h3 className="mb-0 fs-32 wow fadeInRight">Need 24/7 Protection From Cyber Attacks?</h3>
                         </div>
                         <div className="col-md-2">                            
-                            <a className="btn-main fx-slide btn-line wow fadeInLeft" href="appointment.html"><span>Start For Free</span></a>
+                            <a className="btn-main fx-slide btn-line wow fadeInLeft" href="appointment.html"><span>Start Scan</span></a>
                         </div>
                     </div>
                 </div>

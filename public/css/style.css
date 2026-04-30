@@ -454,7 +454,8 @@ header.smaller.scroll-light #mainmenu li.has-child:after {
 }
 
 div#logo img{
-  max-width: var(--logo-width);
+  max-width: none;
+  height: auto;
 }
 
 .logo-footer{
@@ -13604,5 +13605,53 @@ img {
     left: 50%;
     margin-left: auto;
     width: auto;
+  }
+}
+
+/* ===== CUSTOM LOGO SIZE OVERRIDES ===== */
+#custom-logo-wrapper {
+  display: block !important;
+  width: 250px !important;
+  height: 200px !important;
+  overflow: visible !important;
+}
+
+/* Navbar height override to fit logo */
+header {
+  min-height: 5px !important;
+}
+
+header .container {
+  min-height: 5px !important;
+}
+
+header .de-flex {
+  min-height: 5px !important;
+  align-items: center !important;
+}
+
+#custom-logo-wrapper img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: contain !important;
+}
+
+/* Hide the correct logo per breakpoint */
+#custom-logo-wrapper img.logo-mobile {
+  display: none !important;
+}
+
+@media only screen and (max-width: 767px) {
+  #custom-logo-wrapper {
+    width: 180px !important;
+    height: 150px !important;
+  }
+  #custom-logo-wrapper img.logo-main {
+    display: none !important;
+  }
+  #custom-logo-wrapper img.logo-mobile {
+    display: block !important;
   }
 }

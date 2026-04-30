@@ -127,8 +127,10 @@ const Navbar = () => {
                           {/* logo begin */}
                           <div id="logo">
                               <a href="index.html">
-                                  <img className="logo-main" src="/imgadd/senitalnewlogo.jpeg" alt="" />
-                                  <img className="logo-mobile" src="/imgadd/senitalnewlogo.jpeg" alt="" />
+                                  <div id="custom-logo-wrapper">
+                                      <img className="logo-main" src="/imgadd/senitalnewlogo.jpeg" alt="CyberGuard Logo" />
+                                      <img className="logo-mobile" src="/imgadd/senitalnewlogo.jpeg" alt="CyberGuard Logo" />
+                                  </div>
                               </a>
                           </div>
                           {/* logo end */}
@@ -159,7 +161,7 @@ const Navbar = () => {
                       </div>
                       <div className="de-flex-col">
                           <div className="menu_side_area">
-                              <a href="appointment.html" className="btn-main fx-slide btn-line me-2"><span>Start For Free</span></a>
+                              <a href="appointment.html" className="btn-main fx-slide btn-line me-2"><span>Start Scan</span></a>
                               <a href="pricing.html" className="btn-main fx-slide"><span>Explore Pricing</span></a>
                               <span 
                                 id="menu-btn" 

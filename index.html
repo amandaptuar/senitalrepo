@@ -13,9 +13,60 @@
     <!-- color scheme -->
     <link id="colors" href="/css/colors/scheme-1.css" rel="stylesheet" type="text/css" >
     <link href="/css/custom-swiper-1.css" rel="stylesheet" type="text/css" >
+    <style>
+      /* Full-screen loader */
+      #global-loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #111; /* Dark background */
+        z-index: 999999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+      }
+      
+      /* Hide loader class */
+      #global-loader.hidden {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      /* Modern spinner */
+      .spinner {
+        width: 60px;
+        height: 60px;
+        border: 4px solid rgba(255, 255, 255, 0.1);
+        border-top-color: #00d2ff; /* Theme primary color */
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+    </style>
   </head>
   <body>
+    <div id="global-loader">
+      <div class="spinner"></div>
+    </div>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      window.onload = function() {
+        const loader = document.getElementById('global-loader');
+        if (loader) {
+          loader.classList.add('hidden');
+          // Optionally remove the element after transition to free up DOM
+          setTimeout(() => {
+            loader.remove();
+          }, 500);
+        }
+      };
+    </script>
   </body>
 </html>

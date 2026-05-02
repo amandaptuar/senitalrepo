@@ -60,8 +60,8 @@ const Services = () => {
                                 <div className="spacer-double sm-hide"></div>
 
                                 <div className="col-lg-6">
-                                    <h1 className="mb-0 wow fadeInUp" data-wow-delay=".2s">Our Service</h1>
-                                    <ul className="crumb wow fadeInUp">
+                                    <h1 className="mb-0" data--delay=".2s">Our Service</h1>
+                                    <ul className="crumb">
                                         <li><Link to="/">Home</Link></li>
                                         <li className="active">Our Services</li>
                                     </ul>   
@@ -79,9 +79,9 @@ const Services = () => {
                         <div className="container">
 
                             <div className="row g-4">
-                                <div className="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay="0s">
+                                <div className="col-lg-4 col-md-6" data--delay="0s">
                                     <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden">
-                                        <div className="relative z-2 wow scaleIn" data-wow-delay=".0s">
+                                        <div className="relative z-2" data--delay=".0s">
                                             <img src="/images/icons-white/cyber-security.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
                                             <h4>Network Security</h4>
                                             <p>Deploying firewalls and intrusion detection systems to safeguard networks.</p>
@@ -91,9 +91,9 @@ const Services = () => {
                                     </div>
                                 </div>
 
-                                <div className="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".2s">
+                                <div className="col-lg-4 col-md-6" data--delay=".2s">
                                     <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden">
-                                        <div className="relative z-2 wow scaleIn" data-wow-delay=".2s">
+                                        <div className="relative z-2" data--delay=".2s">
                                             <img src="/images/icons-white/encryption.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
                                             <h4>Data Encryption</h4>
                                             <p>Encrypting sensitive data at rest and in transit using advanced encryption.</p>
@@ -103,9 +103,9 @@ const Services = () => {
                                     </div>
                                 </div>
 
-                                <div className="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".4s">
+                                <div className="col-lg-4 col-md-6" data--delay=".4s">
                                     <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden">
-                                        <div className="relative z-2 wow scaleIn" data-wow-delay=".4s">
+                                        <div className="relative z-2" data--delay=".4s">
                                             <img src="/images/icons-white/fingerprint.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
                                             <h4>Identity & Access</h4>
                                             <p>Managing user identities and access with MFA and detailed role-based control.</p>
@@ -115,9 +115,9 @@ const Services = () => {
                                     </div>
                                 </div>
 
-                                <div className="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".6s">
+                                <div className="col-lg-4 col-md-6" data--delay=".6s">
                                     <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden">
-                                        <div className="relative z-2 wow scaleIn" data-wow-delay=".6s">
+                                        <div className="relative z-2" data--delay=".6s">
                                             <img src="/images/icons-white/monitoring.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
                                             <h4>Security Monitoring</h4>
                                             <p>24/7 monitoring with advanced SIEM systems for real-time detection.</p>
@@ -127,9 +127,9 @@ const Services = () => {
                                     </div>
                                 </div>
 
-                                <div className="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".8s">
+                                <div className="col-lg-4 col-md-6" data--delay=".8s">
                                     <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden">
-                                        <div className="relative z-2 wow scaleIn" data-wow-delay=".8s">
+                                        <div className="relative z-2" data--delay=".8s">
                                             <img src="/images/icons-white/cloud-storage.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
                                             <h4>Backup & Recovery</h4>
                                             <p>Protecting critical data with secure backups and rapid recovery plans.</p>
@@ -139,9 +139,9 @@ const Services = () => {
                                     </div>
                                 </div>
 
-                                <div className="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay="1s">
+                                <div className="col-lg-4 col-md-6" data--delay="1s">
                                     <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden">
-                                        <div className="relative z-2 wow scaleIn" data-wow-delay="1s">
+                                        <div className="relative z-2" data--delay="1s">
                                             <img src="/images/icons-white/settings.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
                                             <h4>Security Configuration</h4>
                                             <p>Hardening systems and applying secure configurations across all infrastructure.</p>
@@ -160,9 +160,9 @@ const Services = () => {
                             <div className="row g-4 justify-content-center mb-2">
                                 <div className="col-lg-12 text-light">
                                     <div className="text-center">
-                                        <div className="subtitle wow fadeInUp">Why Choose Us</div> 
-                                        <h2 className="wow fadeInUp" data-wow-delay=".2s">Complete Cyber Defense Against Modern Attacks</h2>
-                                        <p className="lead wow fadeInUp" data-wow-delay=".4s">Stay protected with a fully integrated defense strategy built for today’s complex cyber landscape.
+                                        <div className="subtitle">Why Choose Us</div> 
+                                        <h2 className="" data--delay=".2s">Complete Cyber Defense Against Modern Attacks</h2>
+                                        <p className="lead" data--delay=".4s">Stay protected with a fully integrated defense strategy built for today’s complex cyber landscape.
         From ransomware to phishing and zero-day exploits, we provide comprehensive protection across networks, endpoints, and cloud environments.</p>
                                     </div>
                                 </div>                                       
@@ -170,7 +170,7 @@ const Services = () => {
 
                             <div className="row g-4">
 
-                                <div className="col-lg-6 wow fadeInRight" data-wow-delay=".0s">
+                                <div className="col-lg-6" data--delay=".0s">
                                     <Link to="/contact" className="hover overflow-hidden rounded-1 bg-dark text-light d-block">
                                         <div className="row g-0 align-items-center">
                                             <div className="col-sm-6">
@@ -190,7 +190,7 @@ const Services = () => {
                                     </Link>
                                 </div>
 
-                                <div className="col-lg-6 wow fadeInRight" data-wow-delay=".2s">
+                                <div className="col-lg-6" data--delay=".2s">
                                     <Link to="/contact" className="hover overflow-hidden rounded-1 bg-dark text-light d-block">
                                         <div className="row g-0 align-items-center">
                                             <div className="col-sm-6">
@@ -218,15 +218,15 @@ const Services = () => {
                     <section className="bg-color text-light pt-60 pb-50 relative overflow-hidden">
                         
                         <div className="w-30 abs abs-middle end-0 me-5 op-1">
-                            <img src="/images/logo-big-white.webp" className="w-100 wow scaleIn" alt="" />
+                            <img src="/images/logo-big-white.webp" className="w-100" alt="" />
                         </div>
                         <div className="container">
                             <div className="row g-4">
                                 <div className="col-md-10">
-                                    <h3 className="mb-0 fs-32 wow fadeInRight">Need 24/7 Protection From Cyber Attacks?</h3>
+                                    <h3 className="mb-0 fs-32">Need 24/7 Protection From Cyber Attacks?</h3>
                                 </div>
                                 <div className="col-md-2">                            
-                                    <Link className="btn-main fx-slide btn-line wow fadeInLeft" to="/platform?tab=demo"><span>Start Scan</span></Link>
+                                    <Link className="btn-main fx-slide btn-line" to="/platform?tab=demo"><span>Start Scan</span></Link>
                                 </div>
                             </div>
                         </div>

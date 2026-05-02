@@ -60,10 +60,10 @@ const Home = () => {
                   <div className="row g-4 gx-5 align-items-center">
                     <div className="col-lg-6">
                         <div className="spacer-double sm-hide"></div>
-                        <div className="subtitle s2 mb-3 wow fadeInUp" data-wow-delay=".0s">Welcome to CyberGuard</div>
-                        <h1 className="wow fadeInUp" data-wow-delay=".2s">Your Partner in Total Cyber Security</h1>
-                        <p className="col-lg-10 wow fadeInUp" data-wow-delay=".4s">Protect your business from digital threats with cutting-edge cybersecurity solutions—24/7 monitoring, penetration testing, and expert-driven defense strategies.</p>
-                        <Link className="btn-main mb10 mb-3 wow fadeInUp" data-wow-delay=".6s" to="/platform?tab=demo"><span>Start Scan</span></Link>
+                        <div className="subtitle s2 mb-3" data--delay=".0s">Welcome to CyberGuard</div>
+                        <h1 className="" data--delay=".2s">Your Partner in Total Cyber Security</h1>
+                        <p className="col-lg-10" data--delay=".4s">Protect your business from digital threats with cutting-edge cybersecurity solutions—24/7 monitoring, penetration testing, and expert-driven defense strategies.</p>
+                        <Link className="btn-main mb10 mb-3" data--delay=".6s" to="/platform?tab=demo"><span>Start Scan</span></Link>
                         <div className="border-bottom my-3"></div>
                         <div className="d-lg-flex align-items-center text-light">
                             <div className="me-3">Google Rating</div>
@@ -80,7 +80,7 @@ const Home = () => {
                     </div>
                     <div className="col-lg-6">
                         <div className="relative">
-                            <div className="bg-blur text-light shadow-1 abs end-0 abs-middle p-4 rounded-1 overflow-hidden z-2 wow fadeInRight" data-wow-delay=".5s">
+                            <div className="bg-blur text-light shadow-1 abs end-0 abs-middle p-4 rounded-1 overflow-hidden z-2" data--delay=".5s">
                                 <div className="d-flex justify-content-center">
                                     <i className="fs-60 id-color fa-solid fa-shield-halved"></i>
                                     <div className="ms-3">
@@ -89,7 +89,7 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="bg-blur shadow-1 abs start-0 bottom-10 p-4 rounded-1 overflow-hidden z-2 wow fadeInLeft" data-wow-delay=".7s">
+                            <div className="bg-blur shadow-1 abs start-0 bottom-10 p-4 rounded-1 overflow-hidden z-2" data--delay=".7s">
                                 <div className="d-flex justify-content-center">
                                     <i className="fs-60 id-color fa-solid fa-user-group"></i>
                                     <div className="ms-3">
@@ -98,7 +98,7 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
-                            <img src="images/misc/c2.webp" className="w-100 wow fadeInUp" data-wow-delay=".3s" alt="" />
+                            <img src="images/misc/c2.webp" className="w-100" data--delay=".3s" alt="" />
                         </div>                        
                     </div>
                   </div>
@@ -109,15 +109,15 @@ const Home = () => {
             <section className="section-dark bg-dark-3 text-light pt-60 pb-50 relative overflow-hidden">
                 
                 <div className="w-30 abs abs-middle end-0 me-5 op-1">
-                    <img src="/imgadd/senitalnewlogo.jpeg" className="w-100 wow scaleIn" alt="" />
+                    <img src="/imgadd/senitalnewlogo.jpeg" className="w-100" alt="" />
                 </div>
                 <div className="container">
                     <div className="row g-4">
                         <div className="col-md-10">
-                            <h3 className="mb-0 fs-32 wow fadeInRight">Need 24/7 Protection From Cyber Attacks?</h3>
+                            <h3 className="mb-0 fs-32">Need 24/7 Protection From Cyber Attacks?</h3>
                         </div>
                         <div className="col-md-2">                            
-                            <Link className="btn-main fx-slide btn-line wow fadeInLeft" to="/platform?tab=demo"><span>Start Scan</span></Link>
+                            <Link className="btn-main fx-slide btn-line" to="/platform?tab=demo"><span>Start Scan</span></Link>
                         </div>
                     </div>
                 </div>
@@ -129,14 +129,14 @@ const Home = () => {
                         <div className="col-lg-12 text-center">
                             <div className="spacer-single"></div>
                             <div className="sw-text-wrapper">
-                                <div className="subtitle wow fadeInUp">Cybersecurity Experts</div>
-                                <h2 className="wow fadeInUp" data-wow-delay=".2s">Comprehensive Cybersecurity Solutions for Modern Threats</h2>
+                                <div className="subtitle">Cybersecurity Experts</div>
+                                <h2 className="" data--delay=".2s">Comprehensive Cybersecurity Solutions for Modern Threats</h2>
                             </div>
                         </div>
                         <div className="spacer-single"></div>
                     </div>
 
-                    <div className="row g-4 slider-extra sm-hide wow fadeInUp" data-wow-delay=".4s">
+                    <div className="row g-4 slider-extra sm-hide" data--delay=".4s">
                         <div className="col-lg-4 col-md-6">
                             <img src="images/icons-dark/padlock.png" className="absolute w-100px p-3 mb-3 z-2" alt="Network Security Icon" />
                             <div className="ps-100 fs-16">
@@ -171,9 +171,9 @@ const Home = () => {
                     <div className="row g-4 justify-content-center mb-2">
                         <div className="col-lg-12">
                             <div className="text-center">
-                                <div className="subtitle wow fadeInUp">What We Provide</div> 
-                                <h2 className="wow fadeInUp" data-wow-delay=".2s">Robust Cybersecurity Services for Today’s Threats</h2>
-                                <p className="lead wow fadeInUp" data-wow-delay=".4s">Protect your business from ever-evolving cyber risks with our end-to-end security solutions.
+                                <div className="subtitle">What We Provide</div> 
+                                <h2 className="" data--delay=".2s">Robust Cybersecurity Services for Today’s Threats</h2>
+                                <p className="lead" data--delay=".4s">Protect your business from ever-evolving cyber risks with our end-to-end security solutions.
 We offer advanced threat detection, real-time monitoring, and proactive defense strategies tailored to your infrastructure. Whether you're safeguarding sensitive data or ensuring compliance, our robust cybersecurity services help you stay secure, resilient, and ahead of the threat curve.</p>
                             </div>
                         </div>                                       
@@ -310,7 +310,7 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                 <div className="container">
                     <div className="row g-4">
                         <div className="col-md-3 col-sm-6">
-                            <div className="de_count text-center wow fadeInRight" data-wow-delay=".0s">
+                            <div className="de_count text-center" data--delay=".0s">
                                 <i className="p-3 circle bg-color text-light fs-40 d-inline-block mb-2 icofont-briefcase-2"></i>
                                 <h3 className="fs-40 mb-0 lh-1-1"><span className="timer" data-to="65250" data-speed="3000">0</span>+</h3>
                                 Hours of Works
@@ -318,7 +318,7 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                         </div>
 
                         <div className="col-md-3 col-sm-6">
-                            <div className="de_count text-center wow fadeInRight" data-wow-delay=".2s">
+                            <div className="de_count text-center" data--delay=".2s">
                                 <i className="p-3 circle bg-color text-light fs-40 d-inline-block mb-2 icofont-thumbs-up"></i>
                                 <h3 className="fs-40 mb-0 lh-1-1"><span className="timer" data-to="23160" data-speed="3000">0</span>+</h3>
                                 Happy Customers
@@ -326,7 +326,7 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                         </div>
 
                         <div className="col-md-3 col-sm-6">
-                            <div className="de_count text-center wow fadeInRight" data-wow-delay=".4s">
+                            <div className="de_count text-center" data--delay=".4s">
                                 <i className="p-3 circle bg-color text-light fs-40 d-inline-block mb-2 icofont-users-alt-3"></i>
                                 <h3 className="fs-40 mb-0 lh-1-1"><span className="timer" data-to="1500" data-speed="3000">0</span>+</h3>
                                 Experienced Workers
@@ -334,7 +334,7 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                         </div>
 
                         <div className="col-md-3 col-sm-6">
-                            <div className="de_count text-center wow fadeInRight" data-wow-delay=".6s">
+                            <div className="de_count text-center" data--delay=".6s">
                                 <i className="p-3 circle bg-color text-light fs-40 d-inline-block mb-2 icofont-badge"></i>
                                 <h3 className="fs-40 mb-0 lh-1-1"><span className="timer" data-to="20" data-speed="3000">0</span>+</h3>
                                 Years of Experience
@@ -349,9 +349,9 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                 <div className="container">
                     <div className="row g-4 mb-2">
                         <div className="col-lg-12 text-center">
-                            <div className="subtitle wow fadeInUp mb-3">Cybersecurity Pricing</div>
-                            <h2 className="wow fadeInUp" data-wow-delay=".2s">Flexible Plans for Every Security Need</h2>
-                            <p className="lead wow fadeInUp" data-wow-delay=".4s">
+                            <div className="subtitle mb-3">Cybersecurity Pricing</div>
+                            <h2 className="" data--delay=".2s">Flexible Plans for Every Security Need</h2>
+                            <p className="lead" data--delay=".4s">
                                 Our transparent pricing ensures enterprise-grade protection, compliance, and 24/7 threat monitoring without hidden costs.
                             </p>
                         </div>
@@ -530,9 +530,9 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                     <div className="row g-4 justify-content-center mb-2">
                         <div className="col-lg-12">
                             <div className="text-center">
-                                <div className="subtitle wow fadeInUp">Real Study Case</div> 
-                                <h2 className="wow fadeInUp" data-wow-delay=".2s">Real-World Cybersecurity Success Stories</h2>
-                                <p className="lead wow fadeInUp" data-wow-delay=".4s">
+                                <div className="subtitle">Real Study Case</div> 
+                                <h2 className="" data--delay=".2s">Real-World Cybersecurity Success Stories</h2>
+                                <p className="lead" data--delay=".4s">
                                 Explore how our tailored cybersecurity solutions have helped businesses overcome critical challenges — from preventing data breaches and fixing cloud vulnerabilities to achieving compliance and building long-term resilience.
                                 </p>
                             </div>
@@ -542,7 +542,7 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                     <div className="row g-4">
                         {/* service item begin */}
                         <div className="col-lg-4 col-sm-6">
-                            <div className="hover rounded-1 overflow-hidden relative text-light text-center wow fadeInRight" data-wow-delay=".0s">
+                            <div className="hover rounded-1 overflow-hidden relative text-light text-center" data--delay=".0s">
                                 <img src="images/projects/1.webp" className="hover-scale-1-1 w-100" alt="" />
                                 <div className="abs w-100 px-4 hover-op-1 z-4 hover-mt-40 abs-centered">
                                     <div className="mb-3">Safeguard your online store with end-to-end protection, preventing data breaches, fraud, and unauthorized access.</div>
@@ -559,7 +559,7 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
 
                         {/* service item begin */}
                         <div className="col-lg-4 col-sm-6">
-                            <div className="hover rounded-1 overflow-hidden relative text-light text-center wow fadeInRight" data-wow-delay=".3s">
+                            <div className="hover rounded-1 overflow-hidden relative text-light text-center" data--delay=".3s">
                                 <img src="images/projects/2.webp" className="hover-scale-1-1 w-100" alt="" />
                                 <div className="abs w-100 px-4 hover-op-1 z-4 hover-mt-40 abs-centered">
                                     <div className="mb-3">Eliminate hidden cloud vulnerabilities with expert misconfiguration audits, secure policies, and real-time fixes.</div>
@@ -576,7 +576,7 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
 
                         {/* service item begin */}
                         <div className="col-lg-4 col-sm-6">
-                            <div className="hover rounded-1 overflow-hidden relative text-light text-center wow fadeInRight" data-wow-delay=".6s">
+                            <div className="hover rounded-1 overflow-hidden relative text-light text-center" data--delay=".6s">
                                 <img src="images/projects/3.webp" className="hover-scale-1-1 w-100" alt="" />
                                 <div className="abs w-100 px-4 hover-op-1 z-4 hover-mt-40 abs-centered">
                                     <div className="mb-3">Strengthen your firm’s defenses with advanced protection, compliance support, and incident response readiness.</div>
@@ -602,15 +602,15 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                 <div className="container">
                     <div className="row g-4 mb-2">
                         <div className="col-lg-12 text-center">
-                            <div className="subtitle wow fadeInUp mb-3">Testimonials</div>
-                            <h2 className="wow fadeInUp" data-wow-delay=".2s">Hear It from Our Happy Customers</h2>
-                            <p className="lead wow fadeInUp" data-wow-delay=".4s">See how our cybersecurity solutions have helped businesses stay secure, compliant, and resilient against evolving digital threats.</p>
+                            <div className="subtitle mb-3">Testimonials</div>
+                            <h2 className="" data--delay=".2s">Hear It from Our Happy Customers</h2>
+                            <p className="lead" data--delay=".4s">See how our cybersecurity solutions have helped businesses stay secure, compliant, and resilient against evolving digital threats.</p>
                         </div>
                     </div>
                 </div>
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="owl-carousel owl-theme wow fadeInUp four-cols-center-dots">
+                        <div className="owl-carousel owl-theme four-cols-center-dots">
                             {/* testimonial item begin */}
                             <div className="item">
                                 <div className="bg-light rounded-1 p-30">
@@ -903,7 +903,7 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                             <a className="d-block hover popup-youtube" href="https://www.youtube.com/watch?v=xQQskN6UXRY">
                                 <div className="relative overflow-hidden">
                                     <div className="absolute start-0 w-100 abs-middle fs-36 text-white text-center z-2">
-                                        <div className="player circle wow scaleIn"><span></span></div>
+                                        <div className="player circle"><span></span></div>
                                     </div> 
                                     <div className="absolute w-100 h-100 top-0 bg-dark hover-op-05"></div>
                                     <img src="images/background/w1.webp" className="w-100 hover-scale-1-1" alt="" />
@@ -918,9 +918,9 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                 <div className="container">
                     <div className="row g-4 mb-2">
                         <div className="col-lg-12 text-center">
-                            <div className="subtitle wow fadeInUp mb-3">Testimonials</div>
-                            <h2 className="wow fadeInUp" data-wow-delay=".2s">Hear It from Our Happy Customers</h2>
-                            <p className="lead wow fadeInUp" data-wow-delay=".4s">See how our cybersecurity solutions have helped businesses stay secure, compliant, and resilient against evolving digital threats.</p>
+                            <div className="subtitle mb-3">Testimonials</div>
+                            <h2 className="" data--delay=".2s">Hear It from Our Happy Customers</h2>
+                            <p className="lead" data--delay=".4s">See how our cybersecurity solutions have helped businesses stay secure, compliant, and resilient against evolving digital threats.</p>
                         </div>
                     </div>
 
@@ -981,15 +981,15 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
             <section className="section-dark bg-color text-light pt-60 pb-50 relative overflow-hidden">
                 
                 <div className="w-30 abs abs-middle end-0 me-5 op-1">
-                    <img src="imgadd/senitalnewlogo.jpeg" className="w-100 wow scaleIn" alt="" />
+                    <img src="imgadd/senitalnewlogo.jpeg" className="w-100" alt="" />
                 </div>
                 <div className="container">
                     <div className="row g-4">
                         <div className="col-md-10">
-                            <h3 className="mb-0 fs-32 wow fadeInRight">Need 24/7 Protection From Cyber Attacks?</h3>
+                            <h3 className="mb-0 fs-32">Need 24/7 Protection From Cyber Attacks?</h3>
                         </div>
                         <div className="col-md-2">                            
-                            <Link className="btn-main fx-slide btn-line wow fadeInLeft" to="/platform?tab=demo"><span>Start Scan</span></Link>
+                            <Link className="btn-main fx-slide btn-line" to="/platform?tab=demo"><span>Start Scan</span></Link>
                         </div>
                     </div>
                 </div>

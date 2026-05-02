@@ -60,8 +60,8 @@ const Contact = () => {
                             <div className="spacer-double sm-hide"></div>
 
                             <div className="col-lg-6">
-                                <h1 className="mb-0 wow fadeInUp" data-wow-delay=".2s">Contact Us</h1>
-                                <ul className="crumb wow fadeInUp">
+                                <h1 className="mb-0" data--delay=".2s">Contact Us</h1>
+                                <ul className="crumb">
                                     <li><Link to="/">Home</Link></li>
                                     <li className="active">Contact Us</li>
                                 </ul>   
@@ -78,7 +78,7 @@ const Contact = () => {
                     <div className="container">
                         <div className="row g-4">
                             <div className="col-lg-6">
-                                <h3 className="wow fadeInUp">Send Your Message</h3>
+                                <h3 className="">Send Your Message</h3>
                                 <p className="mb-0">Whether you have a question, a suggestion, or just want to say hello, this is the place to do it. Please fill out the form below with your details and message, and we'll get back to you as soon as possible.</p>
                             </div>
 

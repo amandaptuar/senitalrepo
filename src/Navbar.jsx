@@ -66,7 +66,7 @@ const Navbar = () => {
     if (isMobileWindow) {
       return { 
         display: 'block', 
-        maxHeight: isMobileMenuOpen ? '600px' : '0px', 
+        maxHeight: isMobileMenuOpen ? '2000px' : '0px', 
         paddingTop: isMobileMenuOpen ? '10px' : '0px',
         paddingBottom: isMobileMenuOpen ? '10px' : '0px',
         marginTop: isMobileMenuOpen ? '10px' : '0px',
@@ -84,11 +84,7 @@ const Navbar = () => {
     if (isMobileWindow) {
       const isOpen = openDropdowns[label];
       return { 
-        display: 'block',
-        maxHeight: isOpen ? '500px' : '0px',
-        opacity: isOpen ? 1 : 0,
-        overflow: 'hidden',
-        transition: 'max-height 0.4s ease-in-out, opacity 0.4s ease-in-out',
+        display: isOpen ? 'block' : 'none',
         margin: 0,
         padding: 0
       };

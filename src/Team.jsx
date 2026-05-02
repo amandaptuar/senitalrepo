@@ -60,8 +60,8 @@ const Team = () => {
                                 <div className="spacer-double sm-hide"></div>
 
                                 <div className="col-lg-6">
-                                    <h1 className="mb-0 wow fadeInUp" data-wow-delay=".2s">Our Team</h1>
-                                    <ul className="crumb wow fadeInUp">
+                                    <h1 className="mb-0" data--delay=".2s">Our Team</h1>
+                                    <ul className="crumb">
                                         <li><Link to="/">Home</Link></li>
                                         <li className="active">Our Team</li>
                                     </ul>   
@@ -78,7 +78,7 @@ const Team = () => {
                         <div className="container">
                             <div className="row g-4">
                                 {/* Team 1 */}
-                                <div className="col-lg-3 wow fadeInUp" data-wow-delay="0s">
+                                <div className="col-lg-3" data--delay="0s">
                                     <div className="rounded-1 overflow-hidden">
                                         <img src="/images/team/1.webp" className="w-100" alt="" />
                                         <div className="bg-light p-4 overflow-hidden text-center">
@@ -94,7 +94,7 @@ const Team = () => {
                                 </div>
 
                                 {/* Team 2 */}
-                                <div className="col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
+                                <div className="col-lg-3" data--delay="0.2s">
                                     <div className="rounded-1 overflow-hidden">
                                         <img src="/images/team/2.webp" className="w-100" alt="" />
                                         <div className="bg-light p-4 overflow-hidden text-center">
@@ -110,7 +110,7 @@ const Team = () => {
                                 </div>
 
                                 {/* Team 3 */}
-                                <div className="col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
+                                <div className="col-lg-3" data--delay="0.4s">
                                     <div className="rounded-1 overflow-hidden">
                                         <img src="/images/team/3.webp" className="w-100" alt="" />
                                         <div className="bg-light p-4 overflow-hidden text-center">
@@ -126,7 +126,7 @@ const Team = () => {
                                 </div>
 
                                 {/* Team 4 */}
-                                <div className="col-lg-3 wow fadeInUp" data-wow-delay="0.6s">
+                                <div className="col-lg-3" data--delay="0.6s">
                                     <div className="rounded-1 overflow-hidden">
                                         <img src="/images/team/4.webp" className="w-100" alt="" />
                                         <div className="bg-light p-4 overflow-hidden text-center">
@@ -142,7 +142,7 @@ const Team = () => {
                                 </div>
 
                                 {/* Team 5 */}
-                                <div className="col-lg-3 wow fadeInUp" data-wow-delay="0.8s">
+                                <div className="col-lg-3" data--delay="0.8s">
                                     <div className="rounded-1 overflow-hidden">
                                         <img src="/images/team/5.webp" className="w-100" alt="" />
                                         <div className="bg-light p-4 overflow-hidden text-center">
@@ -158,7 +158,7 @@ const Team = () => {
                                 </div>
 
                                 {/* Team 6 */}
-                                <div className="col-lg-3 wow fadeInUp" data-wow-delay="1s">
+                                <div className="col-lg-3" data--delay="1s">
                                     <div className="rounded-1 overflow-hidden">
                                         <img src="/images/team/6.webp" className="w-100" alt="" />
                                         <div className="bg-light p-4 overflow-hidden text-center">
@@ -174,7 +174,7 @@ const Team = () => {
                                 </div>
 
                                 {/* Team 7 */}
-                                <div className="col-lg-3 wow fadeInUp" data-wow-delay="1.2s">
+                                <div className="col-lg-3" data--delay="1.2s">
                                     <div className="rounded-1 overflow-hidden">
                                         <img src="/images/team/7.webp" className="w-100" alt="" />
                                         <div className="bg-light p-4 overflow-hidden text-center">
@@ -190,7 +190,7 @@ const Team = () => {
                                 </div>
 
                                 {/* Team 8 */}
-                                <div className="col-lg-3 wow fadeInUp" data-wow-delay="1.4s">
+                                <div className="col-lg-3" data--delay="1.4s">
                                     <div className="rounded-1 overflow-hidden">
                                         <img src="/images/team/8.webp" className="w-100" alt="" />
                                         <div className="bg-light p-4 overflow-hidden text-center">
@@ -212,15 +212,15 @@ const Team = () => {
                     <section className="section-dark bg-color text-light pt-60 pb-50 relative overflow-hidden">
                         
                         <div className="w-30 abs abs-middle end-0 me-5 op-1">
-                            <img src="/images/logo-big-white.webp" className="w-100 wow scaleIn" alt="" />
+                            <img src="/images/logo-big-white.webp" className="w-100" alt="" />
                         </div>
                         <div className="container">
                             <div className="row g-4">
                                 <div className="col-md-10">
-                                    <h3 className="mb-0 fs-32 wow fadeInRight">Need 24/7 Protection From Cyber Attacks?</h3>
+                                    <h3 className="mb-0 fs-32">Need 24/7 Protection From Cyber Attacks?</h3>
                                 </div>
                                 <div className="col-md-2">                            
-                                    <Link className="btn-main fx-slide btn-line wow fadeInLeft" to="/platform?tab=demo"><span>Start Scan</span></Link>
+                                    <Link className="btn-main fx-slide btn-line" to="/platform?tab=demo"><span>Start Scan</span></Link>
                                 </div>
                             </div>
                         </div>

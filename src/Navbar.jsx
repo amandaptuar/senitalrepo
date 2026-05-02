@@ -142,20 +142,29 @@ const Navbar = () => {
                           onClick={(e) => toggleDropdown(link.label, e)}
                         ></span>
                       )}
-                      {link.to ? (
-                        <Link className="menu-item" to={link.to}>{link.label}</Link>
-                      ) : (
-                        <Link className="menu-item" to="/contact">{link.label}</Link>
-                      )}
+                      <Link 
+                        className="menu-item" 
+                        to={link.to || "/contact"}
+                        onClick={(e) => {
+                          if (isMobileWindow && link.children) {
+                            toggleDropdown(link.label, e);
+                          } else {
+                            setIsMobileMenuOpen(false);
+                          }
+                        }}
+                      >
+                        {link.label}
+                      </Link>
                       {link.children && (
                         <ul style={getSubmenuStyles(link.label)}>
                           {link.children.map(child => (
                             <li key={child.label}>
-                              {child.to ? (
-                                <Link to={child.to}>{child.label}</Link>
-                              ) : (
-                                <Link to="/contact">{child.label}</Link>
-                              )}
+                              <Link 
+                                to={child.to || "/contact"} 
+                                onClick={() => setIsMobileMenuOpen(false)}
+                              >
+                                {child.label}
+                              </Link>
                             </li>
                           ))}
                         </ul>

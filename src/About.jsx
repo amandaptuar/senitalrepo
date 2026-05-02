@@ -39,7 +39,7 @@ const About = () => {
         <>
             <div id="wrapper">
                 <div className="float-text show-on-scroll">
-                    <span><a href="#">Scroll to top</a></span>
+                    <span><Link to="/contact">Scroll to top</Link></span>
                 </div>
                 <div className="scrollbar-v show-on-scroll"></div>
 

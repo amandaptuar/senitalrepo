@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 const Home = lazy(() => import('./Home'))
 const Contact = lazy(() => import('./Contact'))
 const About = lazy(() => import('./About'))
+const Platform = lazy(() => import('./Platform'))
 
 // Loading component for Suspense
 const PageLoader = () => (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
+          <Route path="/platform" element={<Platform />} />
         </Routes>
       </Suspense>
     </Router>

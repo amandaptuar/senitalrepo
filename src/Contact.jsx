@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
@@ -40,7 +41,7 @@ const Contact = () => {
         <>
             <div id="wrapper">
                 <div className="float-text show-on-scroll">
-                    <span><a href="#">Scroll to top</a></span>
+                    <span><Link to="/contact">Scroll to top</Link></span>
                 </div>
                 <div className="scrollbar-v show-on-scroll"></div>
 
@@ -61,7 +62,7 @@ const Contact = () => {
                             <div className="col-lg-6">
                                 <h1 className="mb-0 wow fadeInUp" data-wow-delay=".2s">Contact Us</h1>
                                 <ul className="crumb wow fadeInUp">
-                                    <li><a href="/">Home</a></li>
+                                    <li><Link to="/">Home</Link></li>
                                     <li className="active">Contact Us</li>
                                 </ul>   
                             </div>

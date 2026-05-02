@@ -41,7 +41,7 @@ const Home = () => {
       {/* Copied from homepage-6.html */}
       <div id="wrapper">
         <div className="float-text show-on-scroll">
-            <span><a href="#">Scroll to top</a></span>
+            <span><Link to="/contact">Scroll to top</Link></span>
         </div>
         <div className="scrollbar-v show-on-scroll"></div>
 
@@ -63,7 +63,7 @@ const Home = () => {
                         <div className="subtitle s2 mb-3 wow fadeInUp" data-wow-delay=".0s">Welcome to CyberGuard</div>
                         <h1 className="wow fadeInUp" data-wow-delay=".2s">Your Partner in Total Cyber Security</h1>
                         <p className="col-lg-10 wow fadeInUp" data-wow-delay=".4s">Protect your business from digital threats with cutting-edge cybersecurity solutions—24/7 monitoring, penetration testing, and expert-driven defense strategies.</p>
-                        <Link className="btn-main mb10 mb-3 wow fadeInUp" data-wow-delay=".6s" to="/contact"><span>Start Scan</span></Link>
+                        <Link className="btn-main mb10 mb-3 wow fadeInUp" data-wow-delay=".6s" to="/platform?tab=demo"><span>Start Scan</span></Link>
                         <div className="border-bottom my-3"></div>
                         <div className="d-lg-flex align-items-center text-light">
                             <div className="me-3">Google Rating</div>
@@ -117,7 +117,7 @@ const Home = () => {
                             <h3 className="mb-0 fs-32 wow fadeInRight">Need 24/7 Protection From Cyber Attacks?</h3>
                         </div>
                         <div className="col-md-2">                            
-                            <Link className="btn-main fx-slide btn-line wow fadeInLeft" to="/contact"><span>Start Scan</span></Link>
+                            <Link className="btn-main fx-slide btn-line wow fadeInLeft" to="/platform?tab=demo"><span>Start Scan</span></Link>
                         </div>
                     </div>
                 </div>
@@ -379,8 +379,8 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                                     <p className="fs-14">Normally <s>$19.99</s></p>
                                 </div>
                                 <div className="relative">
-                                    <a href="#" className="btn-main opt-1 w-100">Get Monthly Plan</a>
-                                    <a href="#" className="btn-main opt-2 w-100">Get Yearly Plan</a>
+                                    <Link to="/contact" className="btn-main opt-1 w-100">Get Monthly Plan</Link>
+                                    <Link to="/contact" className="btn-main opt-2 w-100">Get Yearly Plan</Link>
                                     <p className="fs-12">Auto renews at regular rate</p>
                                 </div>
                                 <div className="relative">
@@ -416,8 +416,8 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                                     <p className="fs-14">Normally <s>$29.99</s></p>
                                 </div>
                                 <div className="relative">
-                                    <a href="#" className="btn-main opt-1 w-100">Get Monthly Plan</a>
-                                    <a href="#" className="btn-main opt-2 w-100">Get Yearly Plan</a>
+                                    <Link to="/contact" className="btn-main opt-1 w-100">Get Monthly Plan</Link>
+                                    <Link to="/contact" className="btn-main opt-2 w-100">Get Yearly Plan</Link>
                                     <p className="fs-12">Auto renews at regular rate</p>
                                 </div>
                                 <div className="relative">
@@ -454,8 +454,8 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                                     <p className="fs-14">Normally <s>$39.99</s></p>
                                 </div>
                                 <div className="relative">
-                                    <a href="#" className="btn-main opt-1 w-100">Get Monthly Plan</a>
-                                    <a href="#" className="btn-main opt-2 w-100">Get Yearly Plan</a>
+                                    <Link to="/contact" className="btn-main opt-1 w-100">Get Monthly Plan</Link>
+                                    <Link to="/contact" className="btn-main opt-2 w-100">Get Yearly Plan</Link>
                                     <p className="fs-12">Auto renews at regular rate</p>
                                 </div>
                                 <div className="relative">
@@ -492,8 +492,8 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                                     <p className="fs-14">Normally <s>$59.99</s></p>
                                 </div>
                                 <div className="relative">
-                                    <a href="#" className="btn-main opt-1 w-100">Get Monthly Plan</a>
-                                    <a href="#" className="btn-main opt-2 w-100">Get Yearly Plan</a>
+                                    <Link to="/contact" className="btn-main opt-1 w-100">Get Monthly Plan</Link>
+                                    <Link to="/contact" className="btn-main opt-2 w-100">Get Yearly Plan</Link>
                                     <p className="fs-12">Auto renews at regular rate</p>
                                 </div>
                                 <div className="relative">
@@ -989,7 +989,7 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                             <h3 className="mb-0 fs-32 wow fadeInRight">Need 24/7 Protection From Cyber Attacks?</h3>
                         </div>
                         <div className="col-md-2">                            
-                            <Link className="btn-main fx-slide btn-line wow fadeInLeft" to="/contact"><span>Start Scan</span></Link>
+                            <Link className="btn-main fx-slide btn-line wow fadeInLeft" to="/platform?tab=demo"><span>Start Scan</span></Link>
                         </div>
                     </div>
                 </div>

@@ -3,6 +3,12 @@ import { Link, useLocation } from 'react-router-dom';
 
 const navLinks = [
   { label: 'Home', to: '/' },
+  { label: 'Platform', to: '/platform?tab=demo', children: [
+    { label: 'Live Demo', to: '/platform?tab=demo' },
+    { label: 'Dashboard', to: '/platform?tab=dashboard' },
+    { label: 'AI Triage', to: '/platform?tab=triage' },
+    { label: 'Investor', to: '/platform?tab=investor' },
+  ]},
   { label: 'Services', to: '/contact', children: [
     { label: 'Services 1', to: '/contact' },
     { label: 'Services 2', to: '/contact' },
@@ -18,12 +24,6 @@ const navLinks = [
     { label: 'Gallery Filter', to: '/contact' },
     { label: 'Gallery Carousel', to: '/contact' },
   ]},
-  { label: 'Projects', to: '/contact', children: [
-    { label: 'Projects 1', to: '/contact' },
-    { label: 'Projects 2', to: '/contact' },
-    { label: 'Project Single', to: '/contact' },
-  ]},
-  { label: 'Blog', to: '/contact' },
   { label: 'Contact Us', to: '/contact' },
 ];
 
@@ -145,7 +145,7 @@ const Navbar = () => {
                       {link.to ? (
                         <Link className="menu-item" to={link.to}>{link.label}</Link>
                       ) : (
-                        <a className="menu-item" href={link.href}>{link.label}</a>
+                        <Link className="menu-item" to="/contact">{link.label}</Link>
                       )}
                       {link.children && (
                         <ul style={getSubmenuStyles(link.label)}>
@@ -154,7 +154,7 @@ const Navbar = () => {
                               {child.to ? (
                                 <Link to={child.to}>{child.label}</Link>
                               ) : (
-                                <a href={child.href}>{child.label}</a>
+                                <Link to="/contact">{child.label}</Link>
                               )}
                             </li>
                           ))}
@@ -167,7 +167,7 @@ const Navbar = () => {
               </div>
               <div className="de-flex-col">
                 <div className="menu_side_area">
-                  <Link to="/contact" className="btn-main fx-slide btn-line me-2"><span>Start Scan</span></Link>
+                  <Link to="/platform?tab=demo" className="btn-main fx-slide btn-line me-2"><span>Start Scan</span></Link>
                   <Link to="/contact" className="btn-main fx-slide"><span>Explore Pricing</span></Link>
                   <span 
                     id="menu-btn" 

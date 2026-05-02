@@ -11,11 +11,11 @@ const Footer = () => {
                 <p>At Senitel, we’re committed to delivering professional, high-quality cybersecurity solutions. From proactive threat monitoring to advanced data protection, we help keep your business secure while preserving its reputation and protecting it from evolving digital threats.</p>
 
                 <div className="social-icons mb-sm-30">
-                  <a href="#"><i className="fa-brands fa-facebook-f"></i></a>
-                  <a href="#"><i className="fa-brands fa-x-twitter"></i></a>
-                  <a href="#"><i className="fa-brands fa-whatsapp"></i></a>
-                  <a href="#"><i className="fa-brands fa-instagram"></i></a>
-                  <a href="#"><i className="fa-brands fa-youtube"></i></a>
+                  <Link to="/contact"><i className="fa-brands fa-facebook-f"></i></Link>
+                  <Link to="/contact"><i className="fa-brands fa-x-twitter"></i></Link>
+                  <Link to="/contact"><i className="fa-brands fa-whatsapp"></i></Link>
+                  <Link to="/contact"><i className="fa-brands fa-instagram"></i></Link>
+                  <Link to="/contact"><i className="fa-brands fa-youtube"></i></Link>
                 </div>
               </div>
 
@@ -87,8 +87,8 @@ const Footer = () => {
                       &copy; 2026 - Senitel by Designesia
                     </div>
                     <ul className="menu-simple">
-                      <li><a href="#">Terms &amp; Conditions</a></li>
-                      <li><a href="#">Privacy Policy</a></li>
+                      <li><Link to="/contact">Terms &amp; Conditions</Link></li>
+                      <li><Link to="/contact">Privacy Policy</Link></li>
                     </ul>
                   </div>
                 </div>

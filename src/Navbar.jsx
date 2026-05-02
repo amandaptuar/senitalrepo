@@ -9,20 +9,10 @@ const navLinks = [
     { label: 'AI Triage', to: '/platform?tab=triage' },
     { label: 'Investor', to: '/platform?tab=investor' },
   ]},
-  { label: 'Services', to: '/contact', children: [
-    { label: 'Services 1', to: '/contact' },
-    { label: 'Services 2', to: '/contact' },
-    { label: 'Services 3', to: '/contact' },
-    { label: 'Services Single', to: '/contact' },
-    { label: 'Pricing', to: '/contact' },
-    { label: 'Appointment', to: '/contact' },
-  ]},
+  { label: 'Services', to: '/services' },
   { label: 'About', to: '/about', children: [
     { label: 'About Us', to: '/about' },
-    { label: 'Our Team', to: '/contact' },
-    { label: 'Careers', to: '/contact' },
-    { label: 'Gallery Filter', to: '/contact' },
-    { label: 'Gallery Carousel', to: '/contact' },
+    { label: 'Our Team', to: '/team' },
   ]},
   { label: 'Contact Us', to: '/contact' },
 ];

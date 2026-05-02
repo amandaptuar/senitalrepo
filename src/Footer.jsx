@@ -26,7 +26,7 @@ const Footer = () => {
                       <h5>Company</h5>
                       <ul>
                         <li><Link to="/">Home</Link></li>
-                        <li><Link to="/contact">Our Services</Link></li>
+                        <li><Link to="/services">Our Services</Link></li>
                         <li><Link to="/contact">Gallery</Link></li>
                         <li><Link to="/about">About Us</Link></li>
                         <li><Link to="/contact">Blog</Link></li>
@@ -39,12 +39,12 @@ const Footer = () => {
                     <div className="widget">
                       <h5>Our Services</h5>
                       <ul>
-                        <li><Link to="/contact">Network Security</Link></li>
-                        <li><Link to="/contact">Data Encryption</Link></li>
-                        <li><Link to="/contact">Identity & Access</Link></li>
-                        <li><Link to="/contact">Security Monitoring</Link></li>
-                        <li><Link to="/contact">Backup & Recovery</Link></li>
-                        <li><Link to="/contact">Security Configuration</Link></li>
+                        <li><Link to="/services">Network Security</Link></li>
+                        <li><Link to="/services">Data Encryption</Link></li>
+                        <li><Link to="/services">Identity & Access</Link></li>
+                        <li><Link to="/services">Security Monitoring</Link></li>
+                        <li><Link to="/services">Backup & Recovery</Link></li>
+                        <li><Link to="/services">Security Configuration</Link></li>
                       </ul>
                     </div>
                   </div>

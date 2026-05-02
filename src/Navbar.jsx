@@ -65,6 +65,7 @@ const Navbar = () => {
 
   const toggleDropdown = (label, e) => {
     e.preventDefault(); 
+    e.stopPropagation();
     setOpenDropdowns(prev => ({
       ...prev,
       [label]: !prev[label]
@@ -94,13 +95,12 @@ const Navbar = () => {
       const isOpen = openDropdowns[label];
       return { 
         display: 'block',
-        maxHeight: isOpen ? '400px' : '0px',
-        paddingTop: isOpen ? '5px' : '0px',
-        paddingBottom: isOpen ? '5px' : '0px',
-        overflow: 'hidden',
-        transition: 'all 0.4s ease',
+        maxHeight: isOpen ? '500px' : '0px',
         opacity: isOpen ? 1 : 0,
-        visibility: isOpen ? 'visible' : 'hidden'
+        overflow: 'hidden',
+        transition: 'max-height 0.4s ease-in-out, opacity 0.4s ease-in-out',
+        margin: 0,
+        padding: 0
       };
     }
     return {}; 

@@ -61,8 +61,8 @@ const Home = () => {
                     <div className="col-lg-6">
                         <div className="spacer-double sm-hide"></div>
                         <div className="subtitle s2 mb-3" data--delay=".0s">Welcome to CyberGuard</div>
-                        <h1 className="" data--delay=".2s">Your Partner in Total Cyber Security</h1>
-                        <p className="col-lg-10" data--delay=".4s">Protect your business from digital threats with cutting-edge cybersecurity solutions—24/7 monitoring, penetration testing, and expert-driven defense strategies.</p>
+                        <h1 className="" data--delay=".2s">Smart AI Cybersecurity and Secure Data Movement for Growing Enterprises</h1>
+                        <p className="col-lg-10" data--delay=".4s">Protect your organization with a modern, AI-powered security framework designed to detect threats faster, reduce risk, and ensure seamless data movement across your infrastructure. We help enterprises secure sensitive data, maintain compliance, and operate with confidence in an increasingly complex digital landscape.</p>
                         <Link className="btn-main mb10 mb-3" data--delay=".6s" to="/platform?tab=demo"><span>Start Scan</span></Link>
                         <div className="border-bottom my-3"></div>
                         <div className="d-lg-flex align-items-center text-light">
@@ -114,7 +114,7 @@ const Home = () => {
                 <div className="container">
                     <div className="row g-4">
                         <div className="col-md-10">
-                            <h3 className="mb-0 fs-32">Need 24/7 Protection From Cyber Attacks?</h3>
+                            <h3 className="mb-0 fs-32">Require 24/7 Protection from Advanced Artificial Intelligence Cyber Threats?</h3>
                         </div>
                         <div className="col-md-2">                            
                             <Link className="btn-main fx-slide btn-line" to="/platform?tab=demo"><span>Start Scan</span></Link>
@@ -130,7 +130,7 @@ const Home = () => {
                             <div className="spacer-single"></div>
                             <div className="sw-text-wrapper">
                                 <div className="subtitle">Cybersecurity Experts</div>
-                                <h2 className="" data--delay=".2s">Comprehensive Cybersecurity Solutions for Modern Threats</h2>
+                                <h2 className="" data--delay=".2s">AI-Powered Cybersecurity Solutions for Modern Threats</h2>
                             </div>
                         </div>
                         <div className="spacer-single"></div>
@@ -140,24 +140,24 @@ const Home = () => {
                         <div className="col-lg-4 col-md-6">
                             <img src="images/icons-dark/padlock.png" className="absolute w-100px p-3 mb-3 z-2" alt="Network Security Icon" />
                             <div className="ps-100 fs-16">
-                                <h4>Network Security</h4>
-                                <p>Protect critical infrastructure with firewalls, intrusion detection systems, and real-time threat monitoring.</p>
+                                <h4>Security tool consolidation</h4>
+                                <p>enterprises reducing vendor count from 45+ to unified platforms</p>
                             </div>
                         </div>
 
                         <div className="col-lg-4 col-md-6">
                             <img src="images/icons-dark/cloud.png" className="absolute w-100px p-3 mb-3 z-2" alt="Cloud Security Icon" />
                             <div className="ps-100 fs-16">
-                                <h4>Cloud Security</h4>
-                                <p>Ensure safe cloud environments with encryption, access control, and advanced identity management solutions.</p>
+                                <h4>Proof-based security mandates</h4>
+                                <p>SEC cyber rules, NIS2 (EU), UAE PDPL requiring demonstrable controls</p>
                             </div>
                         </div>
 
                         <div className="col-lg-4 col-md-6">
                             <img src="images/icons-dark/quality.png" className="absolute w-100px p-3 mb-3 z-2" alt="Compliance Icon" />
                             <div className="ps-100 fs-16">
-                                <h4>Regulatory Compliance</h4>
-                                <p>Stay ahead of industry regulations like GDPR, HIPAA, and ISO by implementing strong security frameworks.</p>
+                                <h4>AI-driven attack acceleration</h4>
+                                <p>autonomous offensive tools require autonomous defense responses</p>
                             </div>
                         </div>
                     </div>
@@ -172,9 +172,26 @@ const Home = () => {
                         <div className="col-lg-12">
                             <div className="text-center">
                                 <div className="subtitle">What We Provide</div> 
-                                <h2 className="" data--delay=".2s">Robust Cybersecurity Services for Today’s Threats</h2>
-                                <p className="lead" data--delay=".4s">Protect your business from ever-evolving cyber risks with our end-to-end security solutions.
-We offer advanced threat detection, real-time monitoring, and proactive defense strategies tailored to your infrastructure. Whether you're safeguarding sensitive data or ensuring compliance, our robust cybersecurity services help you stay secure, resilient, and ahead of the threat curve.</p>
+                                <h2 className="" data--delay=".2s">Leverage intelligent security tools powered by AI</h2>
+                                <p className="lead" data--delay=".4s">Detect threats, automate responses, and reduce manual workload across your infrastructure.</p>
+                                <div className="row text-start justify-content-center mt-4" data--delay=".6s">
+                                    <div className="col-lg-10">
+                                        <div className="row">
+                                            <div className="col-md-6">
+                                                <ul className="ul-check white">
+                                                    <li>AI threat detection</li>
+                                                    <li>Automated incident response</li>
+                                                </ul>
+                                            </div>
+                                            <div className="col-md-6">
+                                                <ul className="ul-check white">
+                                                    <li>Behavior-based anomaly detection</li>
+                                                    <li>Security workflow automation</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>                                       
                     </div>
@@ -183,18 +200,24 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
 
                         <div className="col-lg-6">
                             <Link to="/contact" className="hover overflow-hidden bg-dark text-light d-block">
-                                <div className="row g-0 align-items-end">
-                                    <div className="col-md-6">
-                                        <div className="relative overflow-hidden">
+                                <div className="row g-0 align-items-stretch">
+                                    <div className="col-md-5">
+                                        <div className="relative overflow-hidden h-100">
                                             <h3 className="abs text-white fs-32 lh-1 p-4 top-0 start-0 z-3">01</h3>
                                             <div className="sw-overlay z-2 op-3"></div>
-                                            <img src="images/services/1.webp" className="w-100 hover-scale-1-2" alt="Network Security" loading="lazy" />
+                                            <img src="images/services/1.webp" className="w-100 h-100 hover-scale-1-2" style={{ objectFit: 'cover' }} alt="AI Cybersecurity Consulting" loading="lazy" />
                                         </div>
                                     </div>
-                                    <div className="col-md-6">
-                                        <div className="p-40">
-                                            <h3>Network Security</h3>
-                                            <p className="mb-0">Deploying firewalls and intrusion detection systems to safeguard networks.</p>
+                                    <div className="col-md-7 d-flex flex-column justify-content-center">
+                                        <div className="p-4 p-md-5 text-wrap">
+                                            <h3>AI Cybersecurity Consulting</h3>
+                                            <p>Work with experts to design and implement a future-ready security strategy tailored to your business, compliance needs, and risk profile.</p>
+                                            <ul className="ul-check white mt-3">
+                                                <li>Security architecture design</li>
+                                                <li>Risk assessment &amp; gap analysis</li>
+                                                <li>Compliance (HIPAA, SOC2, ISO)</li>
+                                                <li>AI integration strategy</li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -203,18 +226,24 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
 
                         <div className="col-lg-6">
                             <Link to="/contact" className="hover overflow-hidden bg-color text-light d-block">
-                                <div className="row g-0 align-items-end">
-                                    <div className="col-md-6">
-                                        <div className="relative overflow-hidden">
+                                <div className="row g-0 align-items-stretch">
+                                    <div className="col-md-5">
+                                        <div className="relative overflow-hidden h-100">
                                             <h3 className="abs text-white fs-32 lh-1 p-4 top-0 start-0 z-3">02</h3>
                                             <div className="sw-overlay z-2 op-3"></div>
-                                            <img src="images/services/2.webp" className="w-100 hover-scale-1-2" alt="Data Encryption" loading="lazy" />
+                                            <img src="images/services/2.webp" className="w-100 h-100 hover-scale-1-2" style={{ objectFit: 'cover' }} alt="Offensive Security & Metasploit Framework" loading="lazy" />
                                         </div>
                                     </div>
-                                    <div className="col-md-6">
-                                        <div className="p-40">
-                                            <h3>Data Encryption</h3>
-                                            <p className="mb-0">Encrypting sensitive data at rest and in transit using advanced encryption.</p>
+                                    <div className="col-md-7 d-flex flex-column justify-content-center">
+                                        <div className="p-4 p-md-5 text-wrap">
+                                            <h3>Offensive Security &amp; Metasploit Framework</h3>
+                                            <p>Simulate real-world attacks using industry-standard tools like Metasploit to identify vulnerabilities before hackers do.</p>
+                                            <ul className="ul-check white mt-3">
+                                                <li>Penetration testing</li>
+                                                <li>Exploit development</li>
+                                                <li>Vulnerability assessment</li>
+                                                <li>Red team operations</li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -223,18 +252,24 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
 
                         <div className="col-lg-6">
                             <Link to="/contact" className="hover overflow-hidden bg-dark text-light d-block">
-                                <div className="row g-0 align-items-end">
-                                    <div className="col-sm-6">
-                                        <div className="p-40">
-                                            <h3>Identity & Access</h3>
-                                            <p className="mb-0">Managing user identities and access with MFA and detailed role-based control.</p>
+                                <div className="row g-0 align-items-stretch">
+                                    <div className="col-md-7 d-flex flex-column justify-content-center">
+                                        <div className="p-4 p-md-5 text-wrap">
+                                            <h3>Security Orchestration &amp; AI (SOAR)</h3>
+                                            <p>Streamline and scale your security operations using AI-driven orchestration and automated response systems.</p>
+                                            <ul className="ul-check white mt-3">
+                                                <li>Incident response automation</li>
+                                                <li>SIEM &amp; SOAR integration</li>
+                                                <li>Alert prioritization</li>
+                                                <li>Workflow optimization</li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <div className="col-sm-6">
-                                        <div className="relative overflow-hidden">
+                                    <div className="col-md-5">
+                                        <div className="relative overflow-hidden h-100">
                                             <h3 className="abs text-white fs-32 lh-1 p-4 top-0 start-0 z-3">03</h3>
                                             <div className="sw-overlay z-2 op-3"></div>
-                                            <img src="images/services/3.webp" className="w-100 hover-scale-1-2" alt="Identity & Access" loading="lazy" />
+                                            <img src="images/services/3.webp" className="w-100 h-100 hover-scale-1-2" style={{ objectFit: 'cover' }} alt="Security Orchestration & AI" loading="lazy" />
                                         </div>
                                     </div>
                                 </div>
@@ -243,18 +278,24 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
 
                         <div className="col-lg-6">
                             <Link to="/contact" className="hover overflow-hidden bg-dark text-light d-block">
-                                <div className="row g-0 align-items-end">
-                                    <div className="col-sm-6">
-                                        <div className="p-40">
-                                            <h3>Security Monitoring</h3>
-                                            <p className="mb-0">24/7 monitoring with advanced SIEM systems for real-time detection.</p>
+                                <div className="row g-0 align-items-stretch">
+                                    <div className="col-md-7 d-flex flex-column justify-content-center">
+                                        <div className="p-4 p-md-5 text-wrap">
+                                            <h3>Attack Simulation &amp; Breach Testing</h3>
+                                            <p>Test your defenses with realistic cyber attack simulations to measure readiness and improve response strategies.</p>
+                                            <ul className="ul-check white mt-3">
+                                                <li>Breach &amp; attack simulation (BAS)</li>
+                                                <li>Phishing simulation</li>
+                                                <li>Ransomware scenario testing</li>
+                                                <li>Security posture validation</li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <div className="col-sm-6">
-                                        <div className="relative overflow-hidden">
+                                    <div className="col-md-5">
+                                        <div className="relative overflow-hidden h-100">
                                             <h3 className="abs text-white fs-32 lh-1 p-4 top-0 start-0 z-3">04</h3>
                                             <div className="sw-overlay z-2 op-3"></div>
-                                            <img src="images/services/4.webp" className="w-100 hover-scale-1-2" alt="Security Monitoring" loading="lazy" />
+                                            <img src="images/services/4.webp" className="w-100 h-100 hover-scale-1-2" style={{ objectFit: 'cover' }} alt="Attack Simulation & Breach Testing" loading="lazy" />
                                         </div>
                                     </div>
                                 </div>
@@ -263,18 +304,24 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
 
                         <div className="col-lg-6">
                             <Link to="/contact" className="hover overflow-hidden bg-color text-light d-block">
-                                <div className="row g-0 align-items-end">
-                                    <div className="col-md-6">
-                                        <div className="relative overflow-hidden">
+                                <div className="row g-0 align-items-stretch">
+                                    <div className="col-md-5">
+                                        <div className="relative overflow-hidden h-100">
                                             <h3 className="abs text-white fs-32 lh-1 p-4 top-0 start-0 z-3">05</h3>
                                             <div className="sw-overlay z-2 op-3"></div>
-                                            <img src="images/services/5.webp" className="w-100 hover-scale-1-2" alt="Backup & Recovery" loading="lazy" />
+                                            <img src="images/services/5.webp" className="w-100 h-100 hover-scale-1-2" style={{ objectFit: 'cover' }} alt="Data Protection & Intelligent Encryption" loading="lazy" />
                                         </div>
                                     </div>
-                                    <div className="col-md-6">
-                                        <div className="p-40">
-                                            <h3>Backup & Recovery</h3>
-                                            <p className="mb-0">Protecting critical data with secure backups and rapid recovery plans.</p>
+                                    <div className="col-md-7 d-flex flex-column justify-content-center">
+                                        <div className="p-4 p-md-5 text-wrap">
+                                            <h3>Data Protection &amp; Intelligent Encryption</h3>
+                                            <p>Secure sensitive enterprise data with advanced encryption and AI-driven data protection strategies.</p>
+                                            <ul className="ul-check white mt-3">
+                                                <li>Data encryption (at rest &amp; in transit)</li>
+                                                <li>Data loss prevention (DLP)</li>
+                                                <li>Secure data movement</li>
+                                                <li>Cloud data security</li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -283,16 +330,16 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
 
                         <div className="col-lg-6">
                             <Link to="/contact" className="hover overflow-hidden bg-dark text-light d-block">
-                                <div className="row g-0 align-items-end">
-                                    <div className="col-md-6">
-                                        <div className="relative overflow-hidden">
+                                <div className="row g-0 align-items-stretch">
+                                    <div className="col-md-5">
+                                        <div className="relative overflow-hidden h-100">
                                             <h3 className="abs text-white fs-32 lh-1 p-4 top-0 start-0 z-3">06</h3>
                                             <div className="sw-overlay z-2 op-3"></div>
-                                            <img src="images/services/6.webp" className="w-100 hover-scale-1-2" alt="Security Configuration" loading="lazy" />
+                                            <img src="images/services/6.webp" className="w-100 h-100 hover-scale-1-2" style={{ objectFit: 'cover' }} alt="Security Configuration" loading="lazy" />
                                         </div>
                                     </div>
-                                    <div className="col-md-6">
-                                        <div className="p-40">
+                                    <div className="col-md-7 d-flex flex-column justify-content-center">
+                                        <div className="p-4 p-md-5 text-wrap">
                                             <h3>Security Configuration</h3>
                                             <p className="mb-0">Hardening systems and applying secure configurations across all infrastructure.</p>
                                         </div>
@@ -300,6 +347,7 @@ We offer advanced threat detection, real-time monitoring, and proactive defense 
                                 </div>
                             </Link>
                         </div>
+
                     </div>
 
 

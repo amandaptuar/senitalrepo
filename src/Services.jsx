@@ -80,11 +80,17 @@ const Services = () => {
 
                             <div className="row g-4">
                                 <div className="col-lg-4 col-md-6" data--delay="0s">
-                                    <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden">
+                                    <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden h-100">
                                         <div className="relative z-2" data--delay=".0s">
                                             <img src="/images/icons-white/cyber-security.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
-                                            <h4>Network Security</h4>
-                                            <p>Deploying firewalls and intrusion detection systems to safeguard networks.</p>
+                                            <h4>AI Cybersecurity Consulting</h4>
+                                            <p>Work with experts to design and implement a future-ready security strategy tailored to your business, compliance needs, and risk profile.</p>
+                                            <ul className="ul-check white mt-3 text-start mb-4">
+                                                <li>Security architecture design</li>
+                                                <li>Risk assessment &amp; gap analysis</li>
+                                                <li>Compliance (HIPAA, SOC2, ISO)</li>
+                                                <li>AI integration strategy</li>
+                                            </ul>
                                             <Link className="btn-main fx-slide bg-dark" to="/contact"><span>Learn More</span></Link>
                                         </div>
                                         <img src="/images/icons-white/cyber-security.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
@@ -92,11 +98,17 @@ const Services = () => {
                                 </div>
 
                                 <div className="col-lg-4 col-md-6" data--delay=".2s">
-                                    <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden">
+                                    <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden h-100">
                                         <div className="relative z-2" data--delay=".2s">
                                             <img src="/images/icons-white/encryption.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
-                                            <h4>Data Encryption</h4>
-                                            <p>Encrypting sensitive data at rest and in transit using advanced encryption.</p>
+                                            <h4>Offensive Security &amp; Metasploit</h4>
+                                            <p>Simulate real-world attacks using industry-standard tools like Metasploit to identify vulnerabilities before hackers do.</p>
+                                            <ul className="ul-check white mt-3 text-start mb-4">
+                                                <li>Penetration testing</li>
+                                                <li>Exploit development</li>
+                                                <li>Vulnerability assessment</li>
+                                                <li>Red team operations</li>
+                                            </ul>
                                             <Link className="btn-main fx-slide bg-dark" to="/contact"><span>Learn More</span></Link>
                                         </div>
                                         <img src="/images/icons-white/encryption.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
@@ -104,11 +116,17 @@ const Services = () => {
                                 </div>
 
                                 <div className="col-lg-4 col-md-6" data--delay=".4s">
-                                    <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden">
+                                    <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden h-100">
                                         <div className="relative z-2" data--delay=".4s">
                                             <img src="/images/icons-white/fingerprint.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
-                                            <h4>Identity & Access</h4>
-                                            <p>Managing user identities and access with MFA and detailed role-based control.</p>
+                                            <h4>Security Orchestration &amp; AI (SOAR)</h4>
+                                            <p>Streamline and scale your security operations using AI-driven orchestration and automated response systems.</p>
+                                            <ul className="ul-check white mt-3 text-start mb-4">
+                                                <li>Incident response automation</li>
+                                                <li>SIEM &amp; SOAR integration</li>
+                                                <li>Alert prioritization</li>
+                                                <li>Workflow optimization</li>
+                                            </ul>
                                             <Link className="btn-main fx-slide bg-dark" to="/contact"><span>Learn More</span></Link>
                                         </div>
                                         <img src="/images/icons-white/fingerprint.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
@@ -116,11 +134,17 @@ const Services = () => {
                                 </div>
 
                                 <div className="col-lg-4 col-md-6" data--delay=".6s">
-                                    <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden">
+                                    <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden h-100">
                                         <div className="relative z-2" data--delay=".6s">
                                             <img src="/images/icons-white/monitoring.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
-                                            <h4>Security Monitoring</h4>
-                                            <p>24/7 monitoring with advanced SIEM systems for real-time detection.</p>
+                                            <h4>Attack Simulation &amp; Breach Testing</h4>
+                                            <p>Test your defenses with realistic cyber attack simulations to measure readiness and improve response strategies.</p>
+                                            <ul className="ul-check white mt-3 text-start mb-4">
+                                                <li>Breach &amp; attack simulation (BAS)</li>
+                                                <li>Phishing simulation</li>
+                                                <li>Ransomware scenario testing</li>
+                                                <li>Security posture validation</li>
+                                            </ul>
                                             <Link className="btn-main fx-slide bg-dark" to="/contact"><span>Learn More</span></Link>
                                         </div>
                                         <img src="/images/icons-white/monitoring.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
@@ -128,11 +152,17 @@ const Services = () => {
                                 </div>
 
                                 <div className="col-lg-4 col-md-6" data--delay=".8s">
-                                    <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden">
+                                    <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden h-100">
                                         <div className="relative z-2" data--delay=".8s">
                                             <img src="/images/icons-white/cloud-storage.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
-                                            <h4>Backup & Recovery</h4>
-                                            <p>Protecting critical data with secure backups and rapid recovery plans.</p>
+                                            <h4>Data Protection &amp; Intelligent Encryption</h4>
+                                            <p>Secure sensitive enterprise data with advanced encryption and AI-driven data protection strategies.</p>
+                                            <ul className="ul-check white mt-3 text-start mb-4">
+                                                <li>Data encryption (at rest &amp; in transit)</li>
+                                                <li>Data loss prevention (DLP)</li>
+                                                <li>Secure data movement</li>
+                                                <li>Cloud data security</li>
+                                            </ul>
                                             <Link className="btn-main fx-slide bg-dark" to="/contact"><span>Learn More</span></Link>
                                         </div>
                                         <img src="/images/icons-white/cloud-storage.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
@@ -140,12 +170,12 @@ const Services = () => {
                                 </div>
 
                                 <div className="col-lg-4 col-md-6" data--delay="1s">
-                                    <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden">
+                                    <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden h-100">
                                         <div className="relative z-2" data--delay="1s">
                                             <img src="/images/icons-white/settings.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
                                             <h4>Security Configuration</h4>
                                             <p>Hardening systems and applying secure configurations across all infrastructure.</p>
-                                            <Link className="btn-main fx-slide bg-dark" to="/contact"><span>Learn More</span></Link>
+                                            <Link className="btn-main fx-slide bg-dark mt-auto" to="/contact"><span>Learn More</span></Link>
                                         </div>
                                         <img src="/images/icons-white/settings.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
                                     </div>
@@ -223,7 +253,7 @@ const Services = () => {
                         <div className="container">
                             <div className="row g-4">
                                 <div className="col-md-10">
-                                    <h3 className="mb-0 fs-32">Need 24/7 Protection From Cyber Attacks?</h3>
+                                    <h3 className="mb-0 fs-32">Require 24/7 Protection from Advanced Artificial Intelligence Cyber Threats?</h3>
                                 </div>
                                 <div className="col-md-2">                            
                                     <Link className="btn-main fx-slide btn-line" to="/platform?tab=demo"><span>Start Scan</span></Link>

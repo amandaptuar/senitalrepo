@@ -60,10 +60,10 @@ const Home = () => {
                   <div className="row g-4 gx-5 align-items-center">
                     <div className="col-lg-6">
                         <div className="spacer-double sm-hide"></div>
-                        <div className="subtitle s2 mb-3" data--delay=".0s">Welcome to CyberGuard</div>
-                        <h1 className="" data--delay=".2s">Smart AI Cybersecurity and Secure Data Movement for Growing Enterprises</h1>
-                        <p className="col-lg-10" data--delay=".4s">Protect your organization with a modern, AI-powered security framework designed to detect threats faster, reduce risk, and ensure seamless data movement across your infrastructure. We help enterprises secure sensitive data, maintain compliance, and operate with confidence in an increasingly complex digital landscape.</p>
-                        <Link className="btn-main mb10 mb-3" data--delay=".6s" to="/platform?tab=demo"><span>Start Scan</span></Link>
+                        <div className="subtitle s2 mb-3 wow fadeInUp" data-wow-delay=".0s">Welcome to Sentinel</div>
+                        <h1 className="wow fadeInUp" data-wow-delay=".2s">Smart AI Cybersecurity and Secure Data Movement for Growing Enterprises</h1>
+                        <p className="col-lg-10 wow fadeInUp" data-wow-delay=".4s">Protect your organization with a modern, AI-powered security framework designed to detect threats faster, reduce risk, and ensure seamless data movement across your infrastructure. We help enterprises secure sensitive data, maintain compliance, and operate with confidence in an increasingly complex digital landscape.</p>
+                        <Link className="btn-main mb10 mb-3 wow fadeInUp" data-wow-delay=".6s" to="/platform?tab=demo"><span>Start Scan</span></Link>
                         <div className="border-bottom my-3"></div>
                         <div className="d-lg-flex align-items-center text-light">
                             <div className="me-3">Google Rating</div>
@@ -80,7 +80,7 @@ const Home = () => {
                     </div>
                     <div className="col-lg-6">
                         <div className="relative">
-                            <div className="bg-blur text-light shadow-1 abs end-0 abs-middle p-4 rounded-1 overflow-hidden z-2" data--delay=".5s">
+                            <div className="bg-blur text-light shadow-1 abs end-0 abs-middle p-4 rounded-1 overflow-hidden z-2 wow fadeIn" data-wow-delay=".5s">
                                 <div className="d-flex justify-content-center">
                                     <i className="fs-60 id-color fa-solid fa-shield-halved"></i>
                                     <div className="ms-3">
@@ -89,7 +89,7 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="bg-blur shadow-1 abs start-0 bottom-10 p-4 rounded-1 overflow-hidden z-2" data--delay=".7s">
+                            <div className="bg-blur shadow-1 abs start-0 bottom-10 p-4 rounded-1 overflow-hidden z-2 wow fadeIn" data-wow-delay=".7s">
                                 <div className="d-flex justify-content-center">
                                     <i className="fs-60 id-color fa-solid fa-user-group"></i>
                                     <div className="ms-3">
@@ -98,7 +98,7 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
-                            <img src="images/misc/c2.webp" className="w-100" data--delay=".3s" alt="" />
+                            <img src="images/misc/c2.webp" className="w-100 wow scaleIn" data-wow-delay=".3s" alt="" />
                         </div>                        
                     </div>
                   </div>
@@ -129,14 +129,14 @@ const Home = () => {
                         <div className="col-lg-12 text-center">
                             <div className="spacer-single"></div>
                             <div className="sw-text-wrapper">
-                                <div className="subtitle">Cybersecurity Experts</div>
-                                <h2 className="" data--delay=".2s">AI-Powered Cybersecurity Solutions for Modern Threats</h2>
+                                <div className="subtitle wow fadeInUp">Cybersecurity Experts</div>
+                                <h2 className="wow fadeInUp" data-wow-delay=".2s">AI-Powered Cybersecurity Solutions for Modern Threats</h2>
                             </div>
                         </div>
                         <div className="spacer-single"></div>
                     </div>
 
-                    <div className="row g-4 slider-extra sm-hide" data--delay=".4s">
+                    <div className="row g-4 slider-extra sm-hide wow fadeInUp" data-wow-delay=".4s">
                         <div className="col-lg-4 col-md-6">
                             <img src="images/icons-dark/padlock.png" className="absolute w-100px p-3 mb-3 z-2" alt="Network Security Icon" />
                             <div className="ps-100 fs-16">
@@ -171,10 +171,10 @@ const Home = () => {
                     <div className="row g-4 justify-content-center mb-2">
                         <div className="col-lg-12">
                             <div className="text-center">
-                                <div className="subtitle">What We Provide</div> 
-                                <h2 className="" data--delay=".2s">Leverage intelligent security tools powered by AI</h2>
-                                <p className="lead" data--delay=".4s">Detect threats, automate responses, and reduce manual workload across your infrastructure.</p>
-                                <div className="row text-start justify-content-center mt-4" data--delay=".6s">
+                                <div className="subtitle wow fadeInUp">What We Provide</div> 
+                                <h2 className="wow fadeInUp" data-wow-delay=".2s">Leverage intelligent security tools powered by AI</h2>
+                                <p className="lead wow fadeInUp" data-wow-delay=".4s">Detect threats, automate responses, and reduce manual workload across your infrastructure.</p>
+                                <div className="row text-start justify-content-center mt-4 wow fadeInUp" data-wow-delay=".6s">
                                     <div className="col-lg-10">
                                         <div className="row">
                                             <div className="col-md-6">
@@ -199,7 +199,7 @@ const Home = () => {
                     <div className="row g-0 mb-3">
 
                         <div className="col-lg-6">
-                            <Link to="/contact" className="hover overflow-hidden bg-dark text-light d-block">
+                            <Link to="/services/ai-cybersecurity-consulting" className="hover overflow-hidden bg-dark text-light d-block">
                                 <div className="row g-0 align-items-stretch">
                                     <div className="col-md-5">
                                         <div className="relative overflow-hidden h-100">
@@ -225,7 +225,7 @@ const Home = () => {
                         </div>
 
                         <div className="col-lg-6">
-                            <Link to="/contact" className="hover overflow-hidden bg-color text-light d-block">
+                            <Link to="/services/metasploit-framework" className="hover overflow-hidden bg-color text-light d-block">
                                 <div className="row g-0 align-items-stretch">
                                     <div className="col-md-5">
                                         <div className="relative overflow-hidden h-100">
@@ -251,7 +251,7 @@ const Home = () => {
                         </div>
 
                         <div className="col-lg-6">
-                            <Link to="/contact" className="hover overflow-hidden bg-dark text-light d-block">
+                            <Link to="/services/ai-security-tools-automation" className="hover overflow-hidden bg-dark text-light d-block">
                                 <div className="row g-0 align-items-stretch">
                                     <div className="col-md-7 d-flex flex-column justify-content-center">
                                         <div className="p-4 p-md-5 text-wrap">
@@ -358,7 +358,7 @@ const Home = () => {
                 <div className="container">
                     <div className="row g-4">
                         <div className="col-md-3 col-sm-6">
-                            <div className="de_count text-center" data--delay=".0s">
+                            <div className="de_count text-center wow fadeInUp" data-wow-delay=".0s">
                                 <i className="p-3 circle bg-color text-light fs-40 d-inline-block mb-2 icofont-briefcase-2"></i>
                                 <h3 className="fs-40 mb-0 lh-1-1"><span className="timer" data-to="65250" data-speed="3000">0</span>+</h3>
                                 Hours of Works
@@ -366,7 +366,7 @@ const Home = () => {
                         </div>
 
                         <div className="col-md-3 col-sm-6">
-                            <div className="de_count text-center" data--delay=".2s">
+                            <div className="de_count text-center wow fadeInUp" data-wow-delay=".2s">
                                 <i className="p-3 circle bg-color text-light fs-40 d-inline-block mb-2 icofont-thumbs-up"></i>
                                 <h3 className="fs-40 mb-0 lh-1-1"><span className="timer" data-to="23160" data-speed="3000">0</span>+</h3>
                                 Happy Customers
@@ -374,7 +374,7 @@ const Home = () => {
                         </div>
 
                         <div className="col-md-3 col-sm-6">
-                            <div className="de_count text-center" data--delay=".4s">
+                            <div className="de_count text-center wow fadeInUp" data-wow-delay=".4s">
                                 <i className="p-3 circle bg-color text-light fs-40 d-inline-block mb-2 icofont-users-alt-3"></i>
                                 <h3 className="fs-40 mb-0 lh-1-1"><span className="timer" data-to="1500" data-speed="3000">0</span>+</h3>
                                 Experienced Workers
@@ -382,7 +382,7 @@ const Home = () => {
                         </div>
 
                         <div className="col-md-3 col-sm-6">
-                            <div className="de_count text-center" data--delay=".6s">
+                            <div className="de_count text-center wow fadeInUp" data-wow-delay=".6s">
                                 <i className="p-3 circle bg-color text-light fs-40 d-inline-block mb-2 icofont-badge"></i>
                                 <h3 className="fs-40 mb-0 lh-1-1"><span className="timer" data-to="20" data-speed="3000">0</span>+</h3>
                                 Years of Experience
@@ -397,9 +397,9 @@ const Home = () => {
                 <div className="container">
                     <div className="row g-4 mb-2">
                         <div className="col-lg-12 text-center">
-                            <div className="subtitle mb-3">Cybersecurity Pricing</div>
-                            <h2 className="" data--delay=".2s">Flexible Plans for Every Security Need</h2>
-                            <p className="lead" data--delay=".4s">
+                            <div className="subtitle mb-3 wow fadeInUp">Cybersecurity Pricing</div>
+                            <h2 className="wow fadeInUp" data-wow-delay=".2s">Flexible Plans for Every Security Need</h2>
+                            <p className="lead wow fadeInUp" data-wow-delay=".4s">
                                 Our transparent pricing ensures enterprise-grade protection, compliance, and 24/7 threat monitoring without hidden costs.
                             </p>
                         </div>
@@ -578,9 +578,9 @@ const Home = () => {
                     <div className="row g-4 justify-content-center mb-2">
                         <div className="col-lg-12">
                             <div className="text-center">
-                                <div className="subtitle">Real Study Case</div> 
-                                <h2 className="" data--delay=".2s">Real-World Cybersecurity Success Stories</h2>
-                                <p className="lead" data--delay=".4s">
+                                <div className="subtitle wow fadeInUp">Real Study Case</div> 
+                                <h2 className="wow fadeInUp" data-wow-delay=".2s">Real-World Cybersecurity Success Stories</h2>
+                                <p className="lead wow fadeInUp" data-wow-delay=".4s">
                                 Explore how our tailored cybersecurity solutions have helped businesses overcome critical challenges — from preventing data breaches and fixing cloud vulnerabilities to achieving compliance and building long-term resilience.
                                 </p>
                             </div>
@@ -590,7 +590,7 @@ const Home = () => {
                     <div className="row g-4">
                         {/* service item begin */}
                         <div className="col-lg-4 col-sm-6">
-                            <div className="hover rounded-1 overflow-hidden relative text-light text-center" data--delay=".0s">
+                            <div className="hover rounded-1 overflow-hidden relative text-light text-center wow fadeInUp" data-wow-delay=".0s">
                                 <img src="images/projects/1.webp" className="hover-scale-1-1 w-100" alt="" />
                                 <div className="abs w-100 px-4 hover-op-1 z-4 hover-mt-40 abs-centered">
                                     <div className="mb-3">Safeguard your online store with end-to-end protection, preventing data breaches, fraud, and unauthorized access.</div>
@@ -607,7 +607,7 @@ const Home = () => {
 
                         {/* service item begin */}
                         <div className="col-lg-4 col-sm-6">
-                            <div className="hover rounded-1 overflow-hidden relative text-light text-center" data--delay=".3s">
+                            <div className="hover rounded-1 overflow-hidden relative text-light text-center wow fadeInUp" data-wow-delay=".3s">
                                 <img src="images/projects/2.webp" className="hover-scale-1-1 w-100" alt="" />
                                 <div className="abs w-100 px-4 hover-op-1 z-4 hover-mt-40 abs-centered">
                                     <div className="mb-3">Eliminate hidden cloud vulnerabilities with expert misconfiguration audits, secure policies, and real-time fixes.</div>
@@ -624,7 +624,7 @@ const Home = () => {
 
                         {/* service item begin */}
                         <div className="col-lg-4 col-sm-6">
-                            <div className="hover rounded-1 overflow-hidden relative text-light text-center" data--delay=".6s">
+                            <div className="hover rounded-1 overflow-hidden relative text-light text-center wow fadeInUp" data-wow-delay=".6s">
                                 <img src="images/projects/3.webp" className="hover-scale-1-1 w-100" alt="" />
                                 <div className="abs w-100 px-4 hover-op-1 z-4 hover-mt-40 abs-centered">
                                     <div className="mb-3">Strengthen your firm’s defenses with advanced protection, compliance support, and incident response readiness.</div>
@@ -650,9 +650,9 @@ const Home = () => {
                 <div className="container">
                     <div className="row g-4 mb-2">
                         <div className="col-lg-12 text-center">
-                            <div className="subtitle mb-3">Testimonials</div>
-                            <h2 className="" data--delay=".2s">Hear It from Our Happy Customers</h2>
-                            <p className="lead" data--delay=".4s">See how our cybersecurity solutions have helped businesses stay secure, compliant, and resilient against evolving digital threats.</p>
+                            <div className="subtitle mb-3 wow fadeInUp">Testimonials</div>
+                            <h2 className="wow fadeInUp" data-wow-delay=".2s">Hear It from Our Happy Customers</h2>
+                            <p className="lead wow fadeInUp" data-wow-delay=".4s">See how our cybersecurity solutions have helped businesses stay secure, compliant, and resilient against evolving digital threats.</p>
                         </div>
                     </div>
                 </div>
@@ -966,16 +966,16 @@ const Home = () => {
                 <div className="container">
                     <div className="row g-4 mb-2">
                         <div className="col-lg-12 text-center">
-                            <div className="subtitle mb-3">Testimonials</div>
-                            <h2 className="" data--delay=".2s">Hear It from Our Happy Customers</h2>
-                            <p className="lead" data--delay=".4s">See how our cybersecurity solutions have helped businesses stay secure, compliant, and resilient against evolving digital threats.</p>
+                            <div className="subtitle mb-3 wow fadeInUp">Testimonials</div>
+                            <h2 className="wow fadeInUp" data-wow-delay=".2s">Hear It from Our Happy Customers</h2>
+                            <p className="lead wow fadeInUp" data-wow-delay=".4s">See how our cybersecurity solutions have helped businesses stay secure, compliant, and resilient against evolving digital threats.</p>
                         </div>
                     </div>
 
                     <div className="row g-4">
 
                         <div className="col-lg-4">
-                            <Link to="/contact" className="d-block hover relative rounded-20 overflow-hidden text-light">
+                            <Link to="/contact" className="d-block hover relative rounded-20 overflow-hidden text-light wow fadeInUp" data-wow-delay=".0s">
                                 <img src="images/news/s1.webp" className="w-100 hover-scale-1-1" alt="Cybersecurity News" />
                                 <div className="absolute start-0 bottom-0 p-40 z-2">
                                     <div className="bg-color rounded-1 p-0 px-2 d-inline-block mb-3">Cyber Insights</div>
@@ -991,7 +991,7 @@ const Home = () => {
                         </div>
 
                         <div className="col-lg-4">
-                            <Link to="/contact" className="d-block hover relative rounded-20 overflow-hidden text-light">
+                            <Link to="/contact" className="d-block hover relative rounded-20 overflow-hidden text-light wow fadeInUp" data-wow-delay=".3s">
                                 <img src="images/news/s2.webp" className="w-100 hover-scale-1-1" alt="Cybersecurity News" />
                                 <div className="absolute start-0 bottom-0 p-40 z-2">
                                     <div className="bg-color rounded-1 p-0 px-2 d-inline-block mb-3">Threat Reports</div>
@@ -1007,7 +1007,7 @@ const Home = () => {
                         </div>
 
                         <div className="col-lg-4">
-                            <Link to="/contact" className="d-block hover relative rounded-20 overflow-hidden text-light">
+                            <Link to="/contact" className="d-block hover relative rounded-20 overflow-hidden text-light wow fadeInUp" data-wow-delay=".6s">
                                 <img src="images/news/s3.webp" className="w-100 hover-scale-1-1" alt="Cybersecurity News" />
                                 <div className="absolute start-0 bottom-0 p-40 z-2">
                                     <div className="bg-color rounded-1 p-0 px-2 d-inline-block mb-3">Best Practices</div>
@@ -1033,10 +1033,10 @@ const Home = () => {
                 </div>
                 <div className="container">
                     <div className="row g-4">
-                        <div className="col-md-10">
+                        <div className="col-md-10 wow fadeInRight" data-wow-delay=".0s">
                             <h3 className="mb-0 fs-32">Need 24/7 Protection From Cyber Attacks?</h3>
                         </div>
-                        <div className="col-md-2">                            
+                        <div className="col-md-2 wow fadeInRight" data-wow-delay=".2s">                            
                             <Link className="btn-main fx-slide btn-line" to="/platform?tab=demo"><span>Start Scan</span></Link>
                         </div>
                     </div>

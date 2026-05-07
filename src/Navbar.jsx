@@ -9,7 +9,12 @@ const navLinks = [
     { label: 'AI Triage', to: '/platform?tab=triage' },
     { label: 'Investor', to: '/platform?tab=investor' },
   ]},
-  { label: 'Services', to: '/services' },
+  { label: 'Services', to: '/services', children: [
+    { label: 'All Services', to: '/services' },
+    { label: 'Metasploit Framework', to: '/services/metasploit-framework' },
+    { label: 'AI Consulting', to: '/services/ai-cybersecurity-consulting' },
+    { label: 'AI Tools & Automation', to: '/services/ai-security-tools-automation' },
+  ]},
   { label: 'About', to: '/about', children: [
     { label: 'About Us', to: '/about' },
     { label: 'Our Team', to: '/team' },

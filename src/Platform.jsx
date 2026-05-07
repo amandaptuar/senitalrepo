@@ -201,13 +201,13 @@ const Platform = () => {
           {/* DEMO TAB */}
           {activeTab === 'demo' && (
             <div className="s-view active">
-              <div className="page-title">
+              <div className="page-title wow fadeInUp" data-wow-delay=".0s">
                 <p className="eyebrow">Interactive simulation</p>
                 <h2>Run a controlled SENTINEL scan.</h2>
                 <p className="lead">Demo mode uses simulated findings only. Production scanning requires written authorization and scope approval.</p>
               </div>
 
-              <div className="scan-console">
+              <div className="scan-console wow fadeInUp" data-wow-delay=".2s">
                 <div className="scan-input-card">
                   <label>Authorized target domain</label>
                   <div className="scan-input-row">
@@ -269,7 +269,7 @@ const Platform = () => {
           {/* DASHBOARD TAB */}
           {activeTab === 'dashboard' && (
             <div className="s-view active">
-              <div className="page-title d-flex justify-content-between align-items-start flex-wrap gap-3">
+              <div className="page-title d-flex justify-content-between align-items-start flex-wrap gap-3 wow fadeInUp" data-wow-delay=".0s">
                 <div>
                   <p className="eyebrow">Command dashboard</p>
                   <h2>Validated risk posture.</h2>
@@ -278,14 +278,14 @@ const Platform = () => {
                 <button className="s-btn s-btn-secondary mt-5" onClick={() => setActiveTab('demo')}>Run New Scan</button>
               </div>
 
-              <div className="dashboard-grid">
+              <div className="dashboard-grid wow fadeInUp" data-wow-delay=".2s">
                 <article className="metric-card critical"><span>Critical</span><strong>{criticalCount}</strong><small>validated exploitable</small></article>
                 <article className="metric-card high"><span>High</span><strong>{highCount}</strong><small>confirmed attack paths</small></article>
                 <article className="metric-card"><span>False Positives</span><strong>0</strong><small>after evidence check</small></article>
                 <article className="metric-card green"><span>Remediated</span><strong>0</strong><small>approval-gated fixes</small></article>
               </div>
 
-              <div className="dashboard-main">
+              <div className="dashboard-main wow fadeInUp" data-wow-delay=".4s">
                 <div className="chart-card">
                   <div className="card-head">
                     <h3>Risk Exposure Trend</h3>
@@ -311,7 +311,7 @@ const Platform = () => {
                 </div>
               </div>
 
-              <div className="findings-table-card mt-3">
+              <div className="findings-table-card mt-3 wow fadeInUp" data-wow-delay=".6s">
                 <div className="card-head">
                   <h3>Validated Findings</h3>
                   <span>Click a row for AI triage</span>
@@ -334,13 +334,13 @@ const Platform = () => {
           {/* TRIAGE TAB */}
           {activeTab === 'triage' && (
             <div className="s-view active">
-              <div className="page-title">
+              <div className="page-title wow fadeInUp" data-wow-delay=".0s">
                 <p className="eyebrow">AI evidence synthesis</p>
                 <h2>Executive-ready triage panel.</h2>
                 <p className="lead">Click a finding in the Dashboard or use the sample below to generate a CISO brief.</p>
               </div>
 
-              <div className="triage-layout">
+              <div className="triage-layout wow fadeInUp" data-wow-delay=".2s">
                 <div className="triage-finding">
                   {selectedFinding ? (
                     <>
@@ -416,20 +416,20 @@ const Platform = () => {
           {/* INVESTOR TAB */}
           {activeTab === 'investor' && (
             <div className="s-view active">
-              <div className="page-title">
+              <div className="page-title wow fadeInUp" data-wow-delay=".0s">
                 <p className="eyebrow">Investor tab</p>
                 <h2>Category thesis: proof-based autonomous cyber operations.</h2>
                 <p className="lead">SENTINEL combines continuous validation, AI triage, controlled remediation, enterprise GTM, and sovereign deployment economics.</p>
               </div>
 
-              <div className="investor-hero-grid">
+              <div className="investor-hero-grid wow fadeInUp" data-wow-delay=".2s">
                 <article className="investor-card"><span>TAM</span><strong>$215B</strong><small>global cybersecurity spend</small></article>
                 <article className="investor-card"><span>SAM</span><strong>$62B</strong><small>application, cloud, SOC automation</small></article>
                 <article className="investor-card"><span>SOM</span><strong>$420M</strong><small>year-3 autonomous validation target</small></article>
                 <article className="investor-card"><span>Seed A</span><strong>$3.0M</strong><small>MVP + first enterprise contracts</small></article>
               </div>
 
-              <div className="investor-layout">
+              <div className="investor-layout wow fadeInUp" data-wow-delay=".4s">
                 <div className="investor-panel">
                   <h3>5-Year ARR Model</h3>
                   <div className="arr-chart">
@@ -457,12 +457,12 @@ const Platform = () => {
           {/* SOVEREIGN TAB */}
           {activeTab === 'sovereign' && (
             <div className="s-view active">
-              <div className="page-title">
+              <div className="page-title wow fadeInUp" data-wow-delay=".0s">
                 <p className="eyebrow">Sovereign cyber resilience</p>
                 <h2>Air-gapped autonomous validation for national environments.</h2>
                 <p className="lead">SENTINEL can be deployed as a sovereign instance for defense ministries, national CERTs, utilities, and critical infrastructure operators.</p>
               </div>
-              <div className="sovereign-grid">
+              <div className="sovereign-grid wow fadeInUp" data-wow-delay=".2s">
                 <article><h3>Air-Gapped Instance</h3><p>Designed for environments where telemetry and security data cannot leave national infrastructure.</p></article>
                 <article><h3>CERT Integration</h3><p>API-ready posture dashboards for national response teams and cyber command visibility.</p></article>
                 <article><h3>Self-Scanning Protocol</h3><p>The platform can continuously test its own exposed surfaces, workflows, and security controls.</p></article>
@@ -473,7 +473,7 @@ const Platform = () => {
           {/* CONTACT TAB */}
           {activeTab === 'contact' && (
             <div className="s-view active">
-              <div className="contact-card">
+              <div className="contact-card wow fadeInUp" data-wow-delay=".0s">
                 <p className="eyebrow">Request briefing</p>
                 <h2>Book SENTINEL for enterprise, investor, or sovereign review.</h2>
                 <form onSubmit={handleLeadSubmit}>

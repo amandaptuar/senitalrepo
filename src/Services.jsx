@@ -60,8 +60,8 @@ const Services = () => {
                                 <div className="spacer-double sm-hide"></div>
 
                                 <div className="col-lg-6">
-                                    <h1 className="mb-0" data--delay=".2s">Our Service</h1>
-                                    <ul className="crumb">
+                                    <h1 className="mb-0 wow fadeInUp" data-wow-delay=".2s">Our Service</h1>
+                                    <ul className="crumb wow fadeInUp">
                                         <li><Link to="/">Home</Link></li>
                                         <li className="active">Our Services</li>
                                     </ul>   
@@ -79,9 +79,9 @@ const Services = () => {
                         <div className="container">
 
                             <div className="row g-4">
-                                <div className="col-lg-4 col-md-6" data--delay="0s">
+                                <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0s">
                                     <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden h-100">
-                                        <div className="relative z-2" data--delay=".0s">
+                                        <div className="relative z-2 wow fadeIn" data-wow-delay=".0s">
                                             <img src="/images/icons-white/cyber-security.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
                                             <h4>AI Cybersecurity Consulting</h4>
                                             <p>Work with experts to design and implement a future-ready security strategy tailored to your business, compliance needs, and risk profile.</p>
@@ -91,15 +91,15 @@ const Services = () => {
                                                 <li>Compliance (HIPAA, SOC2, ISO)</li>
                                                 <li>AI integration strategy</li>
                                             </ul>
-                                            <Link className="btn-main fx-slide bg-dark" to="/contact"><span>Learn More</span></Link>
+                                            <Link className="btn-main fx-slide bg-dark" to="/services/ai-cybersecurity-consulting"><span>Learn More</span></Link>
                                         </div>
                                         <img src="/images/icons-white/cyber-security.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
                                     </div>
                                 </div>
 
-                                <div className="col-lg-4 col-md-6" data--delay=".2s">
+                                <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                                     <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden h-100">
-                                        <div className="relative z-2" data--delay=".2s">
+                                        <div className="relative z-2 wow fadeIn" data-wow-delay=".2s">
                                             <img src="/images/icons-white/encryption.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
                                             <h4>Offensive Security &amp; Metasploit</h4>
                                             <p>Simulate real-world attacks using industry-standard tools like Metasploit to identify vulnerabilities before hackers do.</p>
@@ -109,15 +109,15 @@ const Services = () => {
                                                 <li>Vulnerability assessment</li>
                                                 <li>Red team operations</li>
                                             </ul>
-                                            <Link className="btn-main fx-slide bg-dark" to="/contact"><span>Learn More</span></Link>
+                                            <Link className="btn-main fx-slide bg-dark" to="/services/metasploit-framework"><span>Learn More</span></Link>
                                         </div>
                                         <img src="/images/icons-white/encryption.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
                                     </div>
                                 </div>
 
-                                <div className="col-lg-4 col-md-6" data--delay=".4s">
+                                <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
                                     <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden h-100">
-                                        <div className="relative z-2" data--delay=".4s">
+                                        <div className="relative z-2 wow fadeIn" data-wow-delay=".4s">
                                             <img src="/images/icons-white/fingerprint.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
                                             <h4>Security Orchestration &amp; AI (SOAR)</h4>
                                             <p>Streamline and scale your security operations using AI-driven orchestration and automated response systems.</p>
@@ -127,15 +127,15 @@ const Services = () => {
                                                 <li>Alert prioritization</li>
                                                 <li>Workflow optimization</li>
                                             </ul>
-                                            <Link className="btn-main fx-slide bg-dark" to="/contact"><span>Learn More</span></Link>
+                                            <Link className="btn-main fx-slide bg-dark" to="/services/ai-security-tools-automation"><span>Learn More</span></Link>
                                         </div>
                                         <img src="/images/icons-white/fingerprint.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
                                     </div>
                                 </div>
 
-                                <div className="col-lg-4 col-md-6" data--delay=".6s">
+                                <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
                                     <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden h-100">
-                                        <div className="relative z-2" data--delay=".6s">
+                                        <div className="relative z-2 wow fadeIn" data-wow-delay=".6s">
                                             <img src="/images/icons-white/monitoring.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
                                             <h4>Attack Simulation &amp; Breach Testing</h4>
                                             <p>Test your defenses with realistic cyber attack simulations to measure readiness and improve response strategies.</p>
@@ -151,9 +151,9 @@ const Services = () => {
                                     </div>
                                 </div>
 
-                                <div className="col-lg-4 col-md-6" data--delay=".8s">
+                                <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
                                     <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden h-100">
-                                        <div className="relative z-2" data--delay=".8s">
+                                        <div className="relative z-2 wow fadeIn" data-wow-delay=".8s">
                                             <img src="/images/icons-white/cloud-storage.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
                                             <h4>Data Protection &amp; Intelligent Encryption</h4>
                                             <p>Secure sensitive enterprise data with advanced encryption and AI-driven data protection strategies.</p>
@@ -169,9 +169,9 @@ const Services = () => {
                                     </div>
                                 </div>
 
-                                <div className="col-lg-4 col-md-6" data--delay="1s">
+                                <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1s">
                                     <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden h-100">
-                                        <div className="relative z-2" data--delay="1s">
+                                        <div className="relative z-2 wow fadeIn" data-wow-delay="1s">
                                             <img src="/images/icons-white/settings.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
                                             <h4>Security Configuration</h4>
                                             <p>Hardening systems and applying secure configurations across all infrastructure.</p>
@@ -190,9 +190,9 @@ const Services = () => {
                             <div className="row g-4 justify-content-center mb-2">
                                 <div className="col-lg-12 text-light">
                                     <div className="text-center">
-                                        <div className="subtitle">Why Choose Us</div> 
-                                        <h2 className="" data--delay=".2s">Complete Cyber Defense Against Modern Attacks</h2>
-                                        <p className="lead" data--delay=".4s">Stay protected with a fully integrated defense strategy built for today’s complex cyber landscape.
+                                        <div className="subtitle wow fadeInUp">Why Choose Us</div> 
+                                        <h2 className="wow fadeInUp" data-wow-delay=".2s">Complete Cyber Defense Against Modern Attacks</h2>
+                                        <p className="lead wow fadeInUp" data-wow-delay=".4s">Stay protected with a fully integrated defense strategy built for today’s complex cyber landscape.
         From ransomware to phishing and zero-day exploits, we provide comprehensive protection across networks, endpoints, and cloud environments.</p>
                                     </div>
                                 </div>                                       
@@ -200,7 +200,7 @@ const Services = () => {
 
                             <div className="row g-4">
 
-                                <div className="col-lg-6" data--delay=".0s">
+                                <div className="col-lg-6 wow fadeInUp" data-wow-delay=".0s">
                                     <Link to="/contact" className="hover overflow-hidden rounded-1 bg-dark text-light d-block">
                                         <div className="row g-0 align-items-center">
                                             <div className="col-sm-6">
@@ -220,7 +220,7 @@ const Services = () => {
                                     </Link>
                                 </div>
 
-                                <div className="col-lg-6" data--delay=".2s">
+                                <div className="col-lg-6 wow fadeInUp" data-wow-delay=".2s">
                                     <Link to="/contact" className="hover overflow-hidden rounded-1 bg-dark text-light d-block">
                                         <div className="row g-0 align-items-center">
                                             <div className="col-sm-6">
@@ -252,10 +252,10 @@ const Services = () => {
                         </div>
                         <div className="container">
                             <div className="row g-4">
-                                <div className="col-md-10">
+                                <div className="col-md-10 wow fadeInRight" data-wow-delay=".0s">
                                     <h3 className="mb-0 fs-32">Require 24/7 Protection from Advanced Artificial Intelligence Cyber Threats?</h3>
                                 </div>
-                                <div className="col-md-2">                            
+                                <div className="col-md-2 wow fadeInRight" data-wow-delay=".2s">                            
                                     <Link className="btn-main fx-slide btn-line" to="/platform?tab=demo"><span>Start Scan</span></Link>
                                 </div>
                             </div>

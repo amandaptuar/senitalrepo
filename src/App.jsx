@@ -7,6 +7,9 @@ const About = lazy(() => import('./About'))
 const Platform = lazy(() => import('./Platform'))
 const Services = lazy(() => import('./Services'))
 const Team = lazy(() => import('./Team'))
+const MetasploitFramework = lazy(() => import('./MetasploitFramework'))
+const AiCybersecurityConsulting = lazy(() => import('./AiCybersecurityConsulting'))
+const AiSecurityTools = lazy(() => import('./AiSecurityTools'))
 
 // Loading component for Suspense
 const PageLoader = () => (
@@ -27,6 +30,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/platform" element={<Platform />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/services/metasploit-framework" element={<MetasploitFramework />} />
+          <Route path="/services/ai-cybersecurity-consulting" element={<AiCybersecurityConsulting />} />
+          <Route path="/services/ai-security-tools-automation" element={<AiSecurityTools />} />
           <Route path="/team" element={<Team />} />
         </Routes>
       </Suspense>

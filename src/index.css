@@ -245,3 +245,74 @@ section {
 .rounded-1 {
   border-radius: 10px !important;
 }
+
+/* 3D Flip Card Styles */
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 400px;
+  perspective: 1000px; /* 3D effect */
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.flip-card-front {
+  background-color: #f8f9fa;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #1a1a2e; /* Dark matching theme */
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.flip-card-back blockquote {
+  font-style: italic;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.flip-card-back .social-icons a i {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+
+.flip-card-back .social-icons a i:hover {
+  background-color: #00bcd4; /* Accent color */
+}

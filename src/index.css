@@ -41,6 +41,21 @@ header .de-flex.sm-pt10 {
 * { box-sizing: border-box; }
 body { margin: 0; padding: 0; overflow-x: hidden; }
 
+/* Fluid Typography scoped to content to protect footer */
+#content h1 { font-size: clamp(2.5rem, 6vw, 4rem) !important; }
+#content h2 { font-size: clamp(2rem, 5vw, 3.5rem) !important; }
+#content h3 { font-size: clamp(1.5rem, 4vw, 2.5rem) !important; }
+#content h4 { font-size: clamp(1.2rem, 3vw, 2rem) !important; }
+#content h5 { font-size: clamp(1.1rem, 2vw, 1.5rem) !important; }
+
+/* Wow.js Mobile Layout Fix */
+@media (max-width: 768px) {
+  .wow {
+    animation-duration: 0.5s !important;
+    animation-delay: 0s !important;
+  }
+}
+
 /* 2. Push hero section down so it sits below the fixed navbar */
 #section-intro, #subheader {
   padding-top: 140px !important;
@@ -122,6 +137,12 @@ section {
   }
 }
 
+/* Subfooter responsive spacing */
+@media (max-width: 768px) {
+  .subfooter {
+    padding: 20px 0;
+  }
+}
 
 /* 8. Content area: no extra top padding that creates white gaps */
 #content {

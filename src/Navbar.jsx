@@ -71,15 +71,15 @@ const Navbar = () => {
     if (isMobileWindow) {
       return { 
         display: 'block', 
-        maxHeight: isMobileMenuOpen ? '2000px' : '0px', 
+        maxHeight: isMobileMenuOpen ? '1000px' : '0px', 
         paddingTop: isMobileMenuOpen ? '10px' : '0px',
         paddingBottom: isMobileMenuOpen ? '10px' : '0px',
         marginTop: isMobileMenuOpen ? '10px' : '0px',
         overflow: 'hidden',
-        transition: 'all 0.4s ease',
+        transition: 'all 0.5s cubic-bezier(0.4, 0, 0.2, 1)',
         opacity: isMobileMenuOpen ? 1 : 0,
         visibility: isMobileMenuOpen ? 'visible' : 'hidden',
-        backgroundColor: '#111013'
+        backgroundColor: 'transparent'
       };
     }
     return {}; 
@@ -102,8 +102,10 @@ const Navbar = () => {
   ].filter(Boolean).join(' ');
 
   const headerStyle = {
-    backgroundColor: '#111013',
-    ...(isMobileWindow && isMobileMenuOpen ? { height: '100vh' } : {})
+    backgroundColor: (isMobileWindow && isMobileMenuOpen) ? 'rgba(17, 16, 19, 0.95)' : '#111013',
+    backdropFilter: (isMobileWindow && isMobileMenuOpen) ? 'blur(10px)' : 'none',
+    transition: 'background-color 0.4s ease, height 0.4s ease',
+    ...(isMobileWindow && isMobileMenuOpen ? { height: '100vh', position: 'fixed', top: 0, left: 0, width: '100%', zIndex: 9999 } : {})
   };
 
   return (
@@ -168,7 +170,9 @@ const Navbar = () => {
               <div className="de-flex-col">
                 <div className="menu_side_area">
                   <Link to="/platform?tab=demo" className="btn-main fx-slide btn-line me-2"><span>Start Scan</span></Link>
-                  <Link to="/contact" className="btn-main fx-slide"><span>Explore Pricing</span></Link>
+                  {!isMobileWindow && (
+                    <Link to="/contact" className="btn-main fx-slide"><span>Explore Pricing</span></Link>
+                  )}
                   <span 
                     id="menu-btn" 
                     className={isMobileMenuOpen ? 'menu-open' : ''}

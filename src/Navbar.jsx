@@ -15,10 +15,7 @@ const navLinks = [
     { label: 'AI Consulting', to: '/services/ai-cybersecurity-consulting' },
     { label: 'AI Tools & Automation', to: '/services/ai-security-tools-automation' },
   ]},
-  { label: 'About', to: '/about', children: [
-    { label: 'About Us', to: '/about' },
-    { label: 'Our Team', to: '/team' },
-  ]},
+  { label: 'About', to: '/about' },
   { label: 'Contact Us', to: '/contact' },
 ];
 

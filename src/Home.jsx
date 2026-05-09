@@ -198,10 +198,10 @@ const Home = () => {
 
                     <div className="row g-0 mb-3">
 
-                        <div className="col-lg-6">
-                            <Link to="/services/ai-cybersecurity-consulting" className="hover overflow-hidden bg-dark text-light d-block">
-                                <div className="row g-0 align-items-stretch">
-                                    <div className="col-md-5">
+                        <div className="col-lg-6 d-flex">
+                            <Link to="/services/ai-cybersecurity-consulting" className="hover overflow-hidden bg-dark text-light d-block w-100 h-100">
+                                <div className="row g-0 align-items-stretch h-100">
+                                    <div className="col-md-5 h-100">
                                         <div className="relative overflow-hidden h-100">
                                             <h3 className="abs text-white fs-32 lh-1 p-4 top-0 start-0 z-3">01</h3>
                                             <div className="sw-overlay z-2 op-3"></div>
@@ -224,10 +224,10 @@ const Home = () => {
                             </Link>
                         </div>
 
-                        <div className="col-lg-6">
-                            <Link to="/services/metasploit-framework" className="hover overflow-hidden bg-color text-light d-block">
-                                <div className="row g-0 align-items-stretch">
-                                    <div className="col-md-5">
+                        <div className="col-lg-6 d-flex">
+                            <Link to="/services/metasploit-framework" className="hover overflow-hidden bg-color text-light d-block w-100 h-100">
+                                <div className="row g-0 align-items-stretch h-100">
+                                    <div className="col-md-5 h-100">
                                         <div className="relative overflow-hidden h-100">
                                             <h3 className="abs text-white fs-32 lh-1 p-4 top-0 start-0 z-3">02</h3>
                                             <div className="sw-overlay z-2 op-3"></div>
@@ -236,7 +236,7 @@ const Home = () => {
                                     </div>
                                     <div className="col-md-7 d-flex flex-column justify-content-center">
                                         <div className="p-4 p-md-5 text-wrap">
-                                            <h3>Offensive Security &amp; Metasploit Framework</h3>
+                                            <h3>Offensive Security &amp; Metasploit</h3>
                                             <p>Simulate real-world attacks using industry-standard tools like Metasploit to identify vulnerabilities before hackers do.</p>
                                             <ul className="ul-check white mt-3">
                                                 <li>Penetration testing</li>
@@ -250,12 +250,12 @@ const Home = () => {
                             </Link>
                         </div>
 
-                        <div className="col-lg-6">
-                            <Link to="/services/ai-security-tools-automation" className="hover overflow-hidden bg-dark text-light d-block">
-                                <div className="row g-0 align-items-stretch">
+                        <div className="col-lg-6 d-flex">
+                            <Link to="/services/ai-security-tools-automation" className="hover overflow-hidden bg-dark text-light d-block w-100 h-100">
+                                <div className="row g-0 align-items-stretch h-100">
                                     <div className="col-md-7 d-flex flex-column justify-content-center">
                                         <div className="p-4 p-md-5 text-wrap">
-                                            <h3>Security Orchestration &amp; AI (SOAR)</h3>
+                                            <h3>Security Orchestration &amp; AI</h3>
                                             <p>Streamline and scale your security operations using AI-driven orchestration and automated response systems.</p>
                                             <ul className="ul-check white mt-3">
                                                 <li>Incident response automation</li>
@@ -265,7 +265,7 @@ const Home = () => {
                                             </ul>
                                         </div>
                                     </div>
-                                    <div className="col-md-5">
+                                    <div className="col-md-5 h-100">
                                         <div className="relative overflow-hidden h-100">
                                             <h3 className="abs text-white fs-32 lh-1 p-4 top-0 start-0 z-3">03</h3>
                                             <div className="sw-overlay z-2 op-3"></div>
@@ -276,12 +276,12 @@ const Home = () => {
                             </Link>
                         </div>
 
-                        <div className="col-lg-6">
-                            <Link to="/contact" className="hover overflow-hidden bg-dark text-light d-block">
-                                <div className="row g-0 align-items-stretch">
+                        <div className="col-lg-6 d-flex">
+                            <Link to="/contact" className="hover overflow-hidden bg-dark text-light d-block w-100 h-100">
+                                <div className="row g-0 align-items-stretch h-100">
                                     <div className="col-md-7 d-flex flex-column justify-content-center">
                                         <div className="p-4 p-md-5 text-wrap">
-                                            <h3>Attack Simulation &amp; Breach Testing</h3>
+                                            <h3>Attack Simulation &amp; Testing</h3>
                                             <p>Test your defenses with realistic cyber attack simulations to measure readiness and improve response strategies.</p>
                                             <ul className="ul-check white mt-3">
                                                 <li>Breach &amp; attack simulation (BAS)</li>
@@ -291,7 +291,7 @@ const Home = () => {
                                             </ul>
                                         </div>
                                     </div>
-                                    <div className="col-md-5">
+                                    <div className="col-md-5 h-100">
                                         <div className="relative overflow-hidden h-100">
                                             <h3 className="abs text-white fs-32 lh-1 p-4 top-0 start-0 z-3">04</h3>
                                             <div className="sw-overlay z-2 op-3"></div>
@@ -302,10 +302,10 @@ const Home = () => {
                             </Link>
                         </div>
 
-                        <div className="col-lg-6">
-                            <Link to="/contact" className="hover overflow-hidden bg-color text-light d-block">
-                                <div className="row g-0 align-items-stretch">
-                                    <div className="col-md-5">
+                        <div className="col-lg-6 d-flex">
+                            <Link to="/contact" className="hover overflow-hidden bg-color text-light d-block w-100 h-100">
+                                <div className="row g-0 align-items-stretch h-100">
+                                    <div className="col-md-5 h-100">
                                         <div className="relative overflow-hidden h-100">
                                             <h3 className="abs text-white fs-32 lh-1 p-4 top-0 start-0 z-3">05</h3>
                                             <div className="sw-overlay z-2 op-3"></div>
@@ -314,7 +314,7 @@ const Home = () => {
                                     </div>
                                     <div className="col-md-7 d-flex flex-column justify-content-center">
                                         <div className="p-4 p-md-5 text-wrap">
-                                            <h3>Data Protection &amp; Intelligent Encryption</h3>
+                                            <h3>Intelligent Data Encryption</h3>
                                             <p>Secure sensitive enterprise data with advanced encryption and AI-driven data protection strategies.</p>
                                             <ul className="ul-check white mt-3">
                                                 <li>Data encryption (at rest &amp; in transit)</li>
@@ -328,10 +328,10 @@ const Home = () => {
                             </Link>
                         </div>
 
-                        <div className="col-lg-6">
-                            <Link to="/contact" className="hover overflow-hidden bg-dark text-light d-block">
-                                <div className="row g-0 align-items-stretch">
-                                    <div className="col-md-5">
+                        <div className="col-lg-6 d-flex">
+                            <Link to="/contact" className="hover overflow-hidden bg-dark text-light d-block w-100 h-100">
+                                <div className="row g-0 align-items-stretch h-100">
+                                    <div className="col-md-5 h-100">
                                         <div className="relative overflow-hidden h-100">
                                             <h3 className="abs text-white fs-32 lh-1 p-4 top-0 start-0 z-3">06</h3>
                                             <div className="sw-overlay z-2 op-3"></div>
@@ -340,8 +340,14 @@ const Home = () => {
                                     </div>
                                     <div className="col-md-7 d-flex flex-column justify-content-center">
                                         <div className="p-4 p-md-5 text-wrap">
-                                            <h3>Security Configuration</h3>
-                                            <p className="mb-0">Hardening systems and applying secure configurations across all infrastructure.</p>
+                                            <h3>Zero-Trust Configuration</h3>
+                                            <p>Implement resilient infrastructure by enforcing strict zero-trust policies and advanced access controls.</p>
+                                            <ul className="ul-check white mt-3">
+                                                <li>Cloud infrastructure hardening</li>
+                                                <li>Zero-trust policy enforcement</li>
+                                                <li>Continuous compliance checks</li>
+                                                <li>Automated drift detection</li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>

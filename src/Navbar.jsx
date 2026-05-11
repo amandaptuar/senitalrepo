@@ -262,7 +262,7 @@ const Navbar = () => {
               {/* Side area (buttons + hamburger) */}
               <div className="de-flex-col">
                 <div className="menu_side_area">
-                  <Link to="/scan" className="btn-main fx-slide btn-line me-2">
+                  <Link to="/platform?tab=demo" className="btn-main fx-slide btn-line me-2">
                     <span>Start Scan</span>
                   </Link>
 

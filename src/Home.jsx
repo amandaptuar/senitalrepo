@@ -71,7 +71,7 @@ const Home = () => {
                         <div className="subtitle s2 mb-3 wow fadeInUp" data-wow-delay=".0s">Welcome to Sentinel</div>
                         <h1 className="wow fadeInUp" data-wow-delay=".2s">Autonomous AI Cybersecurity and Zero-Trust Enterprise Defense</h1>
                         <p className="col-lg-10 wow fadeInUp" data-wow-delay=".4s">Fortify your digital infrastructure with SENTINEL's autonomous, AI-driven security ecosystem. We empower global enterprises to neutralize zero-day threats in milliseconds, enforce strict zero-trust architectures, and ensure absolute data sovereignty in an increasingly hostile digital landscape.</p>
-                        <Link className="btn-main mb10 mb-3 wow fadeInUp" data-wow-delay=".6s" to="/scan"><span>Start Scan</span></Link>
+                        <Link className="btn-main mb10 mb-3 wow fadeInUp" data-wow-delay=".6s" to="/platform?tab=demo"><span>Start Scan</span></Link>
                         <div className="border-bottom my-3"></div>
                         <div className="d-lg-flex align-items-center text-light">
                             <div className="me-3">TrustScore 5.0</div>
@@ -124,7 +124,7 @@ const Home = () => {
                             <h3 className="mb-0 fs-32">Require 24/7 Autonomous Defense Against Advanced AI Threat Vectors?</h3>
                         </div>
                         <div className="col-md-2">                            
-                            <Link className="btn-main fx-slide btn-line" to="/scan"><span>Start Scan</span></Link>
+                            <Link className="btn-main fx-slide btn-line" to="/platform?tab=demo"><span>Start Scan</span></Link>
                         </div>
                     </div>
                 </div>
@@ -574,7 +574,7 @@ const Home = () => {
                             <h3 className="mb-0 fs-32">Need 24/7 Protection From Cyber Attacks?</h3>
                         </div>
                         <div className="col-md-2 wow fadeInRight" data-wow-delay=".2s">                            
-                            <Link className="btn-main fx-slide btn-line" to="/scan"><span>Start Scan</span></Link>
+                            <Link className="btn-main fx-slide btn-line" to="/platform?tab=demo"><span>Start Scan</span></Link>
                         </div>
                     </div>
                 </div>

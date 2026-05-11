@@ -259,11 +259,7 @@ const Navbar = () => {
                   <Link to="/platform?tab=demo" className="btn-main fx-slide btn-line me-2">
                     <span>Start Scan</span>
                   </Link>
-                  {!isMobileWindow && (
-                    <a href="/#pricing" className="btn-main fx-slide" onClick={handleNavClose}>
-                      <span>Explore Pricing</span>
-                    </a>
-                  )}
+
                   {/* Hamburger — toggles ONLY the mobile menu, never the submenu */}
                   <span
                     id="menu-btn"

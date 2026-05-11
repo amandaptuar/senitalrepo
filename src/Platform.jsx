@@ -197,7 +197,6 @@ const Platform = () => {
           <div className="scanline"></div>
 
           <div className="container" style={{ position: 'relative', zIndex: 10 }}>
-
           {/* DEMO TAB */}
           {activeTab === 'demo' && (
             <div className="s-view active">
@@ -494,7 +493,7 @@ const Platform = () => {
             </div>
           )}
 
-        </div>
+          </div>
         </div>
       </div>
       <Footer />

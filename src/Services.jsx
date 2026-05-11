@@ -5,37 +5,9 @@ import Footer from './Footer';
 
 const Services = () => {
     useEffect(() => {
-        const scripts = [
-          "/js/plugins.js",
-          "/js/designesia.js",
-          "/js/custom-marquee.js",
-          "/js/swiper.js",
-          "/js/custom-swiper-1.js"
-        ];
-    
-        const timeoutId = setTimeout(() => {
-            scripts.forEach(src => {
-              if (!document.querySelector(`script[src="${src}"]`)) {
-                const script = document.createElement("script");
-                script.src = src;
-                script.async = false;
-                document.body.appendChild(script);
-              }
-            });
-        }, 100);
-    
         window.scrollTo(0, 0);
-
-        return () => {
-          clearTimeout(timeoutId);
-          scripts.forEach(src => {
-            const script = document.querySelector(`script[src="${src}"]`);
-            if (script) {
-              script.remove();
-            }
-          });
-        };
     }, []);
+
 
     return (
         <>
@@ -256,7 +228,7 @@ const Services = () => {
                                     <h3 className="mb-0 fs-32">Require 24/7 Protection from Advanced Artificial Intelligence Cyber Threats?</h3>
                                 </div>
                                 <div className="col-md-2 wow fadeInRight" data-wow-delay=".2s">                            
-                                    <Link className="btn-main fx-slide btn-line" to="/platform?tab=demo"><span>Start Scan</span></Link>
+                                    <Link className="btn-main fx-slide btn-line" to="/scan"><span>Start Scan</span></Link>
                                 </div>
                             </div>
                         </div>

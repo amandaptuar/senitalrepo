@@ -15,6 +15,12 @@ const navLinks = [
     { label: 'AI Consulting', to: '/services/ai-cybersecurity-consulting' },
     { label: 'AI Tools & Automation', to: '/services/ai-security-tools-automation' },
   ]},
+  { label: 'Shodan Services', to: '#', children: [
+    { label: 'Device Discovery', to: '/services/shodan-services/device-discovery' },
+    { label: 'Vulnerability Detection', to: '/services/shodan-services/vulnerability-detection' },
+    { label: 'Network Monitoring', to: '/services/shodan-services/network-monitoring' },
+    { label: 'Internet Intelligence', to: '/services/shodan-services/internet-intelligence' },
+  ]},
   { label: 'About', to: '/about' },
   { label: 'Contact Us', to: '/contact' },
 ];
@@ -256,7 +262,7 @@ const Navbar = () => {
               {/* Side area (buttons + hamburger) */}
               <div className="de-flex-col">
                 <div className="menu_side_area">
-                  <Link to="/platform?tab=demo" className="btn-main fx-slide btn-line me-2">
+                  <Link to="/scan" className="btn-main fx-slide btn-line me-2">
                     <span>Start Scan</span>
                   </Link>
 

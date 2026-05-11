@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
-const AiCybersecurityConsulting = () => {
+const ShodanDeviceDiscovery = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+
 
     return (
         <div id="wrapper">
@@ -28,20 +29,20 @@ const AiCybersecurityConsulting = () => {
                         <div className="row gy-4 gx-lg-5 align-items-center">
                             <div className="spacer-double sm-hide"></div>
                             <div className="col-lg-8 text-break">
-                                <h1 className="mb-3 fw-bold text-wrap wow fadeInUp" style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', lineHeight: '1.2' }} data-wow-delay=".2s">AI-Powered Cybersecurity Consulting for Modern Enterprises</h1>
-                                <p className="lead mb-4 text-wrap wow fadeInUp" data-wow-delay=".4s">Protect your organization with intelligent, adaptive security strategies built on advanced AI, real-time analytics, and zero-trust architecture.</p>
+                                <h1 className="mb-3 fw-bold text-wrap wow fadeInUp" style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', lineHeight: '1.2' }} data-wow-delay=".2s">Discover Exposed Internet Devices Before Attackers Do</h1>
+                                <p className="lead mb-4 text-wrap wow fadeInUp" data-wow-delay=".4s">Gain deep visibility into internet-facing assets, open ports, exposed systems, and unmanaged infrastructure using enterprise-grade Shodan intelligence.</p>
                                 <ul className="crumb mb-4 text-wrap wow fadeInUp" data-wow-delay=".6s">
                                     <li><Link to="/">Home</Link></li>
                                     <li><Link to="/services">Services</Link></li>
-                                    <li className="active text-break">AI Cybersecurity Consulting</li>
+                                    <li className="active text-break">Shodan Device Discovery</li>
                                 </ul>
                                 <div className="mt-4 wow fadeInUp" data-wow-delay=".8s">
-                                    <Link to="/contact" className="btn-main fx-slide me-3"><span>Talk to Experts</span></Link>
-                                    <Link to="/contact" className="btn-main btn-line fx-slide"><span>Start Assessment</span></Link>
+                                    <Link to="/contact" className="btn-main fx-slide me-3"><span>Request Consultation</span></Link>
+                                    <Link to="/contact" className="btn-main btn-line fx-slide"><span>Schedule Demo</span></Link>
                                 </div>
                             </div>
                             <div className="col-lg-4 text-center sm-hide">
-                                <img src="/images/icons-white/cyber-security.png" alt="AI Consulting" className="w-50 op-5" style={{ maxWidth: '200px' }} />
+                                <img src="/images/icons-white/cyber-security.png" alt="Device Discovery" className="w-50 op-5" style={{ maxWidth: '200px' }} />
                             </div>
                         </div>
                     </div>
@@ -52,42 +53,42 @@ const AiCybersecurityConsulting = () => {
                     <div className="container">
                         <div className="row g-5 align-items-center">
                             <div className="col-lg-7 text-break">
-                                <div className="subtitle s2 mb-3 wow fadeInUp" data-wow-delay=".0s">Intelligent Defense Strategies</div>
-                                <h2 className="mb-3 text-wrap wow fadeInUp" style={{ fontSize: 'clamp(2rem, 4vw, 2.5rem)' }} data-wow-delay=".2s">AI-Driven Security for Modern Enterprises</h2>
+                                <div className="subtitle s2 mb-3 wow fadeInUp" data-wow-delay=".0s">Shodan Reconnaissance</div>
+                                <h2 className="mb-3 text-wrap wow fadeInUp" style={{ fontSize: 'clamp(2rem, 4vw, 2.5rem)' }} data-wow-delay=".2s">Real-Time Visibility Into Exposed Services</h2>
                                 <p className="lead mb-4 text-wrap wow fadeInUp" data-wow-delay=".4s">
-                                    Cyber threats are no longer static—and neither should your defense strategy be. Our AI-driven cybersecurity consulting services help organizations proactively identify risks, automate threat detection, and strengthen security posture across cloud, network, and application environments.
+                                    Our Shodan Device Discovery services help organizations identify exposed internet-facing infrastructure including servers, IoT devices, routers, firewalls, industrial systems, and cloud assets. We provide real-time visibility into exposed services and help reduce attack surface risks before exploitation occurs.
                                 </p>
                                 <ul className="ul-check white mb-4 text-wrap ps-3 wow fadeInUp" data-wow-delay=".6s">
-                                    <li className="mb-2 text-wrap" style={{ wordBreak: 'break-word' }}>Real-time AI threat detection & automated response</li>
-                                    <li className="mb-2 text-wrap" style={{ wordBreak: 'break-word' }}>Zero Trust architecture design & implementation</li>
-                                    <li className="mb-2 text-wrap" style={{ wordBreak: 'break-word' }}>Regulatory compliance across HIPAA, SOC 2 & ISO 27001</li>
+                                    <li className="mb-2 text-wrap" style={{ wordBreak: 'break-word' }}>Internet Asset Discovery & Mapping</li>
+                                    <li className="mb-2 text-wrap" style={{ wordBreak: 'break-word' }}>Open Port & Vulnerability Enumeration</li>
+                                    <li className="mb-2 text-wrap" style={{ wordBreak: 'break-word' }}>Cloud Infrastructure & IoT Exposure Detection</li>
                                 </ul>
-                                <Link to="/contact" className="btn-main fx-slide me-3 wow fadeInUp" data-wow-delay=".8s"><span>Talk to an Expert</span></Link>
+                                <Link to="/contact" className="btn-main fx-slide me-3 wow fadeInUp" data-wow-delay=".8s"><span>Talk to Expert</span></Link>
                             </div>
                             <div className="col-lg-5">
                                 <div className="row g-3">
                                     <div className="col-md-6 col-sm-6 col-12 wow fadeInRight" data-wow-delay=".0s">
                                         <div className="bg-dark-gradient p-3 p-md-4 rounded-3 border-top border-color border-3 text-center hover-scale-1-1 shadow-sm text-break h-100 d-flex flex-column justify-content-center">
-                                            <h2 className="fs-1 id-color mb-1 fw-bold">98%</h2>
-                                            <p className="mb-0 text-light-50 text-wrap" style={{ fontSize: '0.9rem' }}>Threat Detection Rate</p>
+                                            <h2 className="fs-1 id-color mb-1 fw-bold">100%</h2>
+                                            <p className="mb-0 text-light-50 text-wrap" style={{ fontSize: '0.9rem' }}>Asset Visibility</p>
                                         </div>
                                     </div>
                                     <div className="col-md-6 col-sm-6 col-12 wow fadeInRight" data-wow-delay=".2s">
                                         <div className="bg-dark-gradient p-3 p-md-4 rounded-3 border-top border-color border-3 text-center hover-scale-1-1 shadow-sm text-break h-100 d-flex flex-column justify-content-center">
-                                            <h2 className="fs-1 id-color mb-1 fw-bold">3x</h2>
-                                            <p className="mb-0 text-light-50 text-wrap" style={{ fontSize: '0.9rem' }}>Faster Incident Response</p>
+                                            <h2 className="fs-1 id-color mb-1 fw-bold">24/7</h2>
+                                            <p className="mb-0 text-light-50 text-wrap" style={{ fontSize: '0.9rem' }}>Exposure Tracking</p>
                                         </div>
                                     </div>
                                     <div className="col-md-6 col-sm-6 col-12 wow fadeInRight" data-wow-delay=".4s">
                                         <div className="bg-dark-gradient p-3 p-md-4 rounded-3 border-top border-color border-3 text-center hover-scale-1-1 shadow-sm text-break h-100 d-flex flex-column justify-content-center">
-                                            <h2 className="fs-1 id-color mb-1 fw-bold">200+</h2>
-                                            <p className="mb-0 text-light-50 text-wrap" style={{ fontSize: '0.9rem' }}>Enterprise Clients</p>
+                                            <h2 className="fs-1 id-color mb-1 fw-bold">Zero</h2>
+                                            <p className="mb-0 text-light-50 text-wrap" style={{ fontSize: '0.9rem' }}>Blind Spots</p>
                                         </div>
                                     </div>
                                     <div className="col-md-6 col-sm-6 col-12 wow fadeInRight" data-wow-delay=".6s">
                                         <div className="bg-dark-gradient p-3 p-md-4 rounded-3 border-top border-color border-3 text-center hover-scale-1-1 shadow-sm text-break h-100 d-flex flex-column justify-content-center">
-                                            <h2 className="fs-1 id-color mb-1 fw-bold">24/7</h2>
-                                            <p className="mb-0 text-light-50 text-wrap" style={{ fontSize: '0.9rem' }}>Continuous Monitoring</p>
+                                            <h2 className="fs-1 id-color mb-1 fw-bold">Fast</h2>
+                                            <p className="mb-0 text-light-50 text-wrap" style={{ fontSize: '0.9rem' }}>Remediation</p>
                                         </div>
                                     </div>
                                 </div>
@@ -96,24 +97,24 @@ const AiCybersecurityConsulting = () => {
                     </div>
                 </section>
 
-                {/* Core Services Grid */}
-                <section className="section-dark bg-dark-2 text-light py-5 overflow-hidden relative" style={{ backgroundImage: 'url(/images/background/6.webp)', backgroundPosition: 'top', backgroundSize: 'cover' }}>
+                {/* Core Features Grid */}
+                <section className="section-dark bg-dark text-light py-5 overflow-hidden relative" style={{ backgroundImage: 'url(/images/background/6.webp)', backgroundPosition: 'top', backgroundSize: 'cover' }}>
                     <div className="abs top-0 start-0 w-100 h-100 bg-dark op-8"></div>
                     <div className="container relative z-2">
                         <div className="row mb-5">
                             <div className="col-lg-12 text-center text-break">
-                                <div className="subtitle wow fadeInUp" data-wow-delay=".0s">Core Services</div>
-                                <h2 className="text-wrap wow fadeInUp" data-wow-delay=".2s">AI-Powered Security Operations</h2>
+                                <div className="subtitle wow fadeInUp" data-wow-delay=".0s">Key Features</div>
+                                <h2 className="text-wrap wow fadeInUp" data-wow-delay=".2s">Advanced Device Discovery</h2>
                             </div>
                         </div>
                         <div className="row g-4 align-items-stretch">
                             {[
-                                { title: "AI Risk Assessment & Security Audit", icon: "/images/icons-white/monitoring.png", items: ["Intelligent vulnerability scanning", "Threat surface mapping", "AI-based risk scoring", "HIPAA, SOC 2, NIST, ISO 27001"] },
-                                { title: "AI Threat Detection & Response", icon: "/images/icons-white/cyber-security.png", items: ["Behavioral anomaly detection", "Automated incident response", "Predictive analytics", "Threat intelligence"] },
-                                { title: "Zero Trust Architecture Implementation", icon: "/images/icons-white/fingerprint.png", items: ["Multi-Factor Authentication (MFA)", "Role-Based Access Control (RBAC)", "Continuous verification", "Identity-first security"] },
-                                { title: "Cloud & Application Security", icon: "/images/icons-white/cloud-storage.png", items: ["AWS, Azure, Google Cloud", "API & microservices security", "DevSecOps integration", "AI secure code review"] },
-                                { title: "Penetration Testing with AI Simulation", icon: "/images/icons-white/encryption.png", items: ["Automated attack simulations", "AI red teaming", "Continuous testing", "Web/mobile penetration testing"] },
-                                { title: "Security Automation & Orchestration", icon: "/images/icons-white/settings.png", items: ["AI workflows", "SIEM & SOAR integration", "Security event automation", "Reduced manual work"] }
+                                { title: "Internet Asset Discovery", icon: "/images/icons-white/monitoring.png", items: ["Identify all internet-facing devices", "Discover shadow IT assets", "Map enterprise networks"] },
+                                { title: "Open Port Enumeration", icon: "/images/icons-white/cyber-security.png", items: ["Detect unauthorized open ports", "Analyze exposed services", "Close high-risk entry points"] },
+                                { title: "Cloud Infrastructure Mapping", icon: "/images/icons-white/cloud-storage.png", items: ["AWS, Azure, Google Cloud assets", "Detect misconfigured storage", "Public IP tracking"] },
+                                { title: "IoT Exposure Detection", icon: "/images/icons-white/fingerprint.png", items: ["Locate exposed cameras & routers", "Industrial control systems (ICS)", "Unsecured smart devices"] },
+                                { title: "Service Banner Analysis", icon: "/images/icons-white/encryption.png", items: ["Extract software versions", "Identify legacy systems", "Deep metadata analysis"] },
+                                { title: "Real-Time Exposure Tracking", icon: "/images/icons-white/settings.png", items: ["Continuous Shodan monitoring", "Alerting on new exposures", "Automated threat intelligence"] }
                             ].map((offer, i) => (
                                 <div key={i} className="col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay={`${i * 0.1}s`}>
                                     <div className="d-flex flex-column bg-dark-gradient text-light rounded-3 p-3 p-md-4 h-100 relative overflow-hidden border border-secondary border-opacity-10 hover-scale-1-1 shadow-sm text-break">
@@ -134,22 +135,21 @@ const AiCybersecurityConsulting = () => {
                     </div>
                 </section>
 
-                {/* AI Security Workflow Section */}
-                <section className="section-dark bg-dark text-light py-5 overflow-hidden">
+                {/* Workflow Section */}
+                <section className="section-dark bg-dark-2 text-light py-5 overflow-hidden">
                     <div className="container">
                         <div className="row text-center mb-5">
                             <div className="col-lg-12 text-break">
-                                <div className="subtitle wow fadeInUp" data-wow-delay=".0s">AI Security Workflow</div>
-                                <h2 className="text-wrap wow fadeInUp" data-wow-delay=".2s">Automated Lifecycle</h2>
+                                <div className="subtitle wow fadeInUp" data-wow-delay=".0s">Our Process</div>
+                                <h2 className="text-wrap wow fadeInUp" data-wow-delay=".2s">Discovery Methodology</h2>
                             </div>
                         </div>
                         <div className="row g-4 justify-content-center">
                             {[
-                                { title: "Detect", desc: "Continuous AI monitoring across environments", icon: "monitoring.png" },
-                                { title: "Analyze", desc: "Instant threat scoring & anomaly detection", icon: "cyber-security.png" },
-                                { title: "Automate", desc: "Playbook execution & orchestration", icon: "settings.png" },
-                                { title: "Respond", desc: "Rapid threat isolation & mitigation", icon: "cloud-storage.png" },
-                                { title: "Protect", desc: "Zero-trust policy & proactive defense", icon: "encryption.png" },
+                                { title: "Asset Enumeration", desc: "Identify all domains, IPs, and exposed infrastructure.", icon: "monitoring.png" },
+                                { title: "Exposure Analysis", desc: "Correlate assets with Shodan threat intelligence.", icon: "cyber-security.png" },
+                                { title: "Risk Prioritization", desc: "Rank exposures by severity and business impact.", icon: "settings.png" },
+                                { title: "Remediation", desc: "Actionable recommendations to secure exposed services.", icon: "encryption.png" },
                             ].map((step, index) => (
                                 <div className="col-lg col-md-6 col-sm-12 text-center wow fadeInUp" data-wow-delay={`${index * 0.1}s`} key={index}>
                                     <div className="d-block relative bg-dark-gradient text-light rounded-3 p-3 p-md-4 h-100 hover-scale-1-2 border-top border-color border-3 shadow-sm text-break">
@@ -167,7 +167,7 @@ const AiCybersecurityConsulting = () => {
                 </section>
 
                 {/* Industries We Serve */}
-                <section className="section-dark bg-dark-2 text-light py-5 overflow-hidden">
+                <section className="section-dark bg-dark text-light py-5 overflow-hidden">
                     <div className="container">
                         <div className="row mb-5 text-center">
                             <div className="col-lg-12 text-break">
@@ -177,15 +177,15 @@ const AiCybersecurityConsulting = () => {
                         </div>
                         <div className="row g-4 align-items-stretch">
                             {[
-                                { name: "Healthcare", icon: "fa-hospital", desc: "HIPAA-compliant security for patient data and medical systems." },
-                                { name: "Finance", icon: "fa-building-columns", desc: "PCI-DSS and SOX-aligned protection for financial services." },
-                                { name: "SaaS", icon: "fa-cloud", desc: "Application security for cloud-native software platforms." },
-                                { name: "Government", icon: "fa-landmark", desc: "FedRAMP and NIST 800-53 compliance for public sector." },
-                                { name: "Manufacturing", icon: "fa-industry", desc: "OT/ICS security and IoT protection for production environments." },
-                                { name: "E-commerce", icon: "fa-cart-shopping", desc: "Fraud prevention and customer data protection at scale." },
+                                { name: "Banking & Finance", icon: "fa-building-columns", desc: "Secure exposed financial systems and critical portals." },
+                                { name: "Manufacturing", icon: "fa-industry", desc: "Protect industrial control systems (ICS) and OT infrastructure." },
+                                { name: "Healthcare", icon: "fa-hospital", desc: "Discover exposed medical devices and unmanaged endpoints." },
+                                { name: "Government", icon: "fa-landmark", desc: "Secure public sector assets and highly sensitive infrastructure." },
+                                { name: "Telecom", icon: "fa-satellite-dish", desc: "Map complex distributed networks and exposed routers." },
+                                { name: "SaaS Companies", icon: "fa-cloud", desc: "Identify misconfigured cloud assets and exposed APIs." },
                             ].map((industry, i) => (
                                 <div key={i} className="col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay={`${i * 0.1}s`}>
-                                    <div className="d-flex align-items-start bg-dark p-3 p-md-4 rounded-3 h-100 border-start border-color border-4 hover-scale-1-1 shadow-sm text-break">
+                                    <div className="d-flex align-items-start bg-dark-gradient p-3 p-md-4 rounded-3 h-100 border-start border-color border-4 hover-scale-1-1 shadow-sm text-break">
                                         <div className="me-3 mt-1 flex-shrink-0">
                                             <i className={`fa-solid ${industry.icon} fs-2 id-color`}></i>
                                         </div>
@@ -193,35 +193,6 @@ const AiCybersecurityConsulting = () => {
                                             <h5 className="mb-2 text-wrap">{industry.name}</h5>
                                             <p className="text-light-50 mb-0 text-wrap" style={{ wordBreak: 'break-word', fontSize: '0.9rem' }}>{industry.desc}</p>
                                         </div>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
-
-                {/* Compliance & Standards Section */}
-                <section className="section-dark bg-dark text-light py-5 overflow-hidden">
-                    <div className="container">
-                        <div className="row mb-5 text-center">
-                            <div className="col-lg-12 text-break">
-                                <div className="subtitle wow fadeInUp" data-wow-delay=".0s">Compliance</div>
-                                <h2 className="text-wrap wow fadeInUp" data-wow-delay=".2s">Frameworks & Standards</h2>
-                                <p className="lead text-light-50 mx-auto text-wrap wow fadeInUp" data-wow-delay=".4s" style={{ maxWidth: '600px' }}>Our consulting is aligned with all major industry regulatory frameworks to ensure your organization stays audit-ready.</p>
-                            </div>
-                        </div>
-                        <div className="row g-4 justify-content-center">
-                            {[
-                                { name: "HIPAA", desc: "Healthcare Data" },
-                                { name: "SOC 2", desc: "Service Organization" },
-                                { name: "ISO 27001", desc: "Info Security Mgmt" },
-                                { name: "NIST", desc: "Cybersecurity Framework" },
-                                { name: "GDPR", desc: "Data Privacy" },
-                            ].map((standard, i) => (
-                                <div key={i} className="col-lg-2 col-md-4 col-sm-6 col-12 wow fadeInUp" data-wow-delay={`${i * 0.1}s`}>
-                                    <div className="bg-dark-gradient p-3 p-md-4 rounded-3 text-center border border-color hover-scale-1-1 shadow-sm text-break h-100 d-flex flex-column justify-content-center">
-                                        <h5 className="id-color mb-2 text-wrap">{standard.name}</h5>
-                                        <p className="mb-0 text-light-50 text-wrap" style={{ fontSize: '0.85rem' }}>{standard.desc}</p>
                                     </div>
                                 </div>
                             ))}
@@ -241,21 +212,21 @@ const AiCybersecurityConsulting = () => {
                         <div className="row justify-content-center">
                             <div className="col-lg-8 col-md-10 col-12">
                                 <div className="bg-dark p-3 p-md-4 rounded-3 mb-4 border-start border-color border-4 shadow-sm hover-scale-1-1 text-break wow fadeInUp" data-wow-delay=".0s">
-                                    <h4 className="mb-3 text-wrap">How does AI improve threat detection?</h4>
+                                    <h4 className="mb-3 text-wrap">What is Shodan device discovery?</h4>
                                     <p className="text-light-50 mb-0 text-wrap" style={{ wordBreak: 'break-word' }}>
-                                        AI systems analyze vast amounts of data in real-time, identifying behavioral anomalies and subtle patterns that indicate a potential attack—much faster than manual human analysis.
+                                        It is the process of using the Shodan search engine and our proprietary threat intelligence tools to identify all internet-facing devices belonging to your organization, including servers, IoT devices, and databases.
                                     </p>
                                 </div>
                                 <div className="bg-dark p-3 p-md-4 rounded-3 mb-4 border-start border-color border-4 shadow-sm hover-scale-1-1 text-break wow fadeInUp" data-wow-delay=".2s">
-                                    <h4 className="mb-3 text-wrap">Do you help with regulatory compliance?</h4>
+                                    <h4 className="mb-3 text-wrap">Can you identify shadow IT assets?</h4>
                                     <p className="text-light-50 mb-0 text-wrap" style={{ wordBreak: 'break-word' }}>
-                                        Yes. We align your security posture with major regulatory frameworks like HIPAA, SOC 2, ISO 27001, and NIST, ensuring that your organization is audit-ready and compliant.
+                                        Yes. We frequently discover unmanaged infrastructure, forgotten legacy systems, and rogue devices that were spun up outside of normal IT processes, presenting significant security risks.
                                     </p>
                                 </div>
                                 <div className="bg-dark p-3 p-md-4 rounded-3 mb-4 border-start border-color border-4 shadow-sm hover-scale-1-1 text-break wow fadeInUp" data-wow-delay=".4s">
-                                    <h4 className="mb-3 text-wrap">How quickly can you deploy AI security tools?</h4>
+                                    <h4 className="mb-3 text-wrap">How often should organizations scan assets?</h4>
                                     <p className="text-light-50 mb-0 text-wrap" style={{ wordBreak: 'break-word' }}>
-                                        Deployment timelines vary based on environment complexity, but most AI integrations are operational within 2–4 weeks. We handle the full setup, configuration, and staff training.
+                                        Given the dynamic nature of cloud and modern IT, we recommend continuous monitoring. Attack surfaces change daily, and real-time visibility is critical to preventing exploitation.
                                     </p>
                                 </div>
                             </div>
@@ -264,26 +235,25 @@ const AiCybersecurityConsulting = () => {
                 </section>
 
                 {/* Final CTA Section */}
-                <section className="bg-dark-gradient text-light py-5 relative overflow-hidden">
-                    <div className="w-30 abs abs-middle end-0 me-5 op-1 d-none d-lg-block">
-                        <img src="/images/logo-big-white.webp" className="w-100" alt="" />
-                    </div>
-                    <div className="container relative z-2">
-                        <div className="row g-4 align-items-center">
-                            <div className="col-lg-8 col-md-12 text-center text-lg-start text-break wow fadeInRight" data-wow-delay=".0s">
-                                <h3 className="mb-3 text-white fw-bold text-wrap" style={{ fontSize: 'clamp(1.5rem, 4vw, 2rem)' }}>Build a Future-Ready Security Strategy</h3>
-                                <p className="lead mb-0 text-white-50 text-wrap">Consult with our AI cybersecurity experts today and get a tailored security roadmap.</p>
-                            </div>
-                            <div className="col-lg-4 col-md-12 text-center text-lg-end mt-4 mt-lg-0 wow fadeInRight" data-wow-delay=".2s">
-                                <Link className="btn-main bg-color text-white fw-bold px-4 py-3 rounded-3 text-wrap" to="/contact"><span>Book a Consultation</span></Link>
+                <section className="section-dark bg-color text-light py-5 overflow-hidden text-center">
+                    <div className="container">
+                        <div className="row justify-content-center">
+                            <div className="col-lg-8">
+                                <h2 className="mb-3 wow fadeInUp" data-wow-delay=".0s">Get Full Visibility Into Your Internet-Facing Infrastructure</h2>
+                                <p className="lead mb-4 wow fadeInUp" data-wow-delay=".2s">Identify exposed systems, reduce attack surface risks, and strengthen cyber resilience today.</p>
+                                <div className="wow fadeInUp" data-wow-delay=".4s">
+                                    <Link to="/contact" className="btn-main btn-dark fx-slide me-3"><span>Request Consultation</span></Link>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
+
             </div>
+
             <Footer />
         </div>
     );
 };
 
-export default AiCybersecurityConsulting;
+export default ShodanDeviceDiscovery;

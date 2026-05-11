@@ -5,35 +5,9 @@ import Footer from './Footer';
 
 const About = () => {
     useEffect(() => {
-        const scripts = [
-          "/js/plugins.js",
-          "/js/designesia.js",
-          "/js/custom-marquee.js"
-        ];
-    
-        const timeoutId = setTimeout(() => {
-            scripts.forEach(src => {
-              if (!document.querySelector(`script[src="${src}"]`)) {
-                const script = document.createElement("script");
-                script.src = src;
-                script.async = false;
-                document.body.appendChild(script);
-              }
-            });
-        }, 100);
-    
         window.scrollTo(0, 0);
-
-        return () => {
-          clearTimeout(timeoutId);
-          scripts.forEach(src => {
-            const script = document.querySelector(`script[src="${src}"]`);
-            if (script) {
-              script.remove();
-            }
-          });
-        };
     }, []);
+
 
     return (
         <>

@@ -181,7 +181,7 @@ html {
 }
 
 body {
-  overflow-x: none;
+  overflow-x: hidden;
   font-family: var(--body-font);
   font-size: var(--body-font-size);
   font-weight: var(--body-font-weight);;

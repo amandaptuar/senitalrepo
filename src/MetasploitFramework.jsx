@@ -9,44 +9,7 @@ const MetasploitFramework = () => {
         document.title = "Advanced Penetration Testing with Metasploit Framework | Sentinel";
         
         // Add meta description
-        let metaDescription = document.querySelector('meta[name="description"]');
-        if (!metaDescription) {
-            metaDescription = document.createElement('meta');
-            metaDescription.name = "description";
-            document.head.appendChild(metaDescription);
-        }
-        metaDescription.content = "Identify, validate, and remediate vulnerabilities before attackers exploit them using industry-leading Metasploit-driven security testing.";
-
-        const scripts = [
-            "/js/plugins.js",
-            "/js/designesia.js",
-            "/js/custom-marquee.js",
-            "/js/swiper.js",
-            "/js/custom-swiper-1.js"
-        ];
-
-        const timeoutId = setTimeout(() => {
-            scripts.forEach(src => {
-                if (!document.querySelector(`script[src="${src}"]`)) {
-                    const script = document.createElement("script");
-                    script.src = src;
-                    script.async = false;
-                    document.body.appendChild(script);
-                }
-            });
-        }, 100);
-
         window.scrollTo(0, 0);
-
-        return () => {
-            clearTimeout(timeoutId);
-            scripts.forEach(src => {
-                const script = document.querySelector(`script[src="${src}"]`);
-                if (script) {
-                    script.remove();
-                }
-            });
-        };
     }, []);
 
     return (

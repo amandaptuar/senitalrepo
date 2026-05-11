@@ -1,40 +1,48 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef, useState, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
+// ─── Viewport-triggered count-up — pure React, no jQuery dependency ──────────
+const CountUp = ({ target, duration = 2000 }) => {
+  const [count, setCount] = useState(0);
+  const elRef = useRef(null);
+  const hasRun = useRef(false);
+
+  const runAnimation = useCallback(() => {
+    if (hasRun.current) return;
+    hasRun.current = true;
+    const start = performance.now();
+    const easeOutQuart = (t) => 1 - Math.pow(1 - t, 4);
+    const tick = (now) => {
+      const progress = Math.min((now - start) / duration, 1);
+      setCount(Math.round(target * easeOutQuart(progress)));
+      if (progress < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  }, [target, duration]);
+
+  useEffect(() => {
+    const el = elRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) { runAnimation(); observer.disconnect(); } },
+      { threshold: 0.4 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [runAnimation]);
+
+  return <span ref={elRef}>{count}</span>;
+};
+// ─────────────────────────────────────────────────────────────────────────────
+
 const Home = () => {
 
   useEffect(() => {
-    const scripts = [
-      "/js/plugins.js",
-      "/js/designesia.js",
-      "/js/custom-marquee.js",
-      "/js/swiper.js",
-      "/js/custom-swiper-1.js"
-    ];
-
-    const timeoutId = setTimeout(() => {
-        scripts.forEach(src => {
-          if (!document.querySelector(`script[src="${src}"]`)) {
-            const script = document.createElement("script");
-            script.src = src;
-            script.async = false;
-            document.body.appendChild(script);
-          }
-        });
-    }, 100);
-
-    return () => {
-      clearTimeout(timeoutId);
-      scripts.forEach(src => {
-        const script = document.querySelector(`script[src="${src}"]`);
-        if (script) {
-          script.remove();
-        }
-      });
-    };
+    window.scrollTo(0, 0);
   }, []);
+
 
   return (
     <>
@@ -63,7 +71,7 @@ const Home = () => {
                         <div className="subtitle s2 mb-3 wow fadeInUp" data-wow-delay=".0s">Welcome to Sentinel</div>
                         <h1 className="wow fadeInUp" data-wow-delay=".2s">Autonomous AI Cybersecurity and Zero-Trust Enterprise Defense</h1>
                         <p className="col-lg-10 wow fadeInUp" data-wow-delay=".4s">Fortify your digital infrastructure with SENTINEL's autonomous, AI-driven security ecosystem. We empower global enterprises to neutralize zero-day threats in milliseconds, enforce strict zero-trust architectures, and ensure absolute data sovereignty in an increasingly hostile digital landscape.</p>
-                        <Link className="btn-main mb10 mb-3 wow fadeInUp" data-wow-delay=".6s" to="/platform?tab=demo"><span>Start Scan</span></Link>
+                        <Link className="btn-main mb10 mb-3 wow fadeInUp" data-wow-delay=".6s" to="/scan"><span>Start Scan</span></Link>
                         <div className="border-bottom my-3"></div>
                         <div className="d-lg-flex align-items-center text-light">
                             <div className="me-3">TrustScore 5.0</div>
@@ -116,7 +124,7 @@ const Home = () => {
                             <h3 className="mb-0 fs-32">Require 24/7 Autonomous Defense Against Advanced AI Threat Vectors?</h3>
                         </div>
                         <div className="col-md-2">                            
-                            <Link className="btn-main fx-slide btn-line" to="/platform?tab=demo"><span>Start Scan</span></Link>
+                            <Link className="btn-main fx-slide btn-line" to="/scan"><span>Start Scan</span></Link>
                         </div>
                     </div>
                 </div>
@@ -365,7 +373,7 @@ const Home = () => {
                         <div className="col-md-3 col-sm-6">
                             <div className="de_count text-center wow fadeInUp" data-wow-delay=".0s">
                                 <i className="p-3 circle bg-color text-light fs-40 d-inline-block mb-2 icofont-briefcase-2"></i>
-                                <h3 className="fs-40 mb-0 lh-1-1"><span className="timer" data-to="65250" data-speed="3000">0</span>+</h3>
+                                <h3 className="fs-40 mb-0 lh-1-1"><CountUp target={65250} duration={2200} />+</h3>
                                 Hours of Active Monitoring
                             </div>
                         </div>
@@ -373,7 +381,7 @@ const Home = () => {
                         <div className="col-md-3 col-sm-6">
                             <div className="de_count text-center wow fadeInUp" data-wow-delay=".2s">
                                 <i className="p-3 circle bg-color text-light fs-40 d-inline-block mb-2 icofont-thumbs-up"></i>
-                                <h3 className="fs-40 mb-0 lh-1-1"><span className="timer" data-to="23160" data-speed="3000">0</span>+</h3>
+                                <h3 className="fs-40 mb-0 lh-1-1"><CountUp target={23160} duration={2000} />+</h3>
                                 Systems Protected
                             </div>
                         </div>
@@ -381,7 +389,7 @@ const Home = () => {
                         <div className="col-md-3 col-sm-6">
                             <div className="de_count text-center wow fadeInUp" data-wow-delay=".4s">
                                 <i className="p-3 circle bg-color text-light fs-40 d-inline-block mb-2 icofont-users-alt-3"></i>
-                                <h3 className="fs-40 mb-0 lh-1-1"><span className="timer" data-to="1500" data-speed="3000">0</span>+</h3>
+                                <h3 className="fs-40 mb-0 lh-1-1"><CountUp target={1500} duration={1800} />+</h3>
                                 Security Audits Completed
                             </div>
                         </div>
@@ -389,7 +397,7 @@ const Home = () => {
                         <div className="col-md-3 col-sm-6">
                             <div className="de_count text-center wow fadeInUp" data-wow-delay=".6s">
                                 <i className="p-3 circle bg-color text-light fs-40 d-inline-block mb-2 icofont-badge"></i>
-                                <h3 className="fs-40 mb-0 lh-1-1"><span className="timer" data-to="20" data-speed="3000">0</span>+</h3>
+                                <h3 className="fs-40 mb-0 lh-1-1"><CountUp target={20} duration={1500} />+</h3>
                                 Years of Experience
                             </div>
                         </div>
@@ -566,7 +574,7 @@ const Home = () => {
                             <h3 className="mb-0 fs-32">Need 24/7 Protection From Cyber Attacks?</h3>
                         </div>
                         <div className="col-md-2 wow fadeInRight" data-wow-delay=".2s">                            
-                            <Link className="btn-main fx-slide btn-line" to="/platform?tab=demo"><span>Start Scan</span></Link>
+                            <Link className="btn-main fx-slide btn-line" to="/scan"><span>Start Scan</span></Link>
                         </div>
                     </div>
                 </div>

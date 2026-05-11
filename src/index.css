@@ -2,6 +2,448 @@
    Global fixes for React build — mobile responsiveness & layout
    ============================================================ */
 
+/* ============================================================
+   SCROLL FIX — Single browser scrollbar, no nested containers
+   ============================================================ */
+
+/* 1. Root layout — single natural scroll context */
+html {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  overflow-x: hidden;
+  overflow-y: visible;
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+}
+
+/* 2. Main wrapper — no forced height, pure natural flow */
+#wrapper {
+  overflow: visible !important;
+  height: auto !important;
+  min-height: unset !important;
+  position: relative;
+}
+
+/* 3. Hide designesia jQuery scrollbar/float elements — not usable in React SPA */
+.scrollbar-v,
+.float-text {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* 4. Footer whitespace fix — no gap after footer */
+footer {
+  display: block;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.subfooter {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Remove any gap that appears after #wrapper */
+#wrapper + * { display: none; }
+
+/* ============================================================
+   Navbar Fixes
+   ============================================================ */
+header.transparent {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0;
+    width: 100%;
+    z-index: 9999 !important;
+    background: transparent;
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
+}
+
+header.scrollOff, header.scrollOn, header.clone {
+    position: absolute !important;
+    top: 0 !important;
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+header .logo-main, header .logo-mobile {
+    max-height: 100px !important;
+    width: auto;
+}
+
+header .de-flex.sm-pt10 {
+    min-height: 130px;
+    align-items: center;
+}
+
+/* 1. Remove any default margin/padding causing white space */
+* { box-sizing: border-box; }
+body { margin: 0; padding: 0; overflow-x: hidden; }
+
+/* Fluid Typography scoped to content to protect footer */
+#content h1 { font-size: clamp(2.5rem, 6vw, 4rem) !important; }
+#content h2 { font-size: clamp(2rem, 5vw, 3.5rem) !important; }
+#content h3 { font-size: clamp(1.5rem, 4vw, 2.5rem) !important; }
+#content h4 { font-size: clamp(1.2rem, 3vw, 2rem) !important; }
+#content h5 { font-size: clamp(1.1rem, 2vw, 1.5rem) !important; }
+
+/* Wow.js Mobile Layout Fix */
+@media (max-width: 768px) {
+  .wow {
+    animation-duration: 0.5s !important;
+    animation-delay: 0s !important;
+  }
+}
+
+/* 2. Push hero section down so it sits below the fixed navbar */
+#section-intro, #subheader {
+  padding-top: 140px !important;
+}
+
+/* 3. Fix the absolutely-positioned stat cards in the hero section. */
+@media (max-width: 991px) {
+  #section-intro .col-lg-6 .relative {
+    position: relative;
+    padding-bottom: 16px;
+  }
+
+  #section-intro .bg-blur.abs {
+    position: absolute !important;
+    display: block !important;
+    z-index: 5;
+  }
+
+  #section-intro .bg-blur.abs.end-0 {
+    right: 0 !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+  }
+
+  #section-intro .bg-blur.abs.start-0 {
+    left: 0 !important;
+    bottom: 10% !important;
+  }
+
+  #section-intro .col-lg-6:first-child {
+    padding-top: 20px;
+  }
+
+  .spacer-double.sm-hide { display: none !important; }
+}
+
+/* 4. Prevent any section from having horizontal scroll on mobile */
+section {
+  overflow-x: hidden;
+}
+
+/* 5. Fix absolute positioned big logos in CTA banners on mobile */
+@media (max-width: 768px) {
+  .w-30.abs {
+    position: absolute !important;
+    display: block !important;
+  }
+}
+
+/* 6. Ensure the footer logo isn't too large on mobile */
+@media (max-width: 991px) {
+  img.logo-footer {
+    max-width: 160px !important;
+    height: auto !important;
+  }
+
+  .menu_side_area {
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+
+  .menu_side_area .btn-main {
+    display: inline-block !important;
+    margin: 0 !important;
+    white-space: nowrap;
+  }
+
+  #menu-btn {
+    margin-left: 10px !important;
+    position: relative;
+    top: 0;
+  }
+}
+
+/* Subfooter responsive spacing */
+@media (max-width: 768px) {
+  .subfooter {
+    padding: 20px 0;
+  }
+}
+
+/* 8. Content area: no extra top padding that creates white gaps */
+#content {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* 9. Fix hero on very small phones */
+@media (max-width: 480px) {
+  #section-intro {
+    padding-top: 120px !important;
+    padding-bottom: 40px !important;
+  }
+  #section-intro h1, #subheader h1 {
+    font-size: 2.5rem !important;
+  }
+  #subheader {
+    padding-bottom: 40px !important;
+  }
+}
+
+/* ============================================================
+   Hero Section — static image background
+   ============================================================ */
+
+#hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('/images/background/2.webp');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  padding-top: 120px;
+  padding-bottom: 80px;
+  overflow: hidden;
+}
+
+#hero-section .sw-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+#hero-section .gradient-edge-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(to bottom, transparent, #111013);
+  z-index: 2;
+  pointer-events: none;
+}
+
+#hero-section .container {
+  position: relative;
+  z-index: 3;
+}
+
+#hero-section h1 {
+  color: #ffffff;
+  line-height: 1.05;
+  margin-bottom: 20px;
+}
+
+#hero-section .row.g-4:last-child {
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  #hero-section {
+    padding-top: 140px;
+    padding-bottom: 60px;
+    min-height: 100svh;
+  }
+  #hero-section h1 {
+    font-size: clamp(3rem, 15vw, 8rem) !important;
+  }
+}
+
+.abs {
+  position: absolute;
+}
+
+.abs-middle {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.end-0 {
+  right: 0;
+}
+
+.start-0 {
+  left: 0;
+}
+
+.fs-60 {
+  font-size: 60px !important;
+}
+
+.z-2 {
+  z-index: 2 !important;
+}
+
+.shadow-1 {
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,0.1);
+}
+
+.rounded-1 {
+  border-radius: 10px !important;
+}
+
+/* 3D Flip Card Styles */
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 400px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.flip-card-front {
+  background-color: #f8f9fa;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #1a1a2e;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.flip-card-back blockquote {
+  font-style: italic;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.flip-card-back .social-icons a i {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+
+.flip-card-back .social-icons a i:hover {
+  background-color: #00bcd4;
+}
+
+/* Disable all animations for faster load */
+* {
+    animation: none !important;
+}
+
+.hover-scale-big {
+    transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+}
+.hover:hover .hover-scale-big {
+    transform: scale(1.4) !important;
+}
+
+.wow {
+    visibility: visible !important;
+    animation: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+}
+
+/* Fix Hero overlap with Navbar */
+#section-intro, #subheader, #hero-section {
+    padding-top: 180px !important;
+}
+
+/* Fix hover cards on mobile */
+@media (max-width: 991px) {
+    .hover-op-1 { opacity: 1 !important; }
+    .hover-mt-40 { margin-top: 0 !important; }
+    .abs.bg-color.hover-op-1 { opacity: 0.85 !important; }
+}
+
+/* Fix What We Provide mobile layout */
+@media (max-width: 991.98px) { .mobile-gap-4 { row-gap: 1.5rem !important; } .service-img-col { height: 250px !important; min-height: 250px; } }
+@media (min-width: 992px) { .service-img-col { height: 100% !important; } }
+
+/* Hero Floating Cards Mobile Fix */
+@media (max-width: 767.98px) {
+    .hero-stat-card { padding: 1rem !important; }
+    .hero-stat-card .fs-60 { font-size: 36px !important; }
+    .hero-stat-card h2 { font-size: 24px !important; margin-bottom: 0 !important; }
+    .hero-stat-card .ms-3 { font-size: 0.85rem !important; margin-left: 0.75rem !important; }
+    .hero-stat-card.card-1 { top: 35% !important; }
+    .hero-stat-card.card-2 { bottom: 5% !important; }
+}
+
+/* Hero Floating Cards Mobile Fix (No Custom Classes) */
+@media (max-width: 767.98px) {
+    #section-intro .bg-blur.abs.end-0 { padding: 1rem !important; top: 35% !important; }
+    #section-intro .bg-blur.abs.start-0 { padding: 1rem !important; bottom: 5% !important; }
+    #section-intro .bg-blur.abs .fs-60 { font-size: 36px !important; }
+    #section-intro .bg-blur.abs h2 { font-size: 24px !important; margin-bottom: 0 !important; }
+    #section-intro .bg-blur.abs .ms-3 { font-size: 0.85rem !important; margin-left: 0.75rem !important; }
+}
+
+
 /* Navbar Fixes */
 header.transparent {
     position: absolute !important;

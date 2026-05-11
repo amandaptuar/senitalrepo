@@ -5,49 +5,9 @@ import Footer from './Footer';
 
 const AiSecurityTools = () => {
     useEffect(() => {
-        // Update document title for SEO
-        document.title = "AI Security Tools & Automation Services | Sentinel";
-        
-        // Add meta description
-        let metaDescription = document.querySelector('meta[name="description"]');
-        if (!metaDescription) {
-            metaDescription = document.createElement('meta');
-            metaDescription.name = "description";
-            document.head.appendChild(metaDescription);
-        }
-        metaDescription.content = "Smarter Security. Faster Response. Zero Guesswork. AI-powered security solutions combining intelligent automation with real-time threat detection.";
-
-        const scripts = [
-            "/js/plugins.js",
-            "/js/designesia.js",
-            "/js/custom-marquee.js",
-            "/js/swiper.js",
-            "/js/custom-swiper-1.js"
-        ];
-
-        const timeoutId = setTimeout(() => {
-            scripts.forEach(src => {
-                if (!document.querySelector(`script[src="${src}"]`)) {
-                    const script = document.createElement("script");
-                    script.src = src;
-                    script.async = false;
-                    document.body.appendChild(script);
-                }
-            });
-        }, 100);
-
         window.scrollTo(0, 0);
-
-        return () => {
-            clearTimeout(timeoutId);
-            scripts.forEach(src => {
-                const script = document.querySelector(`script[src="${src}"]`);
-                if (script) {
-                    script.remove();
-                }
-            });
-        };
     }, []);
+
 
     return (
         <div id="wrapper">
@@ -78,7 +38,7 @@ const AiSecurityTools = () => {
                                 </ul>
                                 <div className="mt-4 wow fadeInUp" data-wow-delay=".8s">
                                     <Link to="/contact" className="btn-main fx-slide me-3"><span>Request Free Assessment</span></Link>
-                                    <Link to="/platform?tab=demo" className="btn-main btn-line fx-slide"><span>View Dashboard</span></Link>
+                                    <Link to="/contact" className="btn-main btn-line fx-slide"><span>View Dashboard</span></Link>
                                 </div>
                             </div>
                             <div className="col-lg-4 text-center sm-hide">

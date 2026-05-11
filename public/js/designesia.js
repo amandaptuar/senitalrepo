@@ -649,7 +649,11 @@
          })
      }
 
-     /* Lenis begin */
+     /* Lenis DISABLED — incompatible with React SPA navigation.
+        Lenis hijacks window scroll on first load and never re-syncs when
+        React Router navigates between pages, leaving every page un-scrollable.
+        Native browser scroll is used instead. */
+     /*
          const lenis = new Lenis()
 
          function raf(time) {
@@ -661,12 +665,12 @@
          const extraContent = document.querySelector('#extra-content');
          if (extraContent) {
            const modalLenis = new Lenis({
-             wrapper: extraContent,   // the overlay wrapper
-             content: extraContent,   // the scrolled content inside it
+             wrapper: extraContent,
+             content: extraContent,
              autoRaf: true
            });
          }
-     /* Lenis end */
+     */
 
      /* --------------------------------------------------
       * plugin | isotope

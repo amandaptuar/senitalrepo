@@ -6,7 +6,7 @@
   --display: 'Bebas Neue', Impact, sans-serif; --body: 'DM Sans', system-ui, sans-serif; --mono: 'JetBrains Mono', monospace;
   background-color: var(--bg);
   color: var(--white);
-  padding: 60px 0;
+  padding: 140px 0 60px;
 }
 
 .sentinel-wrapper .bg-grid {

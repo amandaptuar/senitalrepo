@@ -7769,6 +7769,15 @@ footer .tiny-border span {
 /* border bottom dark */
 .border-bottom-1-light{border-bottom: solid 1px rgba(255,255,255,.5);}
 
+/* hover effects base transitions */
+.hover-scale-1-1, .hover-scale-1-2, .hover-scale-in-1, .hover-scale-in-3, 
+.hover-op-0, .hover-op-1, .hover-op-05, .hover-mh-60, .hover-mt-40, 
+.hover-bg-color, .hover-bg-color-2, .hover-bg-dark, .hover-top-0, 
+.hover-pb-40, .hover-mt-0, .hover-text-light * {
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
 /* hover effects */
 .hover:hover .hover-scale-1-2{transform: scale(1.2);}
 .hover-scale-in-1{transform: scale(1.1); }

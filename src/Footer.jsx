@@ -6,8 +6,8 @@ const Footer = () => {
           <div className="container">
             <div className="row gx-5 gy-4">
               <div className="col-lg-4 col-md-6 col-12">
-                <img src="/imgadd/image.png" className="logo-footer mb-3" alt="Senitel" />
-                <p className="text-light-50 pe-lg-4" style={{ fontSize: '0.95rem' }}>At Senitel, we’re committed to delivering professional, high-quality cybersecurity solutions. From proactive threat monitoring to advanced data protection, we help keep your business secure while preserving its reputation and protecting it from evolving digital threats.</p>
+                <img src="/imgadd/image.png" className="logo-footer mb-3" alt="Sentinel" />
+                <p className="text-light-50 pe-lg-4" style={{ fontSize: '0.95rem' }}>At Sentinel, we deliver elite, enterprise-grade cybersecurity solutions. From autonomous threat monitoring to zero-trust architecture, we safeguard your digital assets and ensure operational resilience against sophisticated global threats.</p>
 
                 <div className="social-icons mt-4">
                   <Link to="/contact"><i className="fa-brands fa-facebook-f"></i></Link>
@@ -68,7 +68,7 @@ const Footer = () => {
                     <i className="icofont-envelope fs-4 id-color me-3 mt-1"></i>
                     <div>
                       <div className="fw-bold text-white mb-1">Email Us</div>
-                      <span className="text-light-50" style={{ fontSize: '0.9rem' }}>support@senitel.com</span>
+                      <span className="text-light-50" style={{ fontSize: '0.9rem' }}>support@sentinel.com</span>
                     </div>
                   </div>
                 </div>

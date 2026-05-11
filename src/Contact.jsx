@@ -78,8 +78,8 @@ const Contact = () => {
                     <div className="container">
                         <div className="row g-4">
                             <div className="col-lg-6">
-                                <h3 className="wow fadeInUp">Send Your Message</h3>
-                                <p className="mb-0">Whether you have a question, a suggestion, or just want to say hello, this is the place to do it. Please fill out the form below with your details and message, and we'll get back to you as soon as possible.</p>
+                                <h3 className="wow fadeInUp">Request a Security Consultation</h3>
+                                <p className="mb-0">Secure your enterprise infrastructure today. Please provide your details and a brief overview of your security requirements, and our team of cybersecurity experts will respond within 24 hours to schedule a consultation.</p>
                             </div>
 
                             <div className="clearfix"></div>
@@ -114,19 +114,19 @@ const Contact = () => {
                                 <form name="contactForm" id="contact_form" className="position-relative z1000" method="post" action="contact.php">
                                     
                                     <div className="field-set">
-                                        <input type="text" name="name" id="name" className="form-control" placeholder="Your Name" required />
+                                        <input type="text" name="name" id="name" className="form-control" placeholder="Full Name" required />
                                     </div>
 
                                     <div className="field-set">
-                                        <input type="text" name="email" id="email" className="form-control" placeholder="Your Email" required />
+                                        <input type="text" name="email" id="email" className="form-control" placeholder="Corporate Email" required />
                                     </div>
 
                                     <div className="field-set">
-                                        <input type="text" name="phone" id="phone" className="form-control" placeholder="Your Phone" required />
+                                        <input type="text" name="phone" id="phone" className="form-control" placeholder="Phone Number" required />
                                     </div>
 
                                     <div className="field-set mb20">
-                                        <textarea name="message" id="message" className="form-control" placeholder="Your Message" required></textarea>
+                                        <textarea name="message" id="message" className="form-control" placeholder="How can we help secure your business?" required></textarea>
                                     </div>
                                         
                                     <div className="g-recaptcha" data-sitekey="6LdW03QgAAAAAJko8aINFd1eJUdHlpvT4vNKakj6"></div>

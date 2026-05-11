@@ -342,7 +342,13 @@ section {
 /* Disable all animations for faster load */
 * {
     animation: none !important;
-    transition-duration: 0ms !important;
+}
+
+.hover-scale-big {
+    transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+}
+.hover:hover .hover-scale-big {
+    transform: scale(1.4) !important;
 }
 
 .wow {
@@ -350,4 +356,40 @@ section {
     animation: none !important;
     transform: none !important;
     opacity: 1 !important;
+}
+
+
+/* Fix Hero overlap with Navbar */
+#section-intro, #subheader, #hero-section {
+    padding-top: 180px !important;
+}
+
+/* Fix hover cards on mobile */
+@media (max-width: 991px) {
+    .hover-op-1 { opacity: 1 !important; }
+    .hover-mt-40 { margin-top: 0 !important; }
+    .abs.bg-color.hover-op-1 { opacity: 0.85 !important; }
+}
+
+/* Fix What We Provide mobile layout */
+@media (max-width: 991.98px) { .mobile-gap-4 { row-gap: 1.5rem !important; } .service-img-col { height: 250px !important; min-height: 250px; } }
+@media (min-width: 992px) { .service-img-col { height: 100% !important; } }
+
+/* Hero Floating Cards Mobile Fix */
+@media (max-width: 767.98px) {
+    .hero-stat-card { padding: 1rem !important; }
+    .hero-stat-card .fs-60 { font-size: 36px !important; }
+    .hero-stat-card h2 { font-size: 24px !important; margin-bottom: 0 !important; }
+    .hero-stat-card .ms-3 { font-size: 0.85rem !important; margin-left: 0.75rem !important; }
+    .hero-stat-card.card-1 { top: 35% !important; }
+    .hero-stat-card.card-2 { bottom: 5% !important; }
+}
+
+/* Hero Floating Cards Mobile Fix (No Custom Classes) */
+@media (max-width: 767.98px) {
+    #section-intro .bg-blur.abs.end-0 { padding: 1rem !important; top: 35% !important; }
+    #section-intro .bg-blur.abs.start-0 { padding: 1rem !important; bottom: 5% !important; }
+    #section-intro .bg-blur.abs .fs-60 { font-size: 36px !important; }
+    #section-intro .bg-blur.abs h2 { font-size: 24px !important; margin-bottom: 0 !important; }
+    #section-intro .bg-blur.abs .ms-3 { font-size: 0.85rem !important; margin-left: 0.75rem !important; }
 }

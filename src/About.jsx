@@ -87,7 +87,7 @@ const About = () => {
                                             From real-time zero-day threat intelligence to continuous vulnerability analysis, our platform ensures absolute digital sovereignty in an increasingly volatile digital landscape.
                                         </p>
 
-                                        <Link className="btn-main fx-slide mb10 mb-3 wow fadeInUp" data-wow-delay=".6s" to="/contact"><span>Start For Free</span></Link>
+                                        <Link className="btn-main fx-slide mb10 mb-3 wow fadeInUp" data-wow-delay=".6s" to="/contact"><span>Contact Our Team</span></Link>
                                     </div>
                                 </div>
 
@@ -245,7 +245,7 @@ const About = () => {
                                     <h3 className="mb-0 fs-32 wow fadeInRight">Ready to Upgrade to Enterprise-Grade AI Security?</h3>
                                 </div>
                                 <div className="col-md-2">                            
-                                    <Link className="btn-main fx-slide btn-line wow fadeInLeft" to="/contact"><span>Start For Free</span></Link>
+                                    <Link className="btn-main fx-slide btn-line wow fadeInLeft" to="/contact"><span>Book Consultation</span></Link>
                                 </div>
                             </div>
                         </div>

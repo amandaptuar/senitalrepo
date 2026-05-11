@@ -66,8 +66,7 @@ const Home = () => {
                         <Link className="btn-main mb10 mb-3 wow fadeInUp" data-wow-delay=".6s" to="/platform?tab=demo"><span>Start Scan</span></Link>
                         <div className="border-bottom my-3"></div>
                         <div className="d-lg-flex align-items-center text-light">
-                            <div className="me-3">Google Rating</div>
-                            <div className="me-3">5.0</div>
+                            <div className="me-3">TrustScore 5.0</div>
                             <div className="d-flex fs-14 d-rating me-3">
                                 <i className="fa fa-solid fa-star m-1"></i>
                                 <i className="fa fa-solid fa-star m-1"></i>
@@ -75,7 +74,7 @@ const Home = () => {
                                 <i className="fa fa-solid fa-star m-1"></i>
                                 <i className="fa fa-solid fa-star m-1"></i>
                             </div>
-                            <div className="me-3">Based on 23k Reviews</div>
+                            <div className="me-3">Trusted by 500+ Enterprise Clients</div>
                         </div>
                     </div>
                     <div className="col-lg-6">
@@ -93,8 +92,8 @@ const Home = () => {
                                 <div className="d-flex justify-content-center">
                                     <i className="fs-60 id-color fa-solid fa-user-group"></i>
                                     <div className="ms-3">
-                                        <h2 className="mb-0">23K</h2>
-                                        Happy Customers
+                                        <h2 className="mb-0">500+</h2>
+                                        Enterprises Secured
                                     </div>
                                 </div>
                             </div>
@@ -196,16 +195,16 @@ const Home = () => {
                         </div>                                       
                     </div>
 
-                    <div className="row g-0 mb-3">
+                    <div className="row g-0 mobile-gap-4 mb-3">
 
                         <div className="col-lg-6 d-flex">
                             <Link to="/services/ai-cybersecurity-consulting" className="hover overflow-hidden bg-dark text-light d-block w-100 h-100">
                                 <div className="row g-0 align-items-stretch h-100">
-                                    <div className="col-md-5 h-100">
+                                    <div className="col-md-5 service-img-col">
                                         <div className="relative overflow-hidden h-100">
                                             <h3 className="abs text-white fs-32 lh-1 p-4 top-0 start-0 z-3">01</h3>
                                             <div className="sw-overlay z-2 op-3"></div>
-                                            <img src="images/services/1.webp" className="w-100 h-100 hover-scale-1-2" style={{ objectFit: 'cover' }} alt="AI Cybersecurity Consulting" loading="lazy" />
+                                            <img src="images/services/1.webp" className="w-100 h-100 hover-scale-big" style={{ objectFit: 'cover' }} alt="AI Cybersecurity Consulting" loading="lazy" />
                                         </div>
                                     </div>
                                     <div className="col-md-7 d-flex flex-column justify-content-center">
@@ -227,11 +226,11 @@ const Home = () => {
                         <div className="col-lg-6 d-flex">
                             <Link to="/services/metasploit-framework" className="hover overflow-hidden bg-color text-light d-block w-100 h-100">
                                 <div className="row g-0 align-items-stretch h-100">
-                                    <div className="col-md-5 h-100">
+                                    <div className="col-md-5 service-img-col">
                                         <div className="relative overflow-hidden h-100">
                                             <h3 className="abs text-white fs-32 lh-1 p-4 top-0 start-0 z-3">02</h3>
                                             <div className="sw-overlay z-2 op-3"></div>
-                                            <img src="images/services/2.webp" className="w-100 h-100 hover-scale-1-2" style={{ objectFit: 'cover' }} alt="Offensive Security & Metasploit Framework" loading="lazy" />
+                                            <img src="images/services/2.webp" className="w-100 h-100 hover-scale-big" style={{ objectFit: 'cover' }} alt="Offensive Security & Metasploit Framework" loading="lazy" />
                                         </div>
                                     </div>
                                     <div className="col-md-7 d-flex flex-column justify-content-center">
@@ -265,11 +264,11 @@ const Home = () => {
                                             </ul>
                                         </div>
                                     </div>
-                                    <div className="col-md-5 h-100">
+                                    <div className="col-md-5 service-img-col">
                                         <div className="relative overflow-hidden h-100">
                                             <h3 className="abs text-white fs-32 lh-1 p-4 top-0 start-0 z-3">03</h3>
                                             <div className="sw-overlay z-2 op-3"></div>
-                                            <img src="images/services/3.webp" className="w-100 h-100 hover-scale-1-2" style={{ objectFit: 'cover' }} alt="Security Orchestration & AI" loading="lazy" />
+                                            <img src="images/services/3.webp" className="w-100 h-100 hover-scale-big" style={{ objectFit: 'cover' }} alt="Security Orchestration & AI" loading="lazy" />
                                         </div>
                                     </div>
                                 </div>
@@ -291,11 +290,11 @@ const Home = () => {
                                             </ul>
                                         </div>
                                     </div>
-                                    <div className="col-md-5 h-100">
+                                    <div className="col-md-5 service-img-col">
                                         <div className="relative overflow-hidden h-100">
                                             <h3 className="abs text-white fs-32 lh-1 p-4 top-0 start-0 z-3">04</h3>
                                             <div className="sw-overlay z-2 op-3"></div>
-                                            <img src="images/services/4.webp" className="w-100 h-100 hover-scale-1-2" style={{ objectFit: 'cover' }} alt="Attack Simulation & Breach Testing" loading="lazy" />
+                                            <img src="images/services/4.webp" className="w-100 h-100 hover-scale-big" style={{ objectFit: 'cover' }} alt="Attack Simulation & Breach Testing" loading="lazy" />
                                         </div>
                                     </div>
                                 </div>
@@ -305,11 +304,11 @@ const Home = () => {
                         <div className="col-lg-6 d-flex">
                             <Link to="/contact" className="hover overflow-hidden bg-color text-light d-block w-100 h-100">
                                 <div className="row g-0 align-items-stretch h-100">
-                                    <div className="col-md-5 h-100">
+                                    <div className="col-md-5 service-img-col">
                                         <div className="relative overflow-hidden h-100">
                                             <h3 className="abs text-white fs-32 lh-1 p-4 top-0 start-0 z-3">05</h3>
                                             <div className="sw-overlay z-2 op-3"></div>
-                                            <img src="images/services/5.webp" className="w-100 h-100 hover-scale-1-2" style={{ objectFit: 'cover' }} alt="Data Protection & Intelligent Encryption" loading="lazy" />
+                                            <img src="images/services/5.webp" className="w-100 h-100 hover-scale-big" style={{ objectFit: 'cover' }} alt="Data Protection & Intelligent Encryption" loading="lazy" />
                                         </div>
                                     </div>
                                     <div className="col-md-7 d-flex flex-column justify-content-center">
@@ -331,11 +330,11 @@ const Home = () => {
                         <div className="col-lg-6 d-flex">
                             <Link to="/contact" className="hover overflow-hidden bg-dark text-light d-block w-100 h-100">
                                 <div className="row g-0 align-items-stretch h-100">
-                                    <div className="col-md-5 h-100">
+                                    <div className="col-md-5 service-img-col">
                                         <div className="relative overflow-hidden h-100">
                                             <h3 className="abs text-white fs-32 lh-1 p-4 top-0 start-0 z-3">06</h3>
                                             <div className="sw-overlay z-2 op-3"></div>
-                                            <img src="images/services/6.webp" className="w-100 h-100 hover-scale-1-2" style={{ objectFit: 'cover' }} alt="Security Configuration" loading="lazy" />
+                                            <img src="images/services/6.webp" className="w-100 h-100 hover-scale-big" style={{ objectFit: 'cover' }} alt="Security Configuration" loading="lazy" />
                                         </div>
                                     </div>
                                     <div className="col-md-7 d-flex flex-column justify-content-center">
@@ -367,7 +366,7 @@ const Home = () => {
                             <div className="de_count text-center wow fadeInUp" data-wow-delay=".0s">
                                 <i className="p-3 circle bg-color text-light fs-40 d-inline-block mb-2 icofont-briefcase-2"></i>
                                 <h3 className="fs-40 mb-0 lh-1-1"><span className="timer" data-to="65250" data-speed="3000">0</span>+</h3>
-                                Hours of Works
+                                Hours of Active Monitoring
                             </div>
                         </div>
 
@@ -375,7 +374,7 @@ const Home = () => {
                             <div className="de_count text-center wow fadeInUp" data-wow-delay=".2s">
                                 <i className="p-3 circle bg-color text-light fs-40 d-inline-block mb-2 icofont-thumbs-up"></i>
                                 <h3 className="fs-40 mb-0 lh-1-1"><span className="timer" data-to="23160" data-speed="3000">0</span>+</h3>
-                                Happy Customers
+                                Systems Protected
                             </div>
                         </div>
 
@@ -383,7 +382,7 @@ const Home = () => {
                             <div className="de_count text-center wow fadeInUp" data-wow-delay=".4s">
                                 <i className="p-3 circle bg-color text-light fs-40 d-inline-block mb-2 icofont-users-alt-3"></i>
                                 <h3 className="fs-40 mb-0 lh-1-1"><span className="timer" data-to="1500" data-speed="3000">0</span>+</h3>
-                                Experienced Workers
+                                Security Audits Completed
                             </div>
                         </div>
 
@@ -422,7 +421,7 @@ const Home = () => {
                                 <img src="images/projects/1.webp" className="hover-scale-1-1 w-100" alt="" />
                                 <div className="abs w-100 px-4 hover-op-1 z-4 hover-mt-40 abs-centered">
                                     <div className="mb-3">Safeguard your online store with end-to-end protection, preventing data breaches, fraud, and unauthorized access.</div>
-                                    <Link className="btn-line" to="/contact">View Details</Link>
+                                    <Link className="btn-line" to="/contact">Read Case Study</Link>
                                 </div>
                                 <div className="abs bg-color z-2 top-0 w-100 h-100 hover-op-1"></div>
                                 <div className="abs z-2 bottom-0 mb-3 w-100 text-center hover-op-0">
@@ -439,7 +438,7 @@ const Home = () => {
                                 <img src="images/projects/2.webp" className="hover-scale-1-1 w-100" alt="" />
                                 <div className="abs w-100 px-4 hover-op-1 z-4 hover-mt-40 abs-centered">
                                     <div className="mb-3">Eliminate hidden cloud vulnerabilities with expert misconfiguration audits, secure policies, and real-time fixes.</div>
-                                    <Link className="btn-line" to="/contact">View Details</Link>
+                                    <Link className="btn-line" to="/contact">Read Case Study</Link>
                                 </div>
                                 <div className="abs bg-color z-2 top-0 w-100 h-100 hover-op-1"></div>
                                 <div className="abs z-2 bottom-0 mb-3 w-100 text-center hover-op-0">
@@ -456,7 +455,7 @@ const Home = () => {
                                 <img src="images/projects/3.webp" className="hover-scale-1-1 w-100" alt="" />
                                 <div className="abs w-100 px-4 hover-op-1 z-4 hover-mt-40 abs-centered">
                                     <div className="mb-3">Strengthen your firm’s defenses with advanced protection, compliance support, and incident response readiness.</div>
-                                    <Link className="btn-line" to="/contact">View Details</Link>
+                                    <Link className="btn-line" to="/contact">Read Case Study</Link>
                                 </div>
                                 <div className="abs bg-color z-2 top-0 w-100 h-100 hover-op-1"></div>
                                 <div className="abs z-2 bottom-0 mb-3 w-100 text-center hover-op-0">

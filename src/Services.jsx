@@ -60,7 +60,7 @@ const Services = () => {
                                 <div className="spacer-double sm-hide"></div>
 
                                 <div className="col-lg-6">
-                                    <h1 className="mb-0 wow fadeInUp" data-wow-delay=".2s">Our Service</h1>
+                                    <h1 className="mb-0 wow fadeInUp" data-wow-delay=".2s">Our Services</h1>
                                     <ul className="crumb wow fadeInUp">
                                         <li><Link to="/">Home</Link></li>
                                         <li className="active">Our Services</li>
@@ -91,7 +91,7 @@ const Services = () => {
                                                 <li>Compliance (HIPAA, SOC2, ISO)</li>
                                                 <li>AI integration strategy</li>
                                             </ul>
-                                            <Link className="btn-main fx-slide bg-dark" to="/services/ai-cybersecurity-consulting"><span>Learn More</span></Link>
+                                            <Link className="btn-main fx-slide bg-dark" to="/services/ai-cybersecurity-consulting"><span>Explore Service</span></Link>
                                         </div>
                                         <img src="/images/icons-white/cyber-security.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
                                     </div>
@@ -109,7 +109,7 @@ const Services = () => {
                                                 <li>Vulnerability assessment</li>
                                                 <li>Red team operations</li>
                                             </ul>
-                                            <Link className="btn-main fx-slide bg-dark" to="/services/metasploit-framework"><span>Learn More</span></Link>
+                                            <Link className="btn-main fx-slide bg-dark" to="/services/metasploit-framework"><span>Explore Service</span></Link>
                                         </div>
                                         <img src="/images/icons-white/encryption.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
                                     </div>
@@ -127,7 +127,7 @@ const Services = () => {
                                                 <li>Alert prioritization</li>
                                                 <li>Workflow optimization</li>
                                             </ul>
-                                            <Link className="btn-main fx-slide bg-dark" to="/services/ai-security-tools-automation"><span>Learn More</span></Link>
+                                            <Link className="btn-main fx-slide bg-dark" to="/services/ai-security-tools-automation"><span>Explore Service</span></Link>
                                         </div>
                                         <img src="/images/icons-white/fingerprint.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
                                     </div>
@@ -145,7 +145,7 @@ const Services = () => {
                                                 <li>Ransomware scenario testing</li>
                                                 <li>Security posture validation</li>
                                             </ul>
-                                            <Link className="btn-main fx-slide bg-dark" to="/contact"><span>Learn More</span></Link>
+                                            <Link className="btn-main fx-slide bg-dark" to="/contact"><span>Explore Service</span></Link>
                                         </div>
                                         <img src="/images/icons-white/monitoring.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
                                     </div>
@@ -163,7 +163,7 @@ const Services = () => {
                                                 <li>Secure data movement</li>
                                                 <li>Cloud data security</li>
                                             </ul>
-                                            <Link className="btn-main fx-slide bg-dark" to="/contact"><span>Learn More</span></Link>
+                                            <Link className="btn-main fx-slide bg-dark" to="/contact"><span>Explore Service</span></Link>
                                         </div>
                                         <img src="/images/icons-white/cloud-storage.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
                                     </div>
@@ -175,7 +175,7 @@ const Services = () => {
                                             <img src="/images/icons-white/settings.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
                                             <h4>Security Configuration</h4>
                                             <p>Hardening systems and applying secure configurations across all infrastructure.</p>
-                                            <Link className="btn-main fx-slide bg-dark mt-auto" to="/contact"><span>Learn More</span></Link>
+                                            <Link className="btn-main fx-slide bg-dark mt-auto" to="/contact"><span>Explore Service</span></Link>
                                         </div>
                                         <img src="/images/icons-white/settings.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
                                     </div>

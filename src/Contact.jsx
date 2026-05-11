@@ -97,10 +97,7 @@ const Contact = () => {
                                                 <div className="fw-bold text-dark"><i className="icofont-location-pin me-2 id-color-2"></i>Office Location</div>
                                                 123 Cyber Street, Los Angeles, CA
 
-                                                <div className="spacer-20"></div>
 
-                                                <div className="fw-bold text-dark"><i className="icofont-phone me-2 id-color-2"></i>Call Us Directly</div>
-                                                +1 123 456 789
 
                                                 <div className="spacer-20"></div>
 

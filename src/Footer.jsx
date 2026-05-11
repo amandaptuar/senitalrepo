@@ -38,12 +38,12 @@ const Footer = () => {
                     <div className="widget">
                       <h5 className="id-color mb-3">Our Services</h5>
                       <ul className="list-unstyled">
-                        <li className="mb-2"><Link to="/services" className="text-light-50 hover-text-white transition-all">Network Security</Link></li>
-                        <li className="mb-2"><Link to="/services" className="text-light-50 hover-text-white transition-all">Data Encryption</Link></li>
-                        <li className="mb-2"><Link to="/services" className="text-light-50 hover-text-white transition-all">Identity & Access</Link></li>
-                        <li className="mb-2"><Link to="/services" className="text-light-50 hover-text-white transition-all">Security Monitoring</Link></li>
-                        <li className="mb-2"><Link to="/services" className="text-light-50 hover-text-white transition-all">Backup & Recovery</Link></li>
-                        <li className="mb-2"><Link to="/services" className="text-light-50 hover-text-white transition-all">Security Configuration</Link></li>
+                        <li className="mb-2"><Link to="/services/ai-cybersecurity-consulting" className="text-light-50 hover-text-white transition-all">AI Cybersecurity Consulting</Link></li>
+                        <li className="mb-2"><Link to="/services/metasploit-framework" className="text-light-50 hover-text-white transition-all">Offensive Security &amp; Metasploit</Link></li>
+                        <li className="mb-2"><Link to="/services/ai-security-tools-automation" className="text-light-50 hover-text-white transition-all">Security Orchestration &amp; AI (SOAR)</Link></li>
+                        <li className="mb-2"><Link to="/contact" className="text-light-50 hover-text-white transition-all">Attack Simulation &amp; Breach Testing</Link></li>
+                        <li className="mb-2"><Link to="/contact" className="text-light-50 hover-text-white transition-all">Data Protection &amp; Intelligent Encryption</Link></li>
+                        <li className="mb-2"><Link to="/contact" className="text-light-50 hover-text-white transition-all">Security Configuration</Link></li>
                       </ul>
                     </div>
                   </div>
@@ -62,13 +62,7 @@ const Footer = () => {
                     </div>
                   </div>
 
-                  <div className="d-flex align-items-start mb-3">
-                    <i className="icofont-phone fs-4 id-color me-3 mt-1"></i>
-                    <div>
-                      <div className="fw-bold text-white mb-1">Call Us</div>
-                      <span className="text-light-50" style={{ fontSize: '0.9rem' }}>+1 800 987 654</span>
-                    </div>
-                  </div>
+
 
                   <div className="d-flex align-items-start">
                     <i className="icofont-envelope fs-4 id-color me-3 mt-1"></i>
@@ -88,7 +82,7 @@ const Footer = () => {
                 <div className="col-md-12">
                   <div className="de-flex d-flex flex-column flex-md-row justify-content-between align-items-center">
                     <div className="de-flex-col mb-3 mb-md-0 text-light-50 text-center text-md-start" style={{ fontSize: '0.9rem' }}>
-                      &copy; 2026 - Senitel by Designesia
+                      &copy; 2026 Sentinel. All Rights Reserved.
                     </div>
                     <ul className="menu-simple d-flex flex-wrap justify-content-center gap-3 list-unstyled mb-0">
                       <li><Link to="/contact" className="text-light-50 hover-text-white transition-all text-decoration-none">Terms &amp; Conditions</Link></li>

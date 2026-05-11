@@ -82,9 +82,9 @@ const About = () => {
                                         <h2 className="wow fadeInUp" data-wow-delay=".2s">Pioneering AI-Powered Cyber Defense</h2>
 
                                         <p className="wow fadeInUp" data-wow-delay=".4s">
-                                            For over 15 years, we have engineered scalable cyber defense infrastructure to protect global enterprises from sophisticated attacks. 
-                                            By combining advanced AI models with human security research, we deliver an intelligent, proactive security posture. 
-                                            From real-time threat intelligence to continuous vulnerability analysis, our platform ensures absolute digital trust in an increasingly volatile digital landscape.
+                                            For over 15 years, we have architected mission-critical, autonomous cyber defense infrastructure to protect global enterprises from sophisticated attacks. 
+                                            By combining advanced AI models with elite security research, we deliver an intelligent, self-healing security posture. 
+                                            From real-time zero-day threat intelligence to continuous vulnerability analysis, our platform ensures absolute digital sovereignty in an increasingly volatile digital landscape.
                                         </p>
 
                                         <Link className="btn-main fx-slide mb10 mb-3 wow fadeInUp" data-wow-delay=".6s" to="/contact"><span>Start For Free</span></Link>
@@ -141,8 +141,8 @@ const About = () => {
                             <div className="row gy-4 gx-5">
                                 <div className="col-lg-12">
                                     <div className="text-center">
-                                        <div className="subtitle s2 mb-3 wow fadeInUp" data-wow-delay=".0s">Next-Generation Security</div>
-                                        <h2 className="wow fadeInUp" data-wow-delay=".2s">Scalable Infrastructure for Modern Threat Vectors</h2>
+                                        <div className="subtitle s2 mb-3 wow fadeInUp" data-wow-delay=".0s">Autonomous Defense Infrastructure</div>
+                                        <h2 className="wow fadeInUp" data-wow-delay=".2s">Zero-Trust Architecture for Advanced Threat Vectors</h2>
                                     </div>
                                 </div>
 
@@ -231,78 +231,7 @@ const About = () => {
                     </section>
 
 
-                    <section>
-                        <div className="container">
-                            <div className="row g-4">
-                                <div className="col-lg-12">
-                                    <div className="text-center">
-                                        <div className="subtitle wow fadeInUp">Elite Security Research</div> 
-                                        <h2 className="wow fadeInUp" data-wow-delay=".2s">Human Intelligence Empowering AI Systems</h2>
-                                    </div>
-                                </div>
-                                
-                                <div className="col-lg-3">
-                                    <div className="rounded-1 overflow-hidden">
-                                        <img src="/images/team/1.webp" className="w-100" alt="Cybersecurity Expert" loading="lazy" />
-                                        <div className="bg-light p-4 overflow-hidden text-center">
-                                            <h4 className="mb-0">John Smith</h4>
-                                            <p className="mb-2">Chief AI Security Architect</p>
-                                            <div className="social-icons">
-                                                <Link to="/contact"><i className="bg-white id-color bg-hover-2 text-hover-white fa-brands fa-linkedin"></i></Link>
-                                                <Link to="/contact"><i className="bg-white id-color bg-hover-2 text-hover-white fa-brands fa-x-twitter"></i></Link>
-                                                <Link to="/contact"><i className="bg-white id-color bg-hover-2 text-hover-white fa-brands fa-github"></i></Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <div className="col-lg-3">
-                                    <div className="rounded-1 overflow-hidden">
-                                        <img src="/images/team/2.webp" className="w-100" alt="Threat Analyst" />
-                                        <div className="bg-light p-4 overflow-hidden text-center">
-                                            <h4 className="mb-0">Sarah Johnson</h4>
-                                            <p className="mb-2">Head of Threat Intelligence</p>
-                                            <div className="social-icons">
-                                                <Link to="/contact"><i className="bg-white id-color bg-hover-2 text-hover-white fa-brands fa-linkedin"></i></Link>
-                                                <Link to="/contact"><i className="bg-white id-color bg-hover-2 text-hover-white fa-brands fa-x-twitter"></i></Link>
-                                                <Link to="/contact"><i className="bg-white id-color bg-hover-2 text-hover-white fa-brands fa-github"></i></Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="col-lg-3">
-                                    <div className="rounded-1 overflow-hidden">
-                                        <img src="/images/team/3.webp" className="w-100" alt="Cloud Security Specialist" />
-                                        <div className="bg-light p-4 overflow-hidden text-center">
-                                            <h4 className="mb-0">Thomas Bennett</h4>
-                                            <p className="mb-2">Zero-Trust Infrastructure Lead</p>
-                                            <div className="social-icons">
-                                                <Link to="/contact"><i className="bg-white id-color bg-hover-2 text-hover-white fa-brands fa-linkedin"></i></Link>
-                                                <Link to="/contact"><i className="bg-white id-color bg-hover-2 text-hover-white fa-brands fa-x-twitter"></i></Link>
-                                                <Link to="/contact"><i className="bg-white id-color bg-hover-2 text-hover-white fa-brands fa-github"></i></Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="col-lg-3">
-                                    <div className="rounded-1 overflow-hidden">
-                                        <img src="/images/team/4.webp" className="w-100" alt="Incident Response Manager" />
-                                        <div className="bg-light p-4 overflow-hidden text-center">
-                                            <h4 className="mb-0">Joshua Henry</h4>
-                                            <p className="mb-2">Director of Autonomous Defense</p>
-                                            <div className="social-icons">
-                                                <Link to="/contact"><i className="bg-white id-color bg-hover-2 text-hover-white fa-brands fa-linkedin"></i></Link>
-                                                <Link to="/contact"><i className="bg-white id-color bg-hover-2 text-hover-white fa-brands fa-x-twitter"></i></Link>
-                                                <Link to="/contact"><i className="bg-white id-color bg-hover-2 text-hover-white fa-brands fa-github"></i></Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
 
 
                     <section className="section-dark bg-color text-light pt-60 pb-50 relative overflow-hidden">

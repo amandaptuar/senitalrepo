@@ -337,3 +337,17 @@ section {
 .flip-card-back .social-icons a i:hover {
   background-color: #00bcd4; /* Accent color */
 }
+
+
+/* Disable all animations for faster load */
+* {
+    animation: none !important;
+    transition-duration: 0ms !important;
+}
+
+.wow {
+    visibility: visible !important;
+    animation: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+}

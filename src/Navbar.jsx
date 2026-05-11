@@ -156,7 +156,7 @@ const Navbar = () => {
               {/* Logo */}
               <div className="de-flex-col">
                 <div id="logo">
-                  <Link to="/" onClick={handleNavClose}>
+                  <Link to="/" onClick={handleNavClose} style={{ display: 'inline-block', padding: '12px 0' }}>
                     <img className="logo-main"   src="/imgadd/image.png" alt="Sentinel Logo" />
                     <img className="logo-mobile" src="/imgadd/image.png" alt="Sentinel Logo" />
                   </Link>
@@ -260,9 +260,9 @@ const Navbar = () => {
                     <span>Start Scan</span>
                   </Link>
                   {!isMobileWindow && (
-                    <Link to="/contact" className="btn-main fx-slide">
+                    <a href="/#pricing" className="btn-main fx-slide" onClick={handleNavClose}>
                       <span>Explore Pricing</span>
-                    </Link>
+                    </a>
                   )}
                   {/* Hamburger — toggles ONLY the mobile menu, never the submenu */}
                   <span

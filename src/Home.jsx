@@ -61,8 +61,8 @@ const Home = () => {
                     <div className="col-lg-6">
                         <div className="spacer-double sm-hide"></div>
                         <div className="subtitle s2 mb-3 wow fadeInUp" data-wow-delay=".0s">Welcome to Sentinel</div>
-                        <h1 className="wow fadeInUp" data-wow-delay=".2s">Smart AI Cybersecurity and Secure Data Movement for Growing Enterprises</h1>
-                        <p className="col-lg-10 wow fadeInUp" data-wow-delay=".4s">Protect your organization with a modern, AI-powered security framework designed to detect threats faster, reduce risk, and ensure seamless data movement across your infrastructure. We help enterprises secure sensitive data, maintain compliance, and operate with confidence in an increasingly complex digital landscape.</p>
+                        <h1 className="wow fadeInUp" data-wow-delay=".2s">Autonomous AI Cybersecurity and Zero-Trust Enterprise Defense</h1>
+                        <p className="col-lg-10 wow fadeInUp" data-wow-delay=".4s">Fortify your digital infrastructure with SENTINEL's autonomous, AI-driven security ecosystem. We empower global enterprises to neutralize zero-day threats in milliseconds, enforce strict zero-trust architectures, and ensure absolute data sovereignty in an increasingly hostile digital landscape.</p>
                         <Link className="btn-main mb10 mb-3 wow fadeInUp" data-wow-delay=".6s" to="/platform?tab=demo"><span>Start Scan</span></Link>
                         <div className="border-bottom my-3"></div>
                         <div className="d-lg-flex align-items-center text-light">
@@ -114,7 +114,7 @@ const Home = () => {
                 <div className="container">
                     <div className="row g-4">
                         <div className="col-md-10">
-                            <h3 className="mb-0 fs-32">Require 24/7 Protection from Advanced Artificial Intelligence Cyber Threats?</h3>
+                            <h3 className="mb-0 fs-32">Require 24/7 Autonomous Defense Against Advanced AI Threat Vectors?</h3>
                         </div>
                         <div className="col-md-2">                            
                             <Link className="btn-main fx-slide btn-line" to="/platform?tab=demo"><span>Start Scan</span></Link>
@@ -141,7 +141,7 @@ const Home = () => {
                             <img src="images/icons-dark/padlock.png" className="absolute w-100px p-3 mb-3 z-2" alt="Network Security Icon" />
                             <div className="ps-100 fs-16">
                                 <h4>Security tool consolidation</h4>
-                                <p>enterprises reducing vendor count from 45+ to unified platforms</p>
+                                <p>Enterprises are reducing fragmented tool sprawl in favor of unified, autonomous platforms.</p>
                             </div>
                         </div>
 
@@ -149,7 +149,7 @@ const Home = () => {
                             <img src="images/icons-dark/cloud.png" className="absolute w-100px p-3 mb-3 z-2" alt="Cloud Security Icon" />
                             <div className="ps-100 fs-16">
                                 <h4>Proof-based security mandates</h4>
-                                <p>SEC cyber rules, NIS2 (EU), UAE PDPL requiring demonstrable controls</p>
+                                <p>Comply with strict SEC, NIS2, and GDPR mandates through irrefutable cryptographic proof.</p>
                             </div>
                         </div>
 
@@ -157,7 +157,7 @@ const Home = () => {
                             <img src="images/icons-dark/quality.png" className="absolute w-100px p-3 mb-3 z-2" alt="Compliance Icon" />
                             <div className="ps-100 fs-16">
                                 <h4>AI-driven attack acceleration</h4>
-                                <p>autonomous offensive tools require autonomous defense responses</p>
+                                <p>Counter autonomous offensive weaponry with predictive, self-healing defensive systems.</p>
                             </div>
                         </div>
                     </div>
@@ -399,7 +399,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="bg-light">
+            <section id="pricing" className="bg-light">
                 <div className="container">
                     <div className="row g-4 mb-2">
                         <div className="col-lg-12 text-center">

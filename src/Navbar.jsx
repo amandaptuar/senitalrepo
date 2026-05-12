@@ -163,8 +163,8 @@ const Navbar = () => {
               <div className="de-flex-col">
                 <div id="logo">
                   <Link to="/" onClick={handleNavClose} style={{ display: 'inline-block', padding: '12px 0' }}>
-                    <img className="logo-main"   src="/imgadd/image.png" alt="Sentinel Logo" />
-                    <img className="logo-mobile" src="/imgadd/image.png" alt="Sentinel Logo" />
+                    <img className="logo-main"   src="imgadd/image.png" alt="Sentinel Logo" />
+                    <img className="logo-mobile" src="imgadd/image.png" alt="Sentinel Logo" />
                   </Link>
                 </div>
               </div>

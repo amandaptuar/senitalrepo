@@ -26,7 +26,7 @@ const MetasploitFramework = () => {
 
                 {/* Hero Section */}
                 <section id="subheader" className="section-dark bg-dark text-light relative overflow-hidden" style={{ padding: '160px 0 100px 0' }}>
-                    <img src="/images/background/2.webp" className="abs start-0 top-0 w-100 h-100" style={{ objectFit: 'cover', opacity: 0.4 }} alt="Background" />
+                    <img src="images/background/2.webp" className="abs start-0 top-0 w-100 h-100" style={{ objectFit: 'cover', opacity: 0.4 }} alt="Background" />
                     <div className="container relative z-2">
                         <div className="row gy-4 gx-lg-5 align-items-center">
                             <div className="col-lg-8 text-break">
@@ -43,7 +43,7 @@ const MetasploitFramework = () => {
                             </div>
                             <div className="col-lg-4 text-center d-none d-lg-block">
                                 <div className="relative d-inline-block p-4 rounded-circle bg-color-opacity-10">
-                                    <img src="/images/icons-white/encryption.png" alt="Metasploit Testing" className="w-100 op-8" style={{ maxWidth: '200px' }} />
+                                    <img src="images/icons-white/encryption.png" alt="Metasploit Testing" className="w-100 op-8" style={{ maxWidth: '200px' }} />
                                     <div className="abs top-0 start-0 w-100 h-100 rounded-circle border border-color border-opacity-50" style={{ animation: 'spin 10s linear infinite' }}></div>
                                 </div>
                             </div>
@@ -240,7 +240,7 @@ const MetasploitFramework = () => {
                 {/* Final CTA Section */}
                 <section className="bg-color text-light py-5 relative overflow-hidden">
                     <div className="w-30 abs abs-middle end-0 me-5 op-1 d-none d-lg-block">
-                        <img src="/images/logo-big-white.webp" className="w-100" alt="Logo" style={{ filter: 'brightness(0) invert(1)', opacity: '0.1' }} />
+                        <img src="images/logo-big-white.webp" className="w-100" alt="Logo" style={{ filter: 'brightness(0) invert(1)', opacity: '0.1' }} />
                     </div>
                     <div className="container relative z-2">
                         <div className="row g-4 align-items-center">

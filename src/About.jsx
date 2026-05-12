@@ -26,7 +26,7 @@ const About = () => {
 
                     <section id="subheader" className="section-dark bg-dark text-light relative jarallax">
                         <div className="gradient-edge-top"></div>
-                        <img src="/images/background/1.webp" className="jarallax-img" alt="" />
+                        <img src="images/background/1.webp" className="jarallax-img" alt="" />
                         <div className="container relative z-2">
                             <div className="row gy-4 gx-5 align-items-center">
                                 <div className="spacer-double sm-hide"></div>
@@ -46,7 +46,7 @@ const About = () => {
                         </div>
                     </section>
                     
-                    <section data-bgimage="url(/images/background/6.webp) top">
+                    <section data-bgimage="url(images/background/6.webp) top">
                         <div className="container">
                             <div className="row g-4 gx-5 align-items-center">
                                 
@@ -75,12 +75,12 @@ const About = () => {
                                         <div className="row g-4">
                                             <div className="col-lg-6 wow fadeInRight">
                                                 <div className="relative rounded-1 overflow-hidden">
-                                                    <img src="/images/misc/p1.webp" className="w-100" alt="Cybersecurity Operations Center" loading="lazy" />
+                                                    <img src="images/misc/p1.webp" className="w-100" alt="Cybersecurity Operations Center" loading="lazy" />
                                                 </div>
                                             </div>
                                             <div className="col-lg-6 wow fadeInRight" data-wow-delay=".3s">
                                                 <div className="relative rounded-1 overflow-hidden">
-                                                    <img src="/images/misc/p2.webp" className="w-100" alt="Network Security Infrastructure" loading="lazy" />
+                                                    <img src="images/misc/p2.webp" className="w-100" alt="Network Security Infrastructure" loading="lazy" />
                                                 </div>
                                             </div>
                                         </div>
@@ -121,22 +121,22 @@ const About = () => {
                                 </div>
 
                                 <div className="col-lg-6">
-                                    <div className="relative">
+                                    <div className="relative about-images-wrapper">
                                         <div className="bg-color text-light text-center rounded-1 abs w-200px p-4 m-4 bottom-0 z-3 overflow-hidden wow zoomIn">
                                             <h2 className="mb-0">99.9%</h2>
                                             <p className="lh-1-5 fs-14 mb-0">Autonomous Threat Mitigation Rate</p>
                                         </div>
                                         <div className="rounded-1 w-90 overflow-hidden wow zoomIn">
-                                            <img src="/images/misc/l1.webp" className="w-100 wow scaleIn" alt="Cyber Defense Dashboard" />
+                                            <img src="images/misc/l1.webp" className="w-100 wow scaleIn" alt="Cyber Defense Dashboard" />
                                         </div>
                                         <div className="rounded-1 w-50 abs mb-min-50 end-0 bottom-0 z-2 overflow-hidden shadow-soft wow zoomIn" data-wow-delay=".2s">
-                                            <img src="/images/misc/s1.webp" className="w-100 wow scaleIn" data-wow-delay=".2s" alt="Security Monitoring Interface" />
+                                            <img src="images/misc/s1.webp" className="w-100 wow scaleIn" data-wow-delay=".2s" alt="Security Monitoring Interface" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="relative mb-4 wow fadeInUp" data-wow-delay=".2s">
-                                        <img src="/images/icons-dark/padlock.png" className="absolute w-100px p-3 mb-3 z-2" alt="Intelligent Vulnerability Analysis Icon" />
+                                        <img src="images/icons-dark/padlock.png" className="absolute w-100px p-3 mb-3 z-2" alt="Intelligent Vulnerability Analysis Icon" />
                                         <div className="ps-100">
                                             <h4>Intelligent Vulnerability Analysis</h4>
                                             <p>Leverage machine learning to continuously discover and patch systemic weaknesses, reducing exposure across complex cloud and on-premise environments.</p>
@@ -144,7 +144,7 @@ const About = () => {
                                     </div>
 
                                     <div className="relative mb-4 wow fadeInUp" data-wow-delay=".4s">
-                                        <img src="/images/icons-dark/cloud.png" className="absolute w-100px p-3 mb-3 z-2" alt="Cloud Security Icon" />
+                                        <img src="images/icons-dark/cloud.png" className="absolute w-100px p-3 mb-3 z-2" alt="Cloud Security Icon" />
                                         <div className="ps-100">
                                             <h4>Quantum-Resistant Encryption</h4>
                                             <p>Secure highly sensitive workloads with next-generation cryptographic protocols, strict zero-trust access controls, and decentralized secure storage.</p>
@@ -152,7 +152,7 @@ const About = () => {
                                     </div>
 
                                     <div className="relative wow fadeInUp" data-wow-delay=".6s">
-                                        <img src="/images/icons-dark/quality.png" className="absolute w-100px p-3 mb-3 z-2" alt="Trust Icon" />
+                                        <img src="images/icons-dark/quality.png" className="absolute w-100px p-3 mb-3 z-2" alt="Trust Icon" />
                                         <div className="ps-100">
                                             <h4>Uncompromising Digital Trust</h4>
                                             <p>Establish irrefutable reliability by neutralizing systemic risks before they disrupt operations, ensuring enterprise resilience and continuous compliance.</p>
@@ -174,7 +174,7 @@ const About = () => {
                                     {/* Image */}
                                     <div className="col-lg-6 position-lg-absolute right-half h-100">
                                         <div className="triangle-bottomright-dark"></div>
-                                        <div className="image" style={{backgroundImage: 'url(/images/misc/s4.webp)', backgroundPosition: 'center', backgroundSize: 'cover'}} data-bgimage="url(/images/misc/s4.webp) center"></div>
+                                        <div className="image" style={{backgroundImage: 'url(images/misc/s4.webp)', backgroundPosition: 'center', backgroundSize: 'cover'}} data-bgimage="url(images/misc/s4.webp) center"></div>
                                     </div>
                                     {/* Text */}
                                     <div className="col-lg-6">
@@ -211,7 +211,7 @@ const About = () => {
                     <section className="section-dark bg-color text-light pt-60 pb-50 relative overflow-hidden">
                         
                         <div className="w-30 abs abs-middle end-0 me-5 op-1">
-                            <img src="/images/logo-big-white.webp" className="w-100 wow scaleIn" alt="" />
+                            <img src="images/logo-big-white.webp" className="w-100 wow scaleIn" alt="" />
                         </div>
                         <div className="container">
                             <div className="row g-4">

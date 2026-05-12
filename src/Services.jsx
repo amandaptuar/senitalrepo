@@ -26,7 +26,7 @@ const Services = () => {
 
                     <section id="subheader" className="section-dark bg-dark text-light relative jarallax">
                         <div className="gradient-edge-top"></div>
-                        <img src="/images/background/2.webp" className="jarallax-img" alt="" />
+                        <img src="images/background/2.webp" className="jarallax-img" alt="" />
                         <div className="container relative z-2">
                             <div className="row gy-4 gx-5 align-items-center">
                                 <div className="spacer-double sm-hide"></div>
@@ -47,14 +47,14 @@ const Services = () => {
 
                     </section>
                     
-                    <section data-bgimage="url(/images/background/6.webp) top">
+                    <section data-bgimage="url(images/background/6.webp) top">
                         <div className="container">
 
                             <div className="row g-4">
                                 <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0s">
                                     <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden h-100">
                                         <div className="relative z-2 wow fadeIn" data-wow-delay=".0s">
-                                            <img src="/images/icons-white/cyber-security.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
+                                            <img src="images/icons-white/cyber-security.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
                                             <h4>AI Cybersecurity Consulting</h4>
                                             <p>Work with experts to design and implement a future-ready security strategy tailored to your business, compliance needs, and risk profile.</p>
                                             <ul className="ul-check white mt-3 text-start mb-4">
@@ -65,14 +65,14 @@ const Services = () => {
                                             </ul>
                                             <Link className="btn-main fx-slide bg-dark" to="/services/ai-cybersecurity-consulting"><span>Explore Service</span></Link>
                                         </div>
-                                        <img src="/images/icons-white/cyber-security.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
+                                        <img src="images/icons-white/cyber-security.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
                                     </div>
                                 </div>
 
                                 <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                                     <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden h-100">
                                         <div className="relative z-2 wow fadeIn" data-wow-delay=".2s">
-                                            <img src="/images/icons-white/encryption.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
+                                            <img src="images/icons-white/encryption.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
                                             <h4>Offensive Security &amp; Metasploit</h4>
                                             <p>Simulate real-world attacks using industry-standard tools like Metasploit to identify vulnerabilities before hackers do.</p>
                                             <ul className="ul-check white mt-3 text-start mb-4">
@@ -83,14 +83,14 @@ const Services = () => {
                                             </ul>
                                             <Link className="btn-main fx-slide bg-dark" to="/services/metasploit-framework"><span>Explore Service</span></Link>
                                         </div>
-                                        <img src="/images/icons-white/encryption.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
+                                        <img src="images/icons-white/encryption.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
                                     </div>
                                 </div>
 
                                 <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
                                     <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden h-100">
                                         <div className="relative z-2 wow fadeIn" data-wow-delay=".4s">
-                                            <img src="/images/icons-white/fingerprint.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
+                                            <img src="images/icons-white/fingerprint.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
                                             <h4>Security Orchestration &amp; AI (SOAR)</h4>
                                             <p>Streamline and scale your security operations using AI-driven orchestration and automated response systems.</p>
                                             <ul className="ul-check white mt-3 text-start mb-4">
@@ -101,14 +101,14 @@ const Services = () => {
                                             </ul>
                                             <Link className="btn-main fx-slide bg-dark" to="/services/ai-security-tools-automation"><span>Explore Service</span></Link>
                                         </div>
-                                        <img src="/images/icons-white/fingerprint.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
+                                        <img src="images/icons-white/fingerprint.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
                                     </div>
                                 </div>
 
                                 <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
                                     <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden h-100">
                                         <div className="relative z-2 wow fadeIn" data-wow-delay=".6s">
-                                            <img src="/images/icons-white/monitoring.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
+                                            <img src="images/icons-white/monitoring.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
                                             <h4>Attack Simulation &amp; Breach Testing</h4>
                                             <p>Test your defenses with realistic cyber attack simulations to measure readiness and improve response strategies.</p>
                                             <ul className="ul-check white mt-3 text-start mb-4">
@@ -119,14 +119,14 @@ const Services = () => {
                                             </ul>
                                             <Link className="btn-main fx-slide bg-dark" to="/contact"><span>Explore Service</span></Link>
                                         </div>
-                                        <img src="/images/icons-white/monitoring.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
+                                        <img src="images/icons-white/monitoring.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
                                     </div>
                                 </div>
 
                                 <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
                                     <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden h-100">
                                         <div className="relative z-2 wow fadeIn" data-wow-delay=".8s">
-                                            <img src="/images/icons-white/cloud-storage.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
+                                            <img src="images/icons-white/cloud-storage.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
                                             <h4>Data Protection &amp; Intelligent Encryption</h4>
                                             <p>Secure sensitive enterprise data with advanced encryption and AI-driven data protection strategies.</p>
                                             <ul className="ul-check white mt-3 text-start mb-4">
@@ -137,19 +137,19 @@ const Services = () => {
                                             </ul>
                                             <Link className="btn-main fx-slide bg-dark" to="/contact"><span>Explore Service</span></Link>
                                         </div>
-                                        <img src="/images/icons-white/cloud-storage.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
+                                        <img src="images/icons-white/cloud-storage.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
                                     </div>
                                 </div>
 
                                 <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1s">
                                     <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden h-100">
                                         <div className="relative z-2 wow fadeIn" data-wow-delay="1s">
-                                            <img src="/images/icons-white/settings.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
+                                            <img src="images/icons-white/settings.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
                                             <h4>Security Configuration</h4>
                                             <p>Hardening systems and applying secure configurations across all infrastructure.</p>
                                             <Link className="btn-main fx-slide bg-dark mt-auto" to="/contact"><span>Explore Service</span></Link>
                                         </div>
-                                        <img src="/images/icons-white/settings.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
+                                        <img src="images/icons-white/settings.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
                                     </div>
                                 </div>
                             </div>
@@ -185,7 +185,7 @@ const Services = () => {
                                             <div className="col-sm-6">
                                                 <div className="relative overflow-hidden">
                                                     <h3 className="abs text-white fs-32 lh-1 p-4 top-0 start-0 z-3">01</h3>
-                                                    <img src="/images/misc/s2.webp" className="w-100 hover-scale-1-2" alt="Threat Detection" />
+                                                    <img src="images/misc/s2.webp" className="w-100 hover-scale-1-2" alt="Threat Detection" />
                                                 </div>
                                             </div>
                                         </div>
@@ -205,7 +205,7 @@ const Services = () => {
                                             <div className="col-sm-6">
                                                 <div className="relative overflow-hidden">
                                                     <h3 className="abs text-white fs-32 lh-1 p-4 top-0 start-0 z-3">02</h3>
-                                                    <img src="/images/misc/s3.webp" className="w-100 hover-scale-1-2" alt="Zero Trust" />
+                                                    <img src="images/misc/s3.webp" className="w-100 hover-scale-1-2" alt="Zero Trust" />
                                                 </div>
                                             </div>
                                         </div>
@@ -220,7 +220,7 @@ const Services = () => {
                     <section className="bg-color text-light pt-60 pb-50 relative overflow-hidden">
                         
                         <div className="w-30 abs abs-middle end-0 me-5 op-1">
-                            <img src="/images/logo-big-white.webp" className="w-100" alt="" />
+                            <img src="images/logo-big-white.webp" className="w-100" alt="" />
                         </div>
                         <div className="container">
                             <div className="row g-4">

@@ -24,7 +24,7 @@ const AiSecurityTools = () => {
                 {/* Hero Section */}
                 <section id="subheader" className="section-dark bg-dark text-light relative jarallax">
                     <div className="gradient-edge-top"></div>
-                    <img src="/images/background/7.webp" className="jarallax-img" alt="" />
+                    <img src="images/background/7.webp" className="jarallax-img" alt="" />
                     <div className="container relative z-2">
                         <div className="row gy-4 gx-5 align-items-center">
                             <div className="spacer-double sm-hide"></div>
@@ -42,7 +42,7 @@ const AiSecurityTools = () => {
                                 </div>
                             </div>
                             <div className="col-lg-4 text-center sm-hide">
-                                <img src="/images/icons-white/fingerprint.png" alt="AI Tools" className="w-50 op-5" />
+                                <img src="images/icons-white/fingerprint.png" alt="AI Tools" className="w-50 op-5" />
                             </div>
                         </div>
                     </div>
@@ -87,7 +87,7 @@ const AiSecurityTools = () => {
                             <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".0s">
                                 <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden h-100">
                                     <div className="relative z-2">
-                                        <img src="/images/icons-white/cyber-security.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
+                                        <img src="images/icons-white/cyber-security.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
                                         <h4>AI-Powered Threat Detection</h4>
                                         <ul className="ul-check white mt-3 text-start mb-4">
                                             <li>Behavioral analysis</li>
@@ -96,14 +96,14 @@ const AiSecurityTools = () => {
                                             <li>Threat intelligence</li>
                                         </ul>
                                     </div>
-                                    <img src="/images/icons-white/cyber-security.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
+                                    <img src="images/icons-white/cyber-security.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
                                 </div>
                             </div>
                             {/* Card 2 */}
                             <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                                 <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden h-100">
                                     <div className="relative z-2">
-                                        <img src="/images/icons-white/settings.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
+                                        <img src="images/icons-white/settings.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
                                         <h4>Security Automation (SOAR)</h4>
                                         <ul className="ul-check white mt-3 text-start mb-4">
                                             <li>Automated workflows</li>
@@ -112,14 +112,14 @@ const AiSecurityTools = () => {
                                             <li>Reduced manual intervention</li>
                                         </ul>
                                     </div>
-                                    <img src="/images/icons-white/settings.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
+                                    <img src="images/icons-white/settings.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
                                 </div>
                             </div>
                             {/* Card 3 */}
                             <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
                                 <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden h-100">
                                     <div className="relative z-2">
-                                        <img src="/images/icons-white/monitoring.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
+                                        <img src="images/icons-white/monitoring.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
                                         <h4>AI Vulnerability Scanning</h4>
                                         <ul className="ul-check white mt-3 text-start mb-4">
                                             <li>Web/API scanning</li>
@@ -128,14 +128,14 @@ const AiSecurityTools = () => {
                                             <li>Compliance reports</li>
                                         </ul>
                                     </div>
-                                    <img src="/images/icons-white/monitoring.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
+                                    <img src="images/icons-white/monitoring.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
                                 </div>
                             </div>
                             {/* Card 4 */}
                             <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
                                 <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden h-100">
                                     <div className="relative z-2">
-                                        <img src="/images/icons-white/encryption.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
+                                        <img src="images/icons-white/encryption.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
                                         <h4>Attack Simulation</h4>
                                         <ul className="ul-check white mt-3 text-start mb-4">
                                             <li>Automated penetration testing</li>
@@ -144,14 +144,14 @@ const AiSecurityTools = () => {
                                             <li>Continuous validation</li>
                                         </ul>
                                     </div>
-                                    <img src="/images/icons-white/encryption.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
+                                    <img src="images/icons-white/encryption.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
                                 </div>
                             </div>
                             {/* Card 5 */}
                             <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
                                 <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden h-100">
                                     <div className="relative z-2">
-                                        <img src="/images/icons-white/cloud-storage.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
+                                        <img src="images/icons-white/cloud-storage.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
                                         <h4>Intelligent Data Protection</h4>
                                         <ul className="ul-check white mt-3 text-start mb-4">
                                             <li>DLP integration</li>
@@ -160,14 +160,14 @@ const AiSecurityTools = () => {
                                             <li>Secure data movement</li>
                                         </ul>
                                     </div>
-                                    <img src="/images/icons-white/cloud-storage.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
+                                    <img src="images/icons-white/cloud-storage.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
                                 </div>
                             </div>
                             {/* Card 6 */}
                             <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1s">
                                 <div className="d-block relative bg-dark-gradient text-light rounded-1 p-40 pb-20 overflow-hidden h-100">
                                     <div className="relative z-2">
-                                        <img src="/images/icons-white/fingerprint.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
+                                        <img src="images/icons-white/fingerprint.png" className="w-90px mb-3 bg-color p-3 rounded-1" alt="" />
                                         <h4>Cloud & Endpoint Security</h4>
                                         <ul className="ul-check white mt-3 text-start mb-4">
                                             <li>Cloud workload protection</li>
@@ -176,7 +176,7 @@ const AiSecurityTools = () => {
                                             <li>MFA enforcement</li>
                                         </ul>
                                     </div>
-                                    <img src="/images/icons-white/fingerprint.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
+                                    <img src="images/icons-white/fingerprint.png" className="w-80 abs start-60 abs-middle op-1" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -213,7 +213,7 @@ const AiSecurityTools = () => {
                 </section>
 
                 {/* Global Coverage Section */}
-                <section className="section-dark bg-dark text-light" data-bgimage="url(/images/background/2.webp) center">
+                <section className="section-dark bg-dark text-light" data-bgimage="url(images/background/2.webp) center">
                     <div className="container">
                         <div className="row text-center mb-4">
                             <div className="col-lg-12">
@@ -270,7 +270,7 @@ const AiSecurityTools = () => {
                 {/* Final CTA Section */}
                 <section className="bg-dark-gradient text-light pt-60 pb-50 relative overflow-hidden">
                     <div className="w-30 abs abs-middle end-0 me-5 op-1">
-                        <img src="/images/logo-big-white.webp" className="w-100" alt="" />
+                        <img src="images/logo-big-white.webp" className="w-100" alt="" />
                     </div>
                     <div className="container">
                         <div className="row g-4 align-items-center">

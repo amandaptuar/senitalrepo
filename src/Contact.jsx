@@ -54,7 +54,7 @@ const Contact = () => {
 
                 <section id="subheader" className="section-dark bg-dark text-light relative jarallax">
                     <div className="gradient-edge-top"></div>
-                    <img src="/images/background/5.webp" className="jarallax-img" alt="" />
+                    <img src="images/background/5.webp" className="jarallax-img" alt="" />
                     <div className="container relative z-2">
                         <div className="row gy-4 gx-5 align-items-center">
                             <div className="spacer-double sm-hide"></div>
@@ -74,7 +74,7 @@ const Contact = () => {
                     </div>
                 </section>
 
-                <section style={{ backgroundImage: 'url(/images/background/6.webp)', backgroundPosition: 'top', backgroundSize: 'cover' }}>
+                <section style={{ backgroundImage: 'url(images/background/6.webp)', backgroundPosition: 'top', backgroundSize: 'cover' }}>
                     <div className="container">
                         <div className="row g-4">
                             <div className="col-lg-6">
@@ -89,7 +89,7 @@ const Contact = () => {
                                 <div className="rounded-1 bg-light overflow-hidden">
                                     <div className="row g-2 h-100">
                                         <div className="col-sm-6">
-                                            <div className="auto-height relative h-100" style={{ backgroundImage: 'url(/images/misc/s1.webp)', backgroundPosition: 'center', backgroundSize: 'cover', minHeight: '300px' }}></div>
+                                            <div className="auto-height relative h-100" style={{ backgroundImage: 'url(images/misc/s1.webp)', backgroundPosition: 'center', backgroundSize: 'cover', minHeight: '300px' }}></div>
                                         </div>   
                                         <div className="col-sm-6 relative">
                                             <div className="p-30">

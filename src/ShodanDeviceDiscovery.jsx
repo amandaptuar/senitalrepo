@@ -24,7 +24,7 @@ const ShodanDeviceDiscovery = () => {
                 {/* Hero Section */}
                 <section id="subheader" className="section-dark bg-dark text-light relative jarallax overflow-hidden">
                     <div className="gradient-edge-top"></div>
-                    <img src="/images/background/9.webp" className="jarallax-img" alt="" />
+                    <img src="images/background/9.webp" className="jarallax-img" alt="" />
                     <div className="container relative z-2">
                         <div className="row gy-4 gx-lg-5 align-items-center">
                             <div className="spacer-double sm-hide"></div>
@@ -42,7 +42,7 @@ const ShodanDeviceDiscovery = () => {
                                 </div>
                             </div>
                             <div className="col-lg-4 text-center sm-hide">
-                                <img src="/images/icons-white/cyber-security.png" alt="Device Discovery" className="w-50 op-5" style={{ maxWidth: '200px' }} />
+                                <img src="images/icons-white/cyber-security.png" alt="Device Discovery" className="w-50 op-5" style={{ maxWidth: '200px' }} />
                             </div>
                         </div>
                     </div>
@@ -98,7 +98,7 @@ const ShodanDeviceDiscovery = () => {
                 </section>
 
                 {/* Core Features Grid */}
-                <section className="section-dark bg-dark text-light py-5 overflow-hidden relative" style={{ backgroundImage: 'url(/images/background/6.webp)', backgroundPosition: 'top', backgroundSize: 'cover' }}>
+                <section className="section-dark bg-dark text-light py-5 overflow-hidden relative" style={{ backgroundImage: 'url(images/background/6.webp)', backgroundPosition: 'top', backgroundSize: 'cover' }}>
                     <div className="abs top-0 start-0 w-100 h-100 bg-dark op-8"></div>
                     <div className="container relative z-2">
                         <div className="row mb-5">

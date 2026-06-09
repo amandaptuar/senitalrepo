@@ -3,12 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 const navLinks = [
   { label: 'Home', to: '/' },
-  { label: 'Platform', to: '/platform?tab=demo', children: [
-    { label: 'Live Demo', to: '/platform?tab=demo' },
-    { label: 'Dashboard', to: '/platform?tab=dashboard' },
-    { label: 'AI Triage', to: '/platform?tab=triage' },
-    { label: 'Investor', to: '/platform?tab=investor' },
-  ]},
+  { label: 'Website Scanner', to: '/website-scanner' },
   { label: 'Services', to: '/services', children: [
     { label: 'All Services', to: '/services' },
     { label: 'Metasploit Framework', to: '/services/metasploit-framework' },
@@ -262,7 +257,7 @@ const Navbar = () => {
               {/* Side area (buttons + hamburger) */}
               <div className="de-flex-col">
                 <div className="menu_side_area">
-                  <Link to="/platform?tab=demo" className="btn-main fx-slide btn-line me-2">
+                  <Link to="/website-scanner" className="btn-main fx-slide btn-line me-2 sm-hide">
                     <span>Start Scan</span>
                   </Link>
 

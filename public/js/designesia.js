@@ -1415,12 +1415,14 @@
            return $state;
          };
 
-         skrollr.init();
+         /* skrollr DISABLED — was causing double scrollbar by setting
+            overflow-y:auto on <html>. React SPA doesn't need parallax. */
+         // skrollr.init();   // ← disabled
 
-         var s = skrollr.init();
-         if (s.isMobile()) {
-             s.destroy();
-         }
+         try {
+           var s = skrollr.init();
+           s.destroy(); // immediately destroy so it never touches overflow
+         } catch(e) {}
          
          // --------------------------------------------------
          // navigation for mobile

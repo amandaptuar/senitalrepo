@@ -13,6 +13,7 @@ const ShodanDeviceDiscovery = lazy(() => import('./ShodanDeviceDiscovery'))
 const ShodanVulnerabilityDetection = lazy(() => import('./ShodanVulnerabilityDetection'))
 const ShodanNetworkMonitoring = lazy(() => import('./ShodanNetworkMonitoring'))
 const ShodanInternetIntelligence = lazy(() => import('./ShodanInternetIntelligence'))
+const WebsiteScanner = lazy(() => import('./WebsiteScanner'))
 
 // Loading component for Suspense
 const PageLoader = () => (
@@ -132,6 +133,7 @@ function App() {
           <Route path="/services/shodan-services/vulnerability-detection" element={<ShodanVulnerabilityDetection />} />
           <Route path="/services/shodan-services/network-monitoring" element={<ShodanNetworkMonitoring />} />
           <Route path="/services/shodan-services/internet-intelligence" element={<ShodanInternetIntelligence />} />
+          <Route path="/website-scanner" element={<WebsiteScanner />} />
         </Routes>
       </Suspense>
     </Router>

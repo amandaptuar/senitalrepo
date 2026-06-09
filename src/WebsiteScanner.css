@@ -370,7 +370,7 @@
 
 /* 768px — tablet */
 @media(max-width:768px){
-  .ws-wrapper{padding:130px 0 60px;}
+  .ws-wrapper{padding:160px 0 60px;}
   .ws-input-card{padding:18px 16px;}
   .ws-kpi-grid{grid-template-columns:repeat(2,1fr);}
   .ws-bar-chart{height:130px;}
@@ -386,7 +386,7 @@
 
 /* 480px — mobile */
 @media(max-width:480px){
-  .ws-wrapper{padding:130px 0 48px;}
+  .ws-wrapper{padding:160px 0 48px;}
   .ws-input-card{padding:14px 12px;border-radius:14px;}
   .ws-kpi-grid{grid-template-columns:1fr;} /* Changed from 1fr 1fr to single column */
   .ws-kpi{padding:14px;}

@@ -307,25 +307,7 @@ export default function WebsiteScanner() {
             {/* ══ VIEW 3: DASHBOARD ══ */}
             {view === 'dashboard' && result && (
               <>
-                <div className="ws-input-card" style={{marginBottom:28}}>
-                  <div className="ws-input-row">
-                    <span className="ws-prefix">🔍 TARGET →</span>
-                    <input type="text" value={url}
-                      onChange={e => setUrl(e.target.value)}
-                      onKeyDown={e => e.key === 'Enter' && !isScanning && handleScan()}
-                      placeholder="Scan another URL…" />
-                  </div>
-                  <div className="ws-btn-row" style={{marginTop:0}}>
-                    <div className="ws-modes" style={{margin:0,flex:1}}>
-                      <button className={`ws-pill ${mode==='full'?'active':''}`} onClick={() => setMode('full')}>Full</button>
-                      <button className={`ws-pill ${mode==='quick'?'active':''}`} onClick={() => setMode('quick')}>Quick</button>
-                    </div>
-                    <button className="ws-btn ws-btn-primary" onClick={handleScan}
-                      disabled={!url.trim() || isScanning} style={{padding:'10px 20px'}}>
-                      ⚡ New Scan
-                    </button>
-                  </div>
-                </div>
+
 
                 <ScannerDashboard
                   data={result}

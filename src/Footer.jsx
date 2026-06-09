@@ -26,9 +26,7 @@ const Footer = () => {
                       <ul className="list-unstyled">
                         <li className="mb-2"><Link to="/" className="text-light-50 hover-text-white transition-all">Home</Link></li>
                         <li className="mb-2"><Link to="/services" className="text-light-50 hover-text-white transition-all">Our Services</Link></li>
-                        <li className="mb-2"><Link to="/contact" className="text-light-50 hover-text-white transition-all">Gallery</Link></li>
                         <li className="mb-2"><Link to="/about" className="text-light-50 hover-text-white transition-all">About Us</Link></li>
-                        <li className="mb-2"><Link to="/contact" className="text-light-50 hover-text-white transition-all">Blog</Link></li>
                         <li className="mb-2"><Link to="/contact" className="text-light-50 hover-text-white transition-all">Contact</Link></li>
                       </ul>
                     </div>
@@ -41,9 +39,6 @@ const Footer = () => {
                         <li className="mb-2"><Link to="/services/ai-cybersecurity-consulting" className="text-light-50 hover-text-white transition-all">AI Cybersecurity Consulting</Link></li>
                         <li className="mb-2"><Link to="/services/metasploit-framework" className="text-light-50 hover-text-white transition-all">Offensive Security &amp; Metasploit</Link></li>
                         <li className="mb-2"><Link to="/services/ai-security-tools-automation" className="text-light-50 hover-text-white transition-all">Security Orchestration &amp; AI (SOAR)</Link></li>
-                        <li className="mb-2"><Link to="/contact" className="text-light-50 hover-text-white transition-all">Attack Simulation &amp; Breach Testing</Link></li>
-                        <li className="mb-2"><Link to="/contact" className="text-light-50 hover-text-white transition-all">Data Protection &amp; Intelligent Encryption</Link></li>
-                        <li className="mb-2"><Link to="/contact" className="text-light-50 hover-text-white transition-all">Security Configuration</Link></li>
                       </ul>
                     </div>
                   </div>

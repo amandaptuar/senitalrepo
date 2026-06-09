@@ -13,7 +13,7 @@ const Services = () => {
         <>
             <div id="wrapper">
                 <div className="float-text show-on-scroll">
-                    <span><Link to="#">Scroll to top</Link></span>
+                    <span><a href="#top">Scroll to top</a></span>
                 </div>
                 <div className="scrollbar-v show-on-scroll"></div>
 
